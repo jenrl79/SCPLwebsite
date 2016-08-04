@@ -1,0 +1,243 @@
+/*doc
+---
+title: Search Filter
+name: search-filter
+category: Search-Search Filter
+---
+
+These are the checkboxes used on the search page to filter one's search. Utilize Bootstraps grid-sizing within your HTML template for resizing.
+
+```html_example
+<h4>FILTER SEARCH</h4>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-location" aria-expanded="false" aria-controls="search-location">
+        Location
+    </a>
+    <div class="collapse search-filter-content" id="search-location">
+        <ul>
+            <li>
+                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+                <label for="checkbox1">Enter location here</label>
+            </li>
+            <li>
+                <input id="checkbox2" name="checkbox" type="checkbox"> 
+                <label for="checkbox2">Enter location here</label>
+            </li>
+            <li>
+                <input id="checkbox3" name="checkbox" type="checkbox"> 
+                <label for="checkbox3">Enter location here</label>
+            </li>
+            <li>
+                <input id="checkbox4" name="checkbox" type="checkbox"> 
+                <label for="checkbox4">Enter location here</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-format" aria-expanded="false" aria-controls="search-format">
+        Format Type
+    </a>
+    <div class="collapse search-filter-content" id="search-format">
+        <ul>
+            <li>
+                <input id="checkbox5" name="checkbox" type="checkbox" checked="checked">
+                <label for="checkbox5">Enter format here</label>
+            </li>
+            <li>
+                <input id="checkbox6" name="checkbox" type="checkbox"> 
+                <label for="checkbox6">Enter format here</label>
+            </li>
+            <li>
+                <input id="checkbox7" name="checkbox" type="checkbox"> 
+                <label for="checkbox7">Enter format here</label>
+            </li>
+            <li>
+                <input id="checkbox8" name="checkbox" type="checkbox"> 
+                <label for="checkbox8">Enter format here</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-audience" aria-expanded="false" aria-controls="search-audience">
+        Audience
+    </a>
+    <div class="collapse search-filter-content" id="search-audience">
+        <ul>
+            <li>
+                <input id="checkbox9" name="checkbox" type="checkbox" checked="checked">
+                <label for="checkbox9">Enter audience here</label>
+            </li>
+            <li>
+                <input id="checkbox10" name="checkbox" type="checkbox"> 
+                <label for="checkbox10">Enter audience here</label>
+            </li>
+            <li>
+                <input id="checkbox11" name="checkbox" type="checkbox"> 
+                <label for="checkbox11">Enter audience here</label>
+            </li>
+            <li>
+                <input id="checkbox12" name="checkbox" type="checkbox"> 
+                <label for="checkbox12">Enter audience here</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-author" aria-expanded="false" aria-controls="search-author">
+        Author
+    </a>
+    <div class="collapse search-filter-content" id="search-author">
+        <ul>
+            <li>
+                <input id="checkbox13" name="checkbox" type="checkbox" checked="checked">
+                <label for="checkbox13">Enter author here</label>
+            </li>
+            <li>
+                <input id="checkbox14" name="checkbox" type="checkbox"> 
+                <label for="checkbox14">Enter author here</label>
+            </li>
+            <li>
+                <input id="checkbox15" name="checkbox" type="checkbox"> 
+                <label for="checkbox15">Enter author here</label>
+            </li>
+            <li>
+                <input id="checkbox16" name="checkbox" type="checkbox"> 
+                <label for="checkbox16">Enter author here</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-published" aria-expanded="false" aria-controls="search-published">
+        Published Date
+    </a>
+    <div class="collapse search-filter-content" id="search-published">
+        <ul>
+           <!-- li inputs go here -->
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-language" aria-expanded="false" aria-controls="search-language">
+        Language
+    </a>
+    <div class="collapse search-filter-content" id="search-language">
+        <ul>
+           <!-- li inputs go here -->
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-audiencegenre" aria-expanded="false" aria-controls="search-audiencegenre">
+        Audience
+    </a>
+    <div class="collapse search-filter-content" id="search-audiencegenre">
+        <ul>
+            <!-- li inputs go here -->
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-genre" aria-expanded="false" aria-controls="search-genre">
+        Genre
+    </a>
+    <div class="collapse search-filter-content" id="search-genre">
+        <ul>
+            <!-- li inputs go here -->
+        </ul>
+    </div>
+</div>
+<div class="search-filter">
+    <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-region" aria-expanded="false" aria-controls="search-region">
+        Region
+    </a>
+    <div class="collapse search-filter-content" id="search-region">
+        <ul>
+            <!-- li inputs go here -->
+        </ul>
+    </div>
+</div>
+```
+
+
+*/
+
+#scpl {
+
+  .search-filter {
+    padding: 15px 0;
+    border-bottom: 1px solid palette(gray, dark);
+    background-color: palette(gray, x-light);
+
+    &:first-of-type {
+      margin-top: 30px;
+      border-top: 1px solid palette(gray, dark);
+    }
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+    
+    a.search-filter-trigger {
+      display: block;
+      color: palette(blue, drkhover);
+      position: relative;
+
+      &:hover, &:active {
+        text-decoration: none;
+      }
+
+      &:after {
+        font-family: 'Entypo';
+        content: "\e9e3";
+        vertical-align: sub;
+        font-size: 23px;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        color: palette(blue, drkhover);
+      }
+
+      &[aria-expanded="false"]:after {
+        content: "\e9f7";
+      }
+
+    }
+
+    .search-filter-content {
+      margin: 15px 0 0 0;
+      color: palette(gray, dark);
+      max-width: 1100px;
+
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+
+        li {
+          list-style-type: none;
+        }
+        
+      }
+
+    }
+    
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

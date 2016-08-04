@@ -1,0 +1,27 @@
+/*doc
+---
+title: Icon Buttons
+name: 03-icon-buttons
+category: Basic Elements-Buttons
+---
+
+You can add icons to buttons by placing a  `span.icon-<your icon class>` inside your button or anchor. You can find a full list of icons and their corresponding classes [here](icons-entypo.html).
+
+```html_example
+<button type="button" class="btn btn-primary"><span class="icon-link" aria-hidden="true"></span>Hold</button>
+<button type="button" class="btn btn-primary"><span class="icon-magnifying-glass" aria-hidden="true"></span>Read</button>
+<button type="button" class="btn btn-primary"><span class="icon-plus" aria-hidden="true"></span>Listen</button>
+<button type="button" class="btn btn-primary"><span class="icon-bookshelf-plus" aria-hidden="true"></span>Add to cart</button>
+```
+
+*/
+
+#scpl .btn {
+
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+}
+

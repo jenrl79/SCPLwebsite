@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SCPL Homepage</title>
+
+	<!-- NEED THESE STYLESHEETS -->
+	<link rel="stylesheet" href="../assets/css/patterns.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/vendor_assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/vendor_assets/slick/slick-theme.css"/>
+
+</head>
+<body id="scpl">
+<nav class="top-nav">
+    <a href="./homepage.html" class="logo"></a>
+    <div class="sign-in">
+        <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf" aria-hidden="true"></span>Bookshelf (5)</button></a>
+        <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+    </div>
+    <a class="mobile-nav-trigger" role="button" data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav">Menu <span class="icon-menu"></span></a>
+    <div class="mobile-nav collapse" id="mobile-nav">
+        <div class="sign-in">
+            <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-shopping-cart" aria-hidden="true"></span>Bookshelf (5)</button></a>
+            <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+        </div>
+        <div class="menu-items">
+            <a href="./homepage.html" alt="home">home</a>
+            <a href="./locations-page.html" alt="locations">locations</a>
+            <a href="./events-page.html" alt="events">events</a>
+            <a href="./using-the-library-page.html" alt="using the library">using the library</a>
+            <a href="./about-us-page.html" alt="about us">about us</a>
+            <a href="./contact-page.html" alt="contact">contact</a>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a>
+            <a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a>
+            <a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a>
+        </div>
+    </div>
+</nav>
+
+<div class="cardotron">
+	<div class="cardotron-content">
+		<h1>Welcome to the Library</h1>
+		<div class="subhead"><p>What are you looking for?</p></div>
+		<div class="card-small">
+			<span class="icon-research"></span>
+			<p>I'm looking for scholarly journals, articles, or research papers.</p>
+			<a href="./research-db-page.html"><button type="button" class="btn btn-secondary">Go to Research</button></a>
+		</div>
+		<div class="card-large">
+			<span class="icon-open-book"></span>
+			<p>I'm looking for books, ebooks, audiobooks, or other items from the library catalog.</p>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search the catalog">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary">Go!</button>
+                </span>
+			</div>
+			<a href="#" class="sub-link">Browse some suggestions</a>
+		</div>
+		<div class="card-small">
+			<span class="icon-resources"></span>
+			<p>I'm looking for scholarly journals, articles, or research papers.</p>
+			<a href="./resource-page.html"><button type="button" class="btn btn-secondary">Go to Resources</button></a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+	    <li><h5>Browse by Age Group</h5></li>
+	    <li role="presentation" class="active"><a href="#allages" aria-controls="allages" role="tab" data-toggle="tab">All Ages</a></li>
+	    <li role="presentation"><a href="#adult" aria-controls="adult" role="tab" data-toggle="tab">Adult</a></li>
+	    <li role="presentation"><a href="#teens" aria-controls="teens" role="teens" data-toggle="tab">Teens</a></li>
+	    <li role="presentation"><a href="#kids" aria-controls="kids" role="kids" data-toggle="tab">Kids</a></li>
+	</ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="allages"> <!-- all ages tab start-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="event-card">
+						<h4 alt="upcoming events and programs">Upcoming Events & Programs</h4>
+						<div class="item-content">
+							<p class="item-status">Ongoing</p>
+							<h6 class="item-date">June 1 - August 30</h6>
+							<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+							<p class="item-location">Library</p>
+							<h6><a href="#" class="item-details">See details</a></h6>
+						</div>
+						<div class="line-break"></div>
+						<div class="item-content">
+							<p class="item-status">Ongoing</p>
+							<h6 class="item-date">June 1 - August 30</h6>
+							<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+							<p class="item-location">Library</p>
+							<h6><a href="#" class="item-details">See details</a></h6>
+						</div>
+						<div class="line-break"></div>
+						<div class="item-content">
+							<p class="item-status">Ongoing</p>
+							<h6 class="item-date">June 1 - August 30</h6>
+							<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+							<p class="item-location">Library</p>
+							<h6><a href="#" class="item-details">See details</a></h6>
+						</div>
+						<div class="line-break"></div>
+						<div class="item-content">
+							<p class="item-status">Ongoing</p>
+							<h6 class="item-date">June 1 - August 30</h6>
+							<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+							<p class="item-location">Library</p>
+							<h6><a href="#" class="item-details">See details</a></h6>
+						</div>
+						<a href="#" class="event-all-events">All events and programs <span class="icon-circle-right-chevron"></span></a>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<h3 class="carousel-header">Recommended Books <span><a href="#">See all</a></span></h3>
+					<div class="book-carousel">
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Book Title</p></a>
+							<p class="author">Book Author</p>
+						</div>
+					</div>
+					<div class="line-break"></div>
+					<h3 class="carousel-header">Latest Movies <span><a href="#">See all</a></span></h3>
+					<div class="movie-carousel">
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Movie Title</p></a>
+							<p class="duration">0h 0m</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Movie Title</p></a>
+							<p class="duration">0h 0m</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Movie Title</p></a>
+							<p class="duration">0h 0m</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Movie Title</p></a>
+							<p class="duration">0h 0m</p>
+						</div>
+						<div class="carousel-card">
+							<a href="#"><img src="http://placehold.it/115x150"></a>
+							<a href="#"><p class="title">Movie Title</p></a>
+							<p class="duration">0h 0m</p>
+						</div>
+					</div>
+				</div> <!-- col-md-8 end -->
+			</div> <!-- row end -->
+		</div> <!-- container end -->
+		<div class="featured-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-xs-12">
+								<div style="text-transform: uppercase; color: #fff;">Featured Research Directory</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="featured-card">
+									<div class="item-content">
+										<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+										<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+										<p class="database-password"></p>
+										<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="featured-card">
+									<div class="item-content">
+										<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+										<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+										<p class="database-password"></p>
+										<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-xs-12">
+								<div style="text-transform: uppercase; color: #fff;">Featured Resources</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="featured-card">
+									<div class="item-content">
+										<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+										<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+										<p class="database-password"></p>
+										<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="featured-card">
+									<div class="item-content">
+										<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+										<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+										<p class="database-password"></p>
+										<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container"> <!-- News from Library -->
+			<div class="col-md-12"><h3 style="margin: 2em 0; text-align: center;">News from the library</h3></div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="image-card">
+						<div class="image-source"></div>
+						<div class="image-content">
+							<a href="#">
+								<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="image-text-card">
+						<div class="image-text-source"></div>
+						<div class="image-text-content">
+							<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+							<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+							<a href="#" class="more-details">See details</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text-card">
+						<div class="text-card-content">
+							<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+							<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+							<a href="#" class="more-details">See details</a>
+						</div>
+					</div>
+					<div class="text-card">
+						<div class="text-card-content">
+							<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+							<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+							<a href="#" class="more-details">See details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="image-text-card">
+						<div class="image-text-source"></div>
+						<div class="image-text-content">
+							<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+							<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+							<a href="#" class="more-details">See details</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="image-card">
+						<div class="image-source"></div>
+						<div class="image-content">
+							<a href="#">
+								<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="image-card">
+						<div class="image-source"></div>
+						<div class="image-content">
+							<a href="#">
+								<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="image-text-card">
+						<div class="image-text-source"></div>
+						<div class="image-text-content">
+							<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+							<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+							<a href="#" class="more-details">See details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- News from Library end -->
+	</div> <!-- all ages tab panel end -->
+
+		<div role="tabpanel" class="tab-pane" id="adult"> <!--adult tab begins -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="event-card">
+							<h4 alt="upcoming events and programs">Upcoming Events & Programs</h4>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<a href="#" class="event-all-events">All events and programs <span class="icon-circle-right-chevron"></span></a>
+						</div>
+					</div>
+
+					<div class="col-md-8">
+						<h3 class="carousel-header">Recommended Books <span><a href="#">See all</a></span></h3>
+						<div class="book-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+						</div>
+						<div class="line-break"></div>
+						<h3 class="carousel-header">Latest Movies <span><a href="#">See all</a></span></h3>
+						<div class="movie-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+						</div>
+					</div> <!-- col-md-8 end -->
+				</div> <!-- row end -->
+			</div> <!-- container end -->
+			<div class="featured-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Research Directory</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Resources</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container"> <!-- News from Library -->
+				<div class="col-md-12"><h3 style="margin: 2em 0;">News from the library</h3></div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- News from Library end -->
+		</div> <!-- adult tab panel end -->
+
+		<div role="tabpanel" class="tab-pane" id="teens"> <!--teen tab begins -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="event-card">
+							<h4 alt="upcoming events and programs">Upcoming Events & Programs</h4>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<a href="#" class="event-all-events">All events and programs <span class="icon-circle-right-chevron"></span></a>
+						</div>
+					</div>
+
+					<div class="col-md-8">
+						<h3 class="carousel-header">Recommended Books <span><a href="#">See all</a></span></h3>
+						<div class="book-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+						</div>
+						<div class="line-break"></div>
+						<h3 class="carousel-header">Latest Movies <span><a href="#">See all</a></span></h3>
+						<div class="movie-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+						</div>
+					</div> <!-- col-md-8 end -->
+				</div> <!-- row end -->
+			</div> <!-- container end -->
+			<div class="featured-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Research Directory</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Resources</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container"> <!-- News from Library -->
+				<div class="col-md-12"><h3 style="margin: 2em 0;">News from the library</h3></div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- News from Library end -->
+		</div> <!-- teen tab panel end -->
+
+		<div role="tabpanel" class="tab-pane" id="kids"> <!-- kid tab start-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="event-card">
+							<h4 alt="upcoming events and programs">Upcoming Events & Programs</h4>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<div class="line-break"></div>
+							<div class="item-content">
+								<p class="item-status">Ongoing</p>
+								<h6 class="item-date">June 1 - August 30</h6>
+								<p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+								<p class="item-location">Library</p>
+								<h6><a href="#" class="item-details">See details</a></h6>
+							</div>
+							<a href="#" class="event-all-events">All events and programs <span class="icon-circle-right-chevron"></span></a>
+						</div>
+					</div>
+
+					<div class="col-md-8">
+						<h3 class="carousel-header">Recommended Books <span><a href="#">See all</a></span></h3>
+						<div class="book-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Book Title</p></a>
+								<p class="author">Book Author</p>
+							</div>
+						</div>
+						<div class="line-break"></div>
+						<h3 class="carousel-header">Latest Movies <span><a href="#">See all</a></span></h3>
+						<div class="movie-carousel">
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+							<div class="carousel-card">
+								<a href="#"><img src="http://placehold.it/115x150"></a>
+								<a href="#"><p class="title">Movie Title</p></a>
+								<p class="duration">0h 0m</p>
+							</div>
+						</div>
+					</div> <!-- col-md-8 end -->
+				</div> <!-- row end -->
+			</div> <!-- container end -->
+			<div class="featured-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Research Directory</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<div style="text-transform: uppercase; color: #fff;">Featured Resources</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="featured-card">
+										<div class="item-content">
+											<h5 class="item-title">Lorem Ipsum Sit Dolor</h5>
+											<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+											<p class="database-password"></p>
+											<a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container"> <!-- News from Library -->
+				<div class="col-md-12"><h3 style="margin: 2em 0;">News from the library</h3></div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+						<div class="text-card">
+							<div class="text-card-content">
+								<h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-card">
+							<div class="image-source"></div>
+							<div class="image-content">
+								<a href="#">
+									<h4>Medium Length Title <span class="icon-chevron-right"></span></h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="image-text-card">
+							<div class="image-text-source"></div>
+							<div class="image-text-content">
+								<h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+								<p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+								<a href="#" class="more-details">See details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- News from Library end -->
+		</div> <!-- kids tab panel end -->
+
+		<div class="contact-banner"> <!--Contact banner and bottom nav -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contact-text">
+						<h3>Get in touch with us</h3>
+						<h4>If you have questions or comments, we'd love to hear from you.</h4>
+					</div>
+				</div>
+				<ul class="contact-info">
+					<li class="contact-contact">Contact <span class="contact-detail">Jane Doe</span></li>
+					<li class="contact-phone">Phone <span class="contact-detail">(555) 555-5555</span></li>
+					<li class="contact-department">Department <span class="contact-detail">#1234</span></li>
+					<li class="contact-address">Address <span class="contact-detail">1234 Spartanburg Lane, Spartanburg, SC 00000</span></li>
+				</ul>
+			</div>
+			<div class="line-break"></div>
+			<p><small>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</small></p>
+		</div>
+
+		<nav class="navbar navbar-fixed-bottom">
+		    <div class="container"> 
+		        <div class="row">
+		            <ul class="navbar-bottom-items">
+		                <li><a href="./homepage.html" alt="home" class="active">home</a></li>
+		                <li><a href="./locations-page.html" alt="locations">locations</a></li>
+		                <li><a href="./events-page.html" alt="events">events</a></li>
+		                <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+		                <li><a href="./about-us-page.html" alt="about us">about us</a></li>
+		                <li><a href="./contact-page.html" alt="contact">contact</a></li>
+		            </ul>
+		            <div class="pull-right">
+		                <ul class="navbar-bottom-social">
+		                    <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+		                    <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+		                    <li><a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</nav> <!--Contact banner and bottom nav -->
+	</div>
+	<script type="text/javascript" src="/vendor_assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/vendor_assets/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.book-carousel, .movie-carousel').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
+</body>
+</html>

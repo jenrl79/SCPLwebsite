@@ -1,0 +1,100 @@
+/*doc
+---
+title: Basic Cards
+name: 01-basic-cards
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="basic-card">
+	<span class="icon-lock-corner"></span> <!-- take this out when item is not locked -->
+	<div class="item-content">
+	    <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+	    <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+	    <p class="database-password"></p>
+	    <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+	</div>
+	<div class="item-genre">
+	  	<ul>
+			<li>Adults</li>
+			<li>Geneaology</li>
+	  	</ul>
+	</div>
+</div>
+
+```
+
+*/
+
+#scpl {
+	.basic-card {
+		display: inline-block;
+		position: relative;
+		margin: 10px 0;
+		color: palette(gray,dark);
+		-webkit-font-smoothing: antialiased;
+		border: 1px solid palette(gray,regular);
+		border-radius: 2px;
+		padding: 0;
+		margin: 7px;
+
+		.icon-lock-corner {
+			position: absolute;
+			font-size: 55px;
+			right: -2px;
+			top: -6px;
+		}
+
+		.item-content {
+			padding: 30px;
+
+			h3 {
+				margin: 0 0 20px 0;
+				font-weight: bold;
+			}
+
+			.item-title {
+				color: palette(blue,hover);
+			}
+
+			.description {
+				min-height: 100px;
+				max-height: 100px;
+				overflow: hidden;
+			}
+
+			.database-password {
+				color: palette(gray,regular);
+				margin: 20px 0;
+
+				&:before {
+					content: '';
+					display: block;
+					color: palette(gray,regular);
+				}
+			}
+
+			a {
+				font-weight: bold;
+				color: palette(blue,hover);
+			}
+		}
+		.item-genre {
+			border-top: 1px solid palette(gray,regular);
+			background-color: palette(blue,drkhover);
+			text-transform: uppercase;
+			font-size: 12px;
+
+			ul {
+				padding: 20px 30px;
+				margin: 0;
+				li {
+					font-weight: bolder;
+					display: inline-block;
+					padding-right: 10px;
+					color: palette(gray,x-light);
+				}
+			}
+		}
+	}
+}

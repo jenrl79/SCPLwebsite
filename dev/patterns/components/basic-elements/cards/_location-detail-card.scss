@@ -1,0 +1,114 @@
+/*doc
+---
+title: Location Detail Card
+name: location-detail-card
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="container">
+    <div class="row location-detail-card"> <!-- row begin -->
+        <div class="col-md-3 col-sm-4">
+            <div class="location-detail-section">
+                <div class="location-detail-image"><img src="http://placehold.it/250x250"></div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+            <div class="location-detail-overview">
+                <h3 class="location-detail-title">Lorem Ipsum Sit Dolor</h3>
+                <div class="line-break"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-3">
+                <div class="location-detail-details">
+                    <p>Location</p>
+                    <ul>
+                        <li>525 Spartanburg St.</li>
+                        <li>Spartanburg, SC 12345</li>
+                        <li><a href="#">Get Directions <span class="icon-circle-right-chevron"></span></a></li>
+                    </ul>
+                    <div class="hidden-xs hidden-sm">
+                        <div class="line-break-vert"></div>
+                    </div>
+                    <p>Contact</p>
+                    <ul>
+                        <li>John Doe</li>
+                        <li>(555) 555-5555</li>
+                        <li>library@infodepot.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <div class="location-detail-availability">
+                    <p>Hours</p>
+                    <ul class="location-hours">
+                        <li class="location-mon">Monday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-tues">Tuesday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-weds">Wednesday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-thurs">Thursday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-fri">Friday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-sat">Saturday:<span class="location-hr">9am - 8pm</span></li>
+                        <li class="location-sun">Sunday:<span class="location-hr">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--detailed item card end-->
+
+
+```
+
+*/
+
+#scpl {
+    .location-detail-card {
+        padding: 0 2em;
+        text-align: center;
+        margin: 1em 0;
+        @include breakpoint(laptop) {
+            text-align: left;
+        }
+        .location-detail-section {
+            margin-top: 2em;
+            .location-back {
+                color: palette(gray,x-dark);
+                &:hover {
+                    text-decoration: none;
+                    color: palette(blue,hover);
+                }
+            }
+        }
+        .location-detail-title {
+            margin-top: 1em;
+            font-size: 20px;
+        }
+        .line-break-vert {
+            &:after {
+                left: 27em;
+            }
+        }
+        .location-detail-details {
+            a, span {
+                line-height: 2;
+                color: palette(blue, hover);
+            }
+        }
+        .location-detail-availability {
+            .location-hr {
+              float: center;
+              @include breakpoint(laptop) {
+                  float: right;
+              }
+            }
+        }
+        .location-detail-details,
+        .location-detail-availability {
+            padding: 1em;
+            p {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/*doc
+---
+title: Availability Tags
+name: 02-availability-tags
+category: Basic Elements-Tags
+---
+
+```html_example
+<span class="availability-tag">3</span>
+<span class="availability-tag">14</span>
+<span class="availability-tag">99</span>
+```
+
+*/
+
+#scpl .availability-tag {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: palette(gray,regular);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+    margin: 5px;
+}

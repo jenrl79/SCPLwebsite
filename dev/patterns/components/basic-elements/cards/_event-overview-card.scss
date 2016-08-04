@@ -1,0 +1,84 @@
+/*doc
+---
+title: Event Overview Card
+name: event-overview-card
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="row event-overview">
+    <div class="col-md-12">
+        <div class="event-overview-title">
+            <h2>Summer Reading</h2>
+            <div class="line-break"></div>
+        </div>
+        <div class="row event-overview-details">
+            <div class="col-md-8">
+                <div class="event-overview-section">
+                  <ul>
+                      <li>When: June 1st - Aug 2nd</li>
+                      <li>Where: All Libraries</li>
+                  </ul>
+                </div>
+                <div class="event-overview-section">
+                  <p>Tote bag scenester tofu flexitarian kale chips blog. Cliche butcher gochujang echo park gentrify. Church-key beard vice, etsy cronut fixie pitchfork chicharrones selfies migas. Man braid kale chips chia fanny pack twee, normcore vinyl celiac heirloom art party raw denim plaid typewriter whatever. 8-bit normcore pitchfork, pop-up intelligentsia single-origin coffee microdosing waistcoat hella actually neutra. Fixie mumblecore irony ennui, banh mi waistcoat aesthetic beard wolf knausgaard affogato migas. Pug selfies organic VHS helvetica gluten-free.</p>
+                </div>
+                <div class="hidden-lg hidden-md">
+                	<div class="line-break"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="event-overview-availability">
+                    <ul class="event-overview-hours">
+                        <li>For more information, please contact:</li>
+                        <li>Jane Doe</li>
+                        <li>(555) 555-5555</li>
+                        <li>janedoe@infodepot.org</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+	.event-overview {
+		margin: 0 0 4em 0;
+		text-align: center;
+		position: relative;
+		.event-overview-title {
+			h2 {
+				color: palette(gray,x-dark);
+			}
+			@include breakpoint(laptop) {
+				text-align: left;
+			}
+		}
+		.event-overview-details {
+			.event-overview-section {
+				p {
+					text-align: justify;
+				}
+			}
+			.line-break-vert {
+				&:after {
+					left: 52em;
+				}
+			}
+			@include breakpoint(laptop) {
+				text-align: left;
+			}
+		}
+		.event-overview-availability {
+			@include breakpoint(laptop) {
+				text-align: left;
+			}
+			@include breakpoint(mobileonly) {
+				margin-top: 1em;
+			}
+		}
+	}
+}

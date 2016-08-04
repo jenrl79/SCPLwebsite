@@ -1,0 +1,122 @@
+/*doc
+---
+title: Account Edit Card
+name: account-edit-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>Account Overview</h2>
+		</div>
+		<div class="col-sm-6">
+			<div class="edit-account-logout">
+				<a href="#">Logout</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="line-break"></div>
+
+	<div class="account-overview">
+		<div class="row col-md-7">
+			<div class="basic-card">
+				<div class="item-content">
+					<h3 class="item-title">Personal Details<h6>To change your personal details and notification options, <a href="#">please contact us</a>.</h6></h3>
+					<br>
+					<div class="col-md-8">
+						<p>
+							<strong>FULL NAME</strong><br>
+							Jane Smith
+						</p>
+						<p>
+							<strong>USERNAME</strong><br>
+							(None)
+						</p>
+						<p>
+							<strong>PHONE</strong><br>
+							(123) 456-7891
+						</p>
+						<ul>
+						    <li>
+						        <input id="account-phone" name="checkbox" type="checkbox" disabled>
+						        <label for="account-phone">Text notifications to this number</label>
+						    </li>
+						</ul>
+						<p>
+							<strong>ALT. PHONE</strong><br>
+							(123) 456-7891
+						</p>
+						<ul>
+						    <li>
+						        <input id="account-altphone" name="checkbox" type="checkbox" disabled>
+						        <label for="account-altphone">Text notifications to this number</label>
+						    </li>
+						</ul>
+						<p>
+							<a href="#">Change text notification</a>
+						</p>
+						<p>
+							<a href="#">Change PIN</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p>
+							<strong>EMAIL</strong><br>
+							jane.smith@somewebsite.com
+						</p>
+						<p>
+							<strong>ADDRESS</strong><br>
+							1234 Grover Lane, Spartanburg, SC 20000
+						</p>
+						<p>
+							<strong>CONTACT ME BY</strong><br>
+							Email, Phone
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row col-md-5">
+			<div class="basic-card">
+				<div class="item-content">
+					<h3 class="item-title">Library Record</h3>
+					<p>
+						<strong>LIBRARY CARD NUMBER</strong><br>
+						12321321654654987654
+					</p>
+					<p>
+						<strong>REGISTERED LOCATION</strong><br>
+						Headquarters
+					</p>
+					<p>
+						<strong>PATRON CODE</strong><br>
+						Adult
+					</p>
+					<p>
+						<strong>EXPIRATION DATE</strong><br>
+						05/19/2016
+					</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+```
+
+*/
+
+

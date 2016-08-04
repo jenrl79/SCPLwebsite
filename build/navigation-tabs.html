@@ -1,0 +1,1494 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Navigation-Tabs</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="theme-build/css/vendors.css">
+    <link rel="stylesheet" href="theme-build/css/cortana.css">
+    <!-- Source CSS -->
+    
+    
+    <link rel="stylesheet" href="assets/css/patterns.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vendor_assets/slick/slick.css">
+    
+    <link rel="stylesheet" href="vendor_assets/slick/slick-theme.css">
+    
+    
+
+    <!--[if lt IE 9]>
+    <script src="theme-build/polyfill/html5shiv.js"></script>
+    <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+
+    
+    
+    <script type="text/javascript" src="vendor_assets/js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="vendor_assets/slick/slick.min.js"></script>
+    
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/components.min.js"></script>
+</head>
+
+<body class="cortana-body" ng-controller="MainController">
+
+<div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <nav class="cortana-nav">
+        <a href="index.html"><!-- <img src="theme-build/img/scpl-color-logo.png" alt="Spartanburg County Public Library" style="vertical-align: middle; padding: 0 10%;"> --></a>
+        
+        <h3>Basic Elements</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="basic_elements-banners.html">Banners</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-buttons.html">Buttons</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-cards.html">Cards</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-breadcrumbs.html">Breadcrumbs</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-accordions.html">Accordions</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-modals.html">Modals</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-pagination.html">Pagination</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-radio.html">Radio</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-tags.html">Tags</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-carousel.html">Carousel</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-checkbox.html">Checkbox</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-dropdown.html">Dropdown</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-line_breaks.html">Line Breaks</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="basic_elements-select.html">Select</a></li>
+            
+            
+            
+        </ul>
+        
+        <h3>Icons</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="icons-entypo.html">Entypo</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="icons-custom.html">Custom</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Jumbotrons</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="jumbotrons-cardotron.html">Cardotron</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Navigation</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a class="active" href="navigation-tabs.html">Tabs</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="navigation-navigation.html">Navigation</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Design</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="design-typography.html">Typography</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Maps</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="maps-google_maps.html">Google Maps</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Inputs</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="inputs-contact_us_inputs.html">Contact Us Inputs</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="inputs-personal_details.html">Personal Details</a></li>
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+        
+        <h3>Search</h3>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="search-main_search.html">Main Search</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="search-search_filter.html">Search Filter</a></li>
+            
+            
+            
+            
+            
+        </ul>
+        
+    </nav>
+</div>
+
+<header class="cortana-header sb-slide">
+    
+    <h1><img src="theme-build/img/scpl-color-logo-horz.png" alt="Spartanburg County Public Library" style="vertical-align: middle; width: 250px;"></h1>
+    
+    <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+    </div>
+</header>
+
+<div id="sb-site">
+
+    <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+            <ul bs-scrollspy-list data-offset="-30">
+                
+                
+                <li><a href="#01-navigation-tab">Navigation tab</a></li>
+                
+                
+                
+                <li><a href="#events-tab">Events Tab</a></li>
+                
+                
+            </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+            <div class="cortana-content">
+<h1 id="01-navigation-tab" class="styleguide">Navigation tab</h1>
+</div><div id="scpl" class="codeExample"><div class="exampleOutput">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li><h5>Browse by Age Group</h5></li>
+    <li role="presentation" class="active"><a href="#allages" aria-controls="allages" role="tab" data-toggle="tab">All Ages</a></li>
+    <li role="presentation"><a href="#adult" aria-controls="adult" role="tab" data-toggle="tab">Adult</a></li>
+    <li role="presentation"><a href="#teens" aria-controls="teens" role="teens" data-toggle="tab">Teens</a></li>
+    <li role="presentation"><a href="#kids" aria-controls="kids" role="kids" data-toggle="tab">Kids</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="allages">All Ages content</div>
+    <div role="tabpanel" class="tab-pane" id="adult">Adult content</div>
+    <div role="tabpanel" class="tab-pane" id="teens">Teen content</div>
+    <div role="tabpanel" class="tab-pane" id="kids">Kid content</div>
+</div>
+
+</div><div class="codeBlock"><div class="highlight"><pre><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td class="code"><pre>
+<span class="c">&lt;!-- Nav tabs --&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;h5&gt;</span>Browse by Age Group<span class="nt">&lt;/h5&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#allages"</span> <span class="na">aria-controls=</span><span class="s">"allages"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>All Ages<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#adult"</span> <span class="na">aria-controls=</span><span class="s">"adult"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Adult<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#teens"</span> <span class="na">aria-controls=</span><span class="s">"teens"</span> <span class="na">role=</span><span class="s">"teens"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Teens<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#kids"</span> <span class="na">aria-controls=</span><span class="s">"kids"</span> <span class="na">role=</span><span class="s">"kids"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Kids<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="c">&lt;!-- Tab panes --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"allages"</span><span class="nt">&gt;</span>All Ages content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"adult"</span><span class="nt">&gt;</span>Adult content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"teens"</span><span class="nt">&gt;</span>Teen content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"kids"</span><span class="nt">&gt;</span>Kid content<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</pre></td></tr></tbody></table>
+</pre></div></div></div><div class="cortana-content">
+<h1 id="events-tab" class="styleguide">Events Tab</h1>
+</div><div id="scpl" class="codeExample"><div class="exampleOutput">
+<!-- Events nav tab -->
+<div class="events-tab">
+    <h5>Upcoming Events</h5>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#adult-events" aria-controls="adults" role="tab" data-toggle="tab">Adults</a></li>
+        <li role="presentation"><a href="#teen-events" aria-controls="teens" role="teens" data-toggle="tab">Teens</a></li>
+        <li role="presentation"><a href="#kid-events" aria-controls="kids" role="kids" data-toggle="tab">Kids</a></li>
+        <li role="presentation"><a href="#kid-events" aria-controls="kids" role="kids" data-toggle="tab">Storytimes</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="adult">Adult content</div>
+        <div role="tabpanel" class="tab-pane" id="teens">Teen content</div>
+        <div role="tabpanel" class="tab-pane" id="kids">Kid content</div>
+        <div role="tabpanel" class="tab-pane" id="storytime">Storytime content</div>
+    </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="code"><pre>
+<span class="c">&lt;!-- Events nav tab --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"events-tab"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Upcoming Events<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#adult-events"</span> <span class="na">aria-controls=</span><span class="s">"adults"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Adults<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#teen-events"</span> <span class="na">aria-controls=</span><span class="s">"teens"</span> <span class="na">role=</span><span class="s">"teens"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Teens<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#kid-events"</span> <span class="na">aria-controls=</span><span class="s">"kids"</span> <span class="na">role=</span><span class="s">"kids"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Kids<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#kid-events"</span> <span class="na">aria-controls=</span><span class="s">"kids"</span> <span class="na">role=</span><span class="s">"kids"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Storytimes<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="c">&lt;!-- Tab panes --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"adult"</span><span class="nt">&gt;</span>Adult content<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"teens"</span><span class="nt">&gt;</span>Teen content<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"kids"</span><span class="nt">&gt;</span>Kid content<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"storytime"</span><span class="nt">&gt;</span>Storytime content<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</pre></div></div></div><div class="cortana-content">
+        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Built by <a href="http://www.cardinalsolutions.com/">Cardinal Solutions</a> using <a href="https://github.com/trulia/hologram">Hologram</a>.
+    </footer>
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+
+    angular.module("cortana").controller("TypeaheadCtrl", function($scope) {
+      $scope.selected = undefined;
+      $scope.searchData =
+      [
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Alert Banner",
+              "breadcrumb": "Basic Elements-Banners > Alert Banner",
+              "path": "basic_elements-banners.html#01-alert-banner"
+              },
+            
+              
+              
+              {
+              "title": "Amenities Banner",
+              "breadcrumb": "Basic Elements-Banners > Amenities Banner",
+              "path": "basic_elements-banners.html#amenities-banner"
+              },
+            
+              
+              
+              {
+              "title": "Contact Banner",
+              "breadcrumb": "Basic Elements-Banners > Contact Banner",
+              "path": "basic_elements-banners.html#contact-banner"
+              },
+            
+              
+              
+              {
+              "title": "Copyright Banner",
+              "breadcrumb": "Basic Elements-Banners > Copyright Banner",
+              "path": "basic_elements-banners.html#copyright-banner"
+              },
+            
+              
+              
+              {
+              "title": "Featured Banner",
+              "breadcrumb": "Basic Elements-Banners > Featured Banner",
+              "path": "basic_elements-banners.html#featured-banner"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Basic Buttons",
+              "breadcrumb": "Basic Elements-Buttons > Basic Buttons",
+              "path": "basic_elements-buttons.html#01-basic-buttons"
+              },
+            
+              
+              
+              {
+              "title": "Button Sizes",
+              "breadcrumb": "Basic Elements-Buttons > Button Sizes",
+              "path": "basic_elements-buttons.html#02-button-sizes"
+              },
+            
+              
+              
+              {
+              "title": "Icon Buttons",
+              "breadcrumb": "Basic Elements-Buttons > Icon Buttons",
+              "path": "basic_elements-buttons.html#03-icon-buttons"
+              },
+            
+              
+              
+              {
+              "title": "Pill Buttons",
+              "breadcrumb": "Basic Elements-Buttons > Pill Buttons",
+              "path": "basic_elements-buttons.html#04-pill-buttons"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Basic Cards",
+              "breadcrumb": "Basic Elements-Cards > Basic Cards",
+              "path": "basic_elements-cards.html#01-basic-cards"
+              },
+            
+              
+              
+              {
+              "title": "Item Card",
+              "breadcrumb": "Basic Elements-Cards > Item Card",
+              "path": "basic_elements-cards.html#02-item-card"
+              },
+            
+              
+              
+              {
+              "title": "Detailed Item Card",
+              "breadcrumb": "Basic Elements-Cards > Detailed Item Card",
+              "path": "basic_elements-cards.html#03-detailed-item-card"
+              },
+            
+              
+              
+              {
+              "title": "Account Card",
+              "breadcrumb": "Basic Elements-Cards > Account Card",
+              "path": "basic_elements-cards.html#account-card"
+              },
+            
+              
+              
+              {
+              "title": "Account Edit Card",
+              "breadcrumb": "Basic Elements-Cards > Account Edit Card",
+              "path": "basic_elements-cards.html#account-edit-card"
+              },
+            
+              
+              
+              {
+              "title": "Carousel Card",
+              "breadcrumb": "Basic Elements-Cards > Carousel Card",
+              "path": "basic_elements-cards.html#carousel-cards"
+              },
+            
+              
+              
+              {
+              "title": "Event Card",
+              "breadcrumb": "Basic Elements-Cards > Event Card",
+              "path": "basic_elements-cards.html#event-card"
+              },
+            
+              
+              
+              {
+              "title": "Event Detail Card",
+              "breadcrumb": "Basic Elements-Cards > Event Detail Card",
+              "path": "basic_elements-cards.html#event-detail-card"
+              },
+            
+              
+              
+              {
+              "title": "Event Overview Card",
+              "breadcrumb": "Basic Elements-Cards > Event Overview Card",
+              "path": "basic_elements-cards.html#event-overview-card"
+              },
+            
+              
+              
+              {
+              "title": "Featured Cards",
+              "breadcrumb": "Basic Elements-Cards > Featured Cards",
+              "path": "basic_elements-cards.html#featured-cards"
+              },
+            
+              
+              
+              {
+              "title": "Image Card",
+              "breadcrumb": "Basic Elements-Cards > Image Card",
+              "path": "basic_elements-cards.html#image-card"
+              },
+            
+              
+              
+              {
+              "title": "Image Text Card",
+              "breadcrumb": "Basic Elements-Cards > Image Text Card",
+              "path": "basic_elements-cards.html#image-text-card"
+              },
+            
+              
+              
+              {
+              "title": "Location Card",
+              "breadcrumb": "Basic Elements-Cards > Location Card",
+              "path": "basic_elements-cards.html#location-card"
+              },
+            
+              
+              
+              {
+              "title": "Location Detail Card",
+              "breadcrumb": "Basic Elements-Cards > Location Detail Card",
+              "path": "basic_elements-cards.html#location-detail-card"
+              },
+            
+              
+              
+              {
+              "title": "Newsletter Cards",
+              "breadcrumb": "Basic Elements-Cards > Newsletter Cards",
+              "path": "basic_elements-cards.html#newsletter-cards"
+              },
+            
+              
+              
+              {
+              "title": "Reverse Image Card",
+              "breadcrumb": "Basic Elements-Cards > Reverse Image Card",
+              "path": "basic_elements-cards.html#reverse-image-card"
+              },
+            
+              
+              
+              {
+              "title": "Sign In Card",
+              "breadcrumb": "Basic Elements-Cards > Sign In Card",
+              "path": "basic_elements-cards.html#sign-in-card"
+              },
+            
+              
+              
+              {
+              "title": "Text Card",
+              "breadcrumb": "Basic Elements-Cards > Text Card",
+              "path": "basic_elements-cards.html#text-card"
+              },
+            
+              
+              
+              {
+              "title": "Using the Library Cards",
+              "breadcrumb": "Basic Elements-Cards > Using the Library Cards",
+              "path": "basic_elements-cards.html#using-the-lib-cards"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Breadcrumb Anchor",
+              "breadcrumb": "Basic Elements-Breadcrumbs > Breadcrumb Anchor",
+              "path": "basic_elements-breadcrumbs.html#01-breadcrumb-anchor"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Entypo",
+              "breadcrumb": "Icons-Entypo > Entypo",
+              "path": "icons-entypo.html#01-entypo"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "FAQ Accordion",
+              "breadcrumb": "Basic Elements-Accordions > FAQ Accordion",
+              "path": "basic_elements-accordions.html#01-faq-accordion"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Cardotron",
+              "breadcrumb": "Jumbotrons-Cardotron > Cardotron",
+              "path": "jumbotrons-cardotron.html#01-Jumbotron With Cards"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Pick-up Modal",
+              "breadcrumb": "Basic Elements-Modals > Pick-up Modal",
+              "path": "basic_elements-modals.html#01-modal-pick-up"
+              },
+            
+              
+              
+              {
+              "title": "Call-number Modal",
+              "breadcrumb": "Basic Elements-Modals > Call-number Modal",
+              "path": "basic_elements-modals.html#02-call-number-modal"
+              },
+            
+              
+              
+              {
+              "title": "Email Modal",
+              "breadcrumb": "Basic Elements-Modals > Email Modal",
+              "path": "basic_elements-modals.html#03-email-modal"
+              },
+            
+              
+              
+              {
+              "title": "Pin Modal",
+              "breadcrumb": "Basic Elements-Modals > Pin Modal",
+              "path": "basic_elements-modals.html#04-pin-modal"
+              },
+            
+              
+              
+              {
+              "title": "Sign-in Modal",
+              "breadcrumb": "Basic Elements-Modals > Sign-in Modal",
+              "path": "basic_elements-modals.html#05-sign-in-modal"
+              },
+            
+              
+              
+              {
+              "title": "Cancel Modal",
+              "breadcrumb": "Basic Elements-Modals > Cancel Modal",
+              "path": "basic_elements-modals.html#06-cancel-modal"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Navigation tab",
+              "breadcrumb": "Navigation-Tabs > Navigation tab",
+              "path": "navigation-tabs.html#01-navigation-tab"
+              },
+            
+              
+              
+              {
+              "title": "Events Tab",
+              "breadcrumb": "Navigation-Tabs > Events Tab",
+              "path": "navigation-tabs.html#events-tab"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Pagination",
+              "breadcrumb": "Basic Elements-Pagination > Pagination",
+              "path": "basic_elements-pagination.html#01-pagination"
+              },
+            
+              
+              
+              {
+              "title": "Pagination With Sorting",
+              "breadcrumb": "Basic Elements-Pagination > Pagination With Sorting",
+              "path": "basic_elements-pagination.html#02-pagination-with-sort"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Radio Buttons",
+              "breadcrumb": "Basic Elements-Radio > Radio Buttons",
+              "path": "basic_elements-radio.html#01-radio-buttons"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Tags",
+              "breadcrumb": "Basic Elements-Tags > Tags",
+              "path": "basic_elements-tags.html#01-tags"
+              },
+            
+              
+              
+              {
+              "title": "Availability Tags",
+              "breadcrumb": "Basic Elements-Tags > Availability Tags",
+              "path": "basic_elements-tags.html#02-availability-tags"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Typography",
+              "breadcrumb": "Design-Typography > Typography",
+              "path": "design-typography.html#01-typography"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Custom Icons",
+              "breadcrumb": "Icons-Custom > Custom Icons",
+              "path": "icons-custom.html#02-custom"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Google Maps",
+              "breadcrumb": "Maps-Google Maps > Google Maps",
+              "path": "maps-google_maps.html#02-google-maps"
+              },
+            
+              
+              
+              {
+              "title": "Google Maps",
+              "breadcrumb": "Maps-Google Maps > Google Maps",
+              "path": "maps-google_maps.html#google-maps"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Bottom Navigation",
+              "breadcrumb": "Navigation-Navigation > Bottom Navigation",
+              "path": "navigation-navigation.html#bottom-navigation"
+              },
+            
+              
+              
+              {
+              "title": "Main Navigation",
+              "breadcrumb": "Navigation-Navigation > Main Navigation",
+              "path": "navigation-navigation.html#main-navigation"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Carousel",
+              "breadcrumb": "Basic Elements-Carousel > Carousel",
+              "path": "basic_elements-carousel.html#carousel"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Checkbox",
+              "breadcrumb": "Basic Elements-Checkbox > Checkbox",
+              "path": "basic_elements-checkbox.html#checkbox"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Contact Us Input",
+              "breadcrumb": "Inputs-Contact Us Inputs > Contact Us Input",
+              "path": "inputs-contact_us_inputs.html#contact-us-input"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Dropdown",
+              "breadcrumb": "Basic Elements-Dropdown > Dropdown",
+              "path": "basic_elements-dropdown.html#dropdown"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Line Break",
+              "breadcrumb": "Basic Elements-Line Breaks > Line Break",
+              "path": "basic_elements-line_breaks.html#line-break"
+              },
+            
+              
+              
+              {
+              "title": "Vertical Line Break",
+              "breadcrumb": "Basic Elements-Line Breaks > Vertical Line Break",
+              "path": "basic_elements-line_breaks.html#line-break-vert"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Main Search",
+              "breadcrumb": "Search-Main Search > Main Search",
+              "path": "search-main_search.html#main-search"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Personal Details Input",
+              "breadcrumb": "Inputs-Personal Details > Personal Details Input",
+              "path": "inputs-personal_details.html#personal-details-input"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Search Filter",
+              "breadcrumb": "Search-Search Filter > Search Filter",
+              "path": "search-search_filter.html#search-filter"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Select",
+              "breadcrumb": "Basic Elements-Select > Select",
+              "path": "basic_elements-select.html#Select"
+              },
+            
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    });
+
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  <!-- Source Components -->
+  
+  <script>
+    $(function() {
+      $('.cortana-content:empty').remove();
+    });
+  </script>
+
+</body>
+</html>

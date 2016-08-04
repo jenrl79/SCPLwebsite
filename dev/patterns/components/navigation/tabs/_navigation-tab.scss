@@ -1,0 +1,78 @@
+/*doc
+---
+title: Navigation tab
+name: 01-navigation-tab
+category: Navigation-Tabs
+---
+
+```html_example
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li><h5>Browse by Age Group</h5></li>
+    <li role="presentation" class="active"><a href="#allages" aria-controls="allages" role="tab" data-toggle="tab">All Ages</a></li>
+    <li role="presentation"><a href="#adult" aria-controls="adult" role="tab" data-toggle="tab">Adult</a></li>
+    <li role="presentation"><a href="#teens" aria-controls="teens" role="teens" data-toggle="tab">Teens</a></li>
+    <li role="presentation"><a href="#kids" aria-controls="kids" role="kids" data-toggle="tab">Kids</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="allages">All Ages content</div>
+    <div role="tabpanel" class="tab-pane" id="adult">Adult content</div>
+    <div role="tabpanel" class="tab-pane" id="teens">Teen content</div>
+    <div role="tabpanel" class="tab-pane" id="kids">Kid content</div>
+</div>
+
+```
+
+*/
+
+#scpl {
+    .nav-tabs {
+      margin-bottom: 3em;
+        h5 {
+            font-size: 16px;
+            margin-right: 2em;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        li {
+            text-transform: uppercase;
+            a {
+                color: palette(gray,x-dark);
+                &:hover {
+                    border-radius: 0;
+                }
+            }
+        }
+        li.active {
+            a {
+               color: palette(gray,x-light);
+               border-radius: 0;
+               text-transform: uppercase;
+      
+              &[href="#allages"] {
+                background-color: #C55E1F;
+                border: 1px solid #C55E1F;
+              }
+
+              &[href="#adult"] {
+                background-color: palette(blue,dark);
+                border: 1px solid palette(blue,dark);
+              }
+
+              &[href="#teens"] {
+                background-color: palette(blue,x-light);
+                border: 1px solid palette(blue,x-light);
+              }
+
+              &[href="#kids"] {
+                background-color: palette(green,primary);
+                border: 1px solid palette(green,primary);
+              }
+
+            }
+        }
+    }
+}

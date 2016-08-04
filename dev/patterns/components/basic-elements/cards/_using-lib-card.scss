@@ -1,0 +1,185 @@
+/*doc
+---
+title: Using the Library Cards
+name: using-the-lib-cards
+category: Basic Elements-Cards
+---
+
+```html_example
+<a href="#">
+    <div class="using-lib-card-primary">
+        <div class="using-lib-header">
+            <h4>Booking Rooms</h4>
+        </div>
+        <div class="using-lib-source"><img src="#"></div>
+        <div class="using-lib-content">
+            <p>Information about getting and renewing library cards</p>
+        </div>
+    </div>
+</a>
+
+<a href="#">
+    <div class="using-lib-card-secondary">
+        <div class="using-lib-header">
+            <h4>Booking Rooms</h4>
+        </div>
+        <div class="using-lib-source">Information about getting and renewing library cards</div>
+        <div class="using-lib-content"></div>
+    </div>
+</a>
+
+<a href="#">
+    <div class="using-lib-card-tertiary">
+        <div class="using-lib-header">
+            <h4>Mobile App</h4>
+        </div>
+        <div class="using-lib-source"><img src="#"></div>
+        <div class="using-lib-content"></div>
+    </div>
+</a>
+
+<a href="#">
+    <div class="using-lib-card-quaternary">
+        <div class="using-lib-header">
+            <h3>Title for a page card</h3>
+        </div>
+    </div>
+</a>
+```
+
+*/
+
+#scpl {
+    .using-lib-card-primary {
+        margin: 1em 0;
+        position: relative;
+        border-radius: 2px;
+        background-color: palette(gray,x-light);
+        &:hover {
+            border: 1px solid palette(gray,mid);
+            box-shadow: 0 0 10px palette(gray,mid);
+        }
+
+        .using-lib-header {
+            padding: 1em 0;
+            h4 {
+                text-align: center;
+                color: palette(blue,dark);
+            }
+        }
+        .using-lib-source {
+            height: 200px;
+            background-color: palette(gray,light);
+        }
+
+        .using-lib-content {
+            position: absolute;
+            background-color: palette(green,primary);
+            bottom: 0em;
+            padding: 1em;
+            width: 100%;
+            p {
+                color: palette(gray,x-light);
+                font-weight: 100;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .using-lib-card-secondary {
+        margin: 1em 0;
+        position: relative;
+        border-radius: 2px;
+        background-color: palette(gray,x-light);
+        &:hover {
+            border: 1px solid palette(gray,mid);
+            box-shadow: 0 0 10px palette(gray,mid);
+        }
+
+        .using-lib-header {
+            padding: 1em 0;
+            h4 {
+                text-align: center;
+                color: palette(blue,dark);
+            }
+        }
+        .using-lib-source {
+            height: 200px;
+            color: palette(gray,x-light);
+            background-color: palette(blue,dark);
+            font-size: 18px;
+            font-weight: lighter;
+            padding: 2em;
+        }
+
+        .using-lib-content {
+            position: absolute;
+            background-color: palette(green,primary);
+            bottom: 0em;
+            padding: .4em;
+            width: 100%;
+        }
+    }
+
+    .using-lib-card-tertiary {
+        margin: 1em 0;
+        position: relative;
+        border-radius: 2px;
+        background-color: palette(gray,x-light);
+        &:hover {
+            border: 1px solid palette(gray,mid);
+            box-shadow: 0 0 10px palette(gray,mid);
+        }
+
+        .using-lib-header {
+            padding: 1em 0;
+            h4 {
+                text-align: center;
+                color: palette(blue,dark);
+            }
+        }
+        .using-lib-source {
+            height: 200px;
+            background-color: palette(gray,light);
+        }
+
+        .using-lib-content {
+            position: absolute;
+            background-color: palette(green,primary);
+            bottom: 0em;
+            padding: 1em;
+            width: 100%;
+            p {
+                color: palette(gray,x-light);
+                font-weight: 100;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .using-lib-card-quaternary {
+        margin: 1em 0;
+        position: relative;
+        border-radius: 2px;
+        background-color: palette(green,primary);
+        height: 265px;
+        border-radius: 2px;
+        padding: 4em;
+        &:hover {
+            border: 1px solid palette(gray,mid);
+            box-shadow: 0 0 10px palette(gray,mid);
+        }
+
+        .using-lib-header {
+            h3 {
+                text-align: center;
+                color: palette(gray,x-light);
+                font-weight: 100;
+            }
+        }
+    }
+}

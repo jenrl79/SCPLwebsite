@@ -1,0 +1,51 @@
+/*doc
+---
+title: Typography
+name: 01-typography
+category: Design-Typography
+---
+
+```html_example
+<h1>Header 1 (2em / 36pt)</h1>
+<h2>Header 2 (1.75em / 30pt)</h2>
+<h3>Header 3 (1.5em / 24pt)</h3>
+<h4>Header 4 (1.25em / 20pt)</h4>
+```
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+#scpl {
+	font-family: 'Lato', Arial, sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+
+	h1, .h1, h3, .h3, h4, .h4 {
+		font-weight: 500;
+	}
+
+	h2, .h2, h5, .h5 {
+		font-weight: 300;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	.intro {
+		font-size: 1.2em;
+	}
+
+}

@@ -1,0 +1,202 @@
+/*doc
+---
+title: Checkbox
+name: checkbox
+category: Basic Elements-Checkbox
+---
+
+```html_example
+<ul>
+	<li>
+		<input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+    	<label for="checkbox1">Enter location here</label>
+	</li>
+	<li>
+		<input id="checkbox2" name="checkbox" type="checkbox" checked="checked" disabled> 
+		<label for="checkbox2">Enter location here</label>
+	</li>
+	<li>
+		<input id="checkbox3" name="checkbox" type="checkbox" disabled> 
+		<label for="checkbox3">Enter location here</label>
+	</li>
+</ul>
+```
+
+*/
+
+#scpl {
+	// mixin
+	@mixin vh() {
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	}
+
+	// custom checkbox
+	$inputHeight: 18px;
+	$inputWidth: 18px;
+	$inputBorderWidth: 1px;
+	$inputActiveScale: 4px; // optimized for even numbers
+
+	input[type="checkbox"] {
+		@include vh();
+
+		&:focus,
+		&:hover {
+			+ label {
+				&:before {
+					border-color: palette(gray,dark);
+				}
+			}
+		}
+		  
+		&:active {
+		    + label {
+				&:before {
+					transition-duration: 0;
+		        	filter: brightness(0.2); 
+				}
+			}
+		}
+
+		+ label {
+			position: relative;
+			padding: 10px;
+			padding-left: 2em;
+			vertical-align: middle;
+			user-select: none;
+			cursor: pointer;
+			font-weight: 400;
+			
+
+			&:before {
+	      		box-sizing: content-box;
+				content: '';
+				color: palette(blue,light);
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: $inputWidth;
+				height: $inputHeight;
+				margin-top: -($inputHeight/2 + $inputBorderWidth);
+				border: $inputBorderWidth solid palette(gray,dark);
+				text-align: center;
+			}
+			&:after {
+	      		box-sizing: content-box;
+				content: '';
+				background-color: palette(blue,light);
+				position: absolute;
+				top: 50%;
+				left: $inputBorderWidth + $inputActiveScale/2;
+				width: $inputWidth - $inputActiveScale;
+				height: $inputHeight -$inputActiveScale;
+				margin-top: -(($inputHeight - $inputActiveScale)/2);
+				transform: scale(0);
+				transform-origin: 50%;
+				transition: transform 200ms ease-out;
+			}
+		}
+	}
+
+	input[type="checkbox"]{
+		+ label {
+			&:after {
+				background-color: transparent;
+				top: 48%;
+	    		left: 2px;
+	    		width: 13px;
+	    		height: 4px;
+				margin-top: -4px;
+				border-style: solid;
+				border-color: palette(blue,light);
+				border-width: 0 0 3px 3px;
+				border-image: none;
+				transform: rotate(-45deg) scale(0);
+				transition: none;
+			}
+		}
+		&:checked {
+			+ label {
+				&:after {
+					content: ''; //\2713';
+
+					transform: rotate(-45deg) scale(1);
+					transition: transform 200ms ease-out;
+				}
+			}
+		}
+	}
+
+	input[type=checkbox]:disabled {
+		+label {
+			cursor: not-allowed;
+			&:before {
+				background-color: palette(gray,mid);
+				cursor: not-allowed;
+
+			}
+		}
+	}
+
+	// select
+
+	select {
+		appearance: none;
+		background-color: #fff;
+		background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%234D4D4D%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E);
+		background-repeat: no-repeat;
+		background-position: 95% 50%;
+		border: $inputBorderWidth solid palette(gray,dark);
+		border-radius: 0;
+		padding: 0.25em 0.4em;
+		padding-right: 1.5em;
+
+		&:focus,
+		&:hover {
+			border-color: palette(gray,dark);
+			outline: none;
+		}
+
+		&:active {
+			border-color: palette(blue,light);
+		}
+
+		// Fix Firefox dotted focusring
+		&:-moz-focusring {
+			color: transparent;
+			text-shadow: 0 0 0 #000;
+		}
+	}
+
+	 /* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		select::-ms-expand {
+			display: none;
+		}
+	}
+
+	// WIP
+	:required:not(:focus) ~ .error-msg,
+	:invalid:required ~ .error-msg {
+	  max-height: 9em;
+	}
+
+	input:focus {
+	  border: 1px solid black;  
+	}
+
+	input:not(:focus):invalid {
+	  border: 1px solid red;
+	  outline: none;
+	}
+
+	input:not(:focus):valid {
+	  border: 1px solid green;
+	}
+}

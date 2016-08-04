@@ -1,0 +1,39 @@
+/*doc
+---
+title: Featured Banner
+name: featured-banner
+category: Basic Elements-Banners
+---
+
+```html_example
+<div class="featured-banner"></div>
+
+```
+
+*/
+
+#scpl {
+	.featured-banner {
+		background-color: #f5f5f5;
+		padding: 4em 0;
+		position: relative;
+		display: inline-block;
+		width: 100%;
+	}
+	#allages .featured-banner {
+		background-color: #C55E1F;
+	}
+	
+	#teens .featured-banner {
+		background-color: palette(blue,x-light);
+	}
+
+	#adult .featured-banner {
+		background-color: palette(blue,dark);	
+	}
+
+	#kids .featured-banner {
+		background-color: palette(green,primary);
+	}
+
+}

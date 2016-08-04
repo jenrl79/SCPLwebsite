@@ -1,0 +1,76 @@
+#scpl {
+	padding-top: 6.5em;
+	padding-bottom: 0;
+
+	@include breakpoint(desktop) {
+		padding-bottom: 4em;
+	}
+
+	table.table {
+
+		thead {
+			background-color: #F7F7F7;
+			border-top: 1px solid rgb(221, 221, 221);
+		}
+
+		td {
+			padding: 20px 10px;
+		}
+
+	}
+
+	table.fees-table {
+		width: 100%;
+
+		td:not(:last-of-type) {
+			border: 1px solid palette(gray, x-dark);
+			padding: 0;
+			text-align: center;
+		}
+
+		td:last-of-type {
+			width: 40%;
+			text-align: right;
+		}
+
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.edit-account-logout {
+		position: absolute;
+		top: 30px;
+		right: 15px;
+
+		a {
+			color: palette(blue, mid);
+			padding-right: 0;
+			margin-right: 0;
+			text-transform: uppercase;
+		}
+
+		a:not(:first-of-type) {
+			border-left: 1px solid palette(blue, mid);
+			padding-left: 10px;
+			margin-left: 5px;
+		}
+
+	}
+
+	.account-overview {
+		display: flex;
+		flex-flow: wrap;
+
+		.basic-card {
+			width: 100%;
+			padding: 0 4em 2em 0;
+		}
+
+	}
+}

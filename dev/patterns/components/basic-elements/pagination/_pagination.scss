@@ -1,0 +1,65 @@
+/*doc
+---
+title: Pagination
+name: 01-pagination
+category: Basic Elements-Pagination
+---
+
+
+```html_example
+<nav>
+	<ul class="pagination">
+		<li>
+			<a href="#" aria-label="Previous">
+				<span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+			</a>
+		</li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li>
+			<a href="#" aria-label="Next">
+				<span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+```
+
+*/
+
+#scpl .pagination {
+	margin: 2em 0;
+	float: right;
+
+	li {
+		color: palette(gray,x-dark);
+		font-weight: bold;
+		
+		a, span {
+			border: none;
+		}
+		a {
+			color: palette(gray,dark);
+
+			&:hover {
+				background-color: palette(blue,light);
+				border-radius: 2px;
+				color: palette(gray,x-light);
+			}
+			&:active {
+				background-color: palette(gray,dark);
+				color: palette(gray, x-light);
+				border-radius: 2px;
+			}
+		}
+		
+		.icon-chevron-small-left, 
+		.icon-chevron-small-right {
+			font-size: 20px;
+		}
+	}
+}

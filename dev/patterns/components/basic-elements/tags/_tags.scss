@@ -1,0 +1,33 @@
+/*doc
+---
+title: Tags
+name: 01-tags
+category: Basic Elements-Tags
+---
+
+```html_example
+<ul class="tags">
+    <li class="btn btn-secondary btn-sm">Fiction
+        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+        <input type="hidden" name="tags[]" value="Web Deisgn">
+    </li>
+    <li class="btn btn-secondary btn-sm">Teens
+        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+        <input type="hidden" name="tags[]" value="Web Deisgn">
+    </li>
+    <li class="btn btn-secondary btn-sm">Spartanburg
+        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+        <input type="hidden" name="tags[]" value="Web Deisgn">
+    </li>
+</ul>
+```
+
+*/
+
+#scpl .tags {
+    margin: 10px 0 20px;
+    .btn.btn-sm {
+        background-color: palette(green,primary);
+        border:none;
+    }
+}

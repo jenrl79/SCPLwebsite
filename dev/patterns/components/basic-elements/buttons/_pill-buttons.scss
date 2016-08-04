@@ -1,0 +1,27 @@
+/*doc
+---
+title: Pill Buttons
+name: 04-pill-buttons
+category: Basic Elements-Buttons
+---
+
+```html_example
+<button type="button" class="btn btn-pill">Hold</button>
+<button type="button" class="btn btn-pill">Read</button>
+<button type="button" class="btn btn-pill">Listen</button>
+```
+
+*/
+
+#scpl .btn.btn-pill {
+  color: #FFFFFF;
+  background: palette(blue,dark);
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 5px;
+
+  &:hover {
+    background-color: palette(blue,drkhover);
+  }
+
+}

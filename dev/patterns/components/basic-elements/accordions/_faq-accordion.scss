@@ -1,0 +1,92 @@
+/*doc
+---
+title: FAQ Accordion
+name: 01-faq-accordion
+category: Basic Elements-Accordions
+---
+
+```html_example
+<div class="faq">
+    <a class="faq-trigger" role="button" data-toggle="collapse" href="#faq1" aria-expanded="false" aria-controls="faq1">
+        Benefits of Owning a Library Card
+    </a>
+    <div class="collapse faq-content" id="faq1">
+      <ul>
+          <li>Check out print and audiovisual materials</li>
+          <li>Use online databases subcribed to by SCPL and the <a href="#">SC State Library</a></li>
+          <li>Get access to public computers for internet searching and Microsoft Office tasks</li>
+          <li>Download materials and streaming services (some restrictions apply)</li>
+          <li>Request materials from your home computer or mobile device</li>
+          <li>Book one of the available meeting rooms (some restrictions apply)</li>
+          <li>Get avvess to Interlibrary Loan Services (some restrictions apply)</li>
+      </ul>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+
+  .faq {
+    padding: 15px 0;
+    border-bottom: 1px solid palette(gray, dark);
+    background-color: palette(gray,x-light);
+
+    &:first-of-type {
+      margin-top: 30px;
+      border-top: 1px solid palette(gray, dark);
+    }
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+    
+    a.faq-trigger {
+      display: block;
+      color: palette(gray, x-dark);
+      position: relative;
+      font-size: 115%;
+
+      &:hover, &:active {
+        text-decoration: none;
+      }
+
+      &:after {
+        font-family: 'Entypo';
+        content: "\e9e3";
+        vertical-align: sub;
+        font-size: 23px;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        color: palette(orange, primary);
+      }
+
+      &[aria-expanded="false"]:after {
+        content: "\e9f7";
+      }
+
+    }
+
+    .faq-content {
+      padding-right: 16em;
+      margin: 15px 0 0 0;
+      color: palette(gray, x-dark);
+      max-width: 1100px;
+
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+
+        li {
+          list-style-type: none;
+        }
+        
+      }
+
+    }
+    
+  }
+
+}

@@ -1,0 +1,130 @@
+/*doc
+---
+title: Main Search
+name: main-search
+category: Search-Main Search
+---
+
+Main search bar used for SCPL.	
+
+
+```html_example
+
+<div class="jumbotron">
+  	<div class="container">
+	    <div class="col-md-8 col-md-offset-2">
+	    	<h3>Explore the Library Catalog</h3>
+		    <div class="input-group">
+		      <input type="text" class="form-control" placeholder="Find books, ebooks and more...">
+		      <span class="input-group-btn">
+		        <button type="button" class="btn btn-secondary btn-lg">Go!</button>
+		      </span>
+		    </div>
+		    <a class="search-trigger role="button" data-toggle="collapse" href="#search1" aria-expanded="false" aria-controls="search1">
+		    	More Search Options<span class="icon-chevron-right"></span>
+		    </a>
+		    <div class="collapse search-content" id="search1">
+		    	<div class="row">
+					<div class="col-md-6">
+						<h4>Library Branch</h4>
+						<select class="selectpicker">
+						    <option>All libraries</option>
+						    <option>option 1</option>
+						    <option>option 2</option>
+						    <option>option 3</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<h4>Languages</h4>
+						<select class="selectpicker">
+						    <option>All libraries</option>
+						    <option>option 1</option>
+						    <option>option 2</option>
+						    <option>option 3</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<h4>Age Group</h4>
+						<select class="selectpicker">
+						    <option>All libraries</option>
+						    <option>option 1</option>
+						    <option>option 2</option>
+						    <option>option 3</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<h4>Material Type</h4>
+						<select class="selectpicker">
+						    <option>All libraries</option>
+						    <option>option 1</option>
+						    <option>option 2</option>
+						    <option>option 3</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<h4>Collections</h4>
+						<select class="selectpicker">
+						    <option>All libraries</option>
+						    <option>option 1</option>
+						    <option>option 2</option>
+						    <option>option 3</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<h4>Publication Year</h4>
+						<div class="form-group">
+				    	    <input type="text" class="form-control" id="publication-year" placeholder="2014">
+				    	</div>
+					</div>
+		    	</div>
+		    </div>
+	    </div>
+  	</div>
+</div>
+```
+
+*/
+
+#scpl .jumbotron {
+	background-color: #F2F3F5;
+		
+	h3 {
+		font-weight: 200;
+		font-size: 28px;
+		color: palette(gray,x-dark);
+	}
+
+	.form-control {
+		height: 50px;
+		margin: 10px 0;
+		font-weight: 300;
+		font-size: 115%;
+		border-radius: 2px;
+		border: 1px solid;
+		font-style: italic;
+	}
+
+	.input-group-btn {
+		button {
+			margin-left: 10px;
+		}
+	}
+
+	a {
+		color: palette(blue,light);
+		font-size: 14px;
+	}
+
+	.icon-chevron-right {
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	.search-content {
+		.selectpicker {
+			padding: 10px 18.8em 10px 10px;
+		}
+		.form-control {
+			height: 42px;
+		}
+	}
+}

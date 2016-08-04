@@ -1,0 +1,692 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+html, body {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.cortana-content p.subhead {
+  color: rgb(91,191,33);
+  font-size: 20px!important;
+}
+
+.cortana-content .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cortana-content .row.no-gap {
+  margin-top: 0;
+}
+
+.cortana-content .row + .row.no-gap {
+  margin-top: -15px;
+}
+
+.cortana-content .container-fluid h3 {
+  color: #525252!important;
+}
+
+.cortana-footer,.cortana-header h1 {
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    text-align: center!important
+}
+
+.cortana-content a,.cortana-content blockquote,.cortana-content li,.cortana-content q,.cortana-header h1,.cortana-nav h3,.cortana-nav li a {
+    text-transform: none!important
+}
+
+.cortana-content p,.cortana-content table,.cortana-footer,.cortana-header h1,.cortana-inside-nav a,.cortana-nav h3,.cortana-nav li a,.exampleOutput:after {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.codeBlock pre,.cortana-content code,.cortana-content pre {
+    word-break: keep-all!important;
+    word-wrap: normal!important;
+    white-space: pre!important
+}
+
+.cortana-nav li a,.cortana-search,.exampleOutput {
+    box-sizing: border-box!important
+}
+
+#sb-site,.cortana-body {
+    background: #f4f6f9!important;
+    z-index: auto!important;
+    padding-top: 20px;
+}
+
+.cortana-header {
+    background: #fff!important;
+    padding: 21px 0!important;
+    position: fixed!important;
+    top: 0!important;
+    width: 100%!important;
+    z-index: 999!important;
+    border-bottom: 1px solid #BDC3C7
+}
+
+.cortana-header h1 {
+    color: #17428C!important;
+    margin: 0!important;
+    padding: 0!important;
+    font-weight: normal!important;
+    text-transform: uppercase!important;
+    font-size: 30px!important;
+    font-style: normal!important;
+    line-height: 1.1em!important
+}
+
+.cortana-footer,.cortana-footer a,.exampleOutput:after {
+    color: #7F8C8D!important
+}
+
+@media only screen and (max-width:767px) {
+  .cortana-header h1 {
+      font-size: 20px!important
+  }
+}
+
+.cortana-container {
+    max-width: 1100px!important;
+    margin: 0 auto!important;
+    padding-bottom: 30px!important;
+    border: 1px solid #f4f6f9!important
+}
+
+@media only screen and (max-width:900px) {
+  .cortana-container {
+      padding: 0 10px 50px!important
+  }
+}
+
+.cortana-content-wrapper {
+    padding: 0!important;
+    background: #fff!important;
+    border-radius: 4px!important;
+}
+
+@media only screen and (max-width:1280px) {
+  .cortana-content-wrapper {
+      margin-top: 20px!important
+  }
+}
+
+.exampleOutput {
+    padding: 50px 4%!important;
+    border-top: 1px solid #ddd!important;
+    position: relative!important;
+    width: 100%!important;
+}
+
+.exampleOutput:after {
+    content: 'Example'!important;
+    position: absolute!important;
+    top: 0!important;
+    left: 0!important;
+    border-right: 1px solid #ddd!important;
+    border-bottom: 1px solid #ddd!important;
+    border-bottom-right-radius: 4px!important;
+    padding: 5px 8px!important;
+    display: inline-block!important;
+    font-size: 16px!important;
+}
+
+.cortana-footer {
+    padding-bottom: 50px!important;
+    font-size: 14px!important;
+    background: 0 0!important
+}
+
+.cortana-footer a:hover {
+    color: #17428C!important
+}
+
+.cortana-content {
+    font-size: 18px!important;
+    line-height: 1.6em!important;
+    padding: 30px!important;
+}
+
+.cortana-content:empty {
+    display: none !important;
+}
+
+.cortana-content h1,.cortana-content h2,.cortana-content h3,.cortana-content h4,.cortana-content h5,.cortana-content h6 {
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal!important;
+    font-style: normal!important;
+    margin: 2em 0 .4em!important;
+    line-height: 1.2em!important;
+    padding: 1em 0 .2em!important;
+    border-top: 1px solid #17428C;
+    color: #17428C!important;
+    text-transform: none!important
+}
+
+.cortana-content h1 {
+    font-size: 36px!important
+}
+
+.cortana-content h2 {
+    font-size: 28px!important
+}
+
+@media only screen and (max-width:900px) {
+  .cortana-content h1,.cortana-content h2,.cortana-content h3,.cortana-content h4,.cortana-content h5,.cortana-content h6 {
+      padding: .4em 10px!important
+  }
+
+  .cortana-content h1 {
+      font-size: 28px!important
+  }
+
+  .cortana-content h2 {
+      font-size: 23px!important
+  }
+}
+
+.cortana-content h3 {
+    font-size: 25px!important
+}
+
+@media only screen and (max-width:900px) {
+  .cortana-content h3 {
+      font-size: 21px!important
+  }
+}
+
+.cortana-content p {
+    line-height: 1.6em!important;
+    padding: 0!important;
+    margin: 1.8em 0!important;
+    font-size: 14px!important
+}
+
+@media only screen and (max-width:900px) {
+  .cortana-content p {
+      padding: 0 10px!important
+  }
+}
+
+.cortana-content blockquote,.cortana-content q {
+    margin: 30px!important;
+    border-left: 3px solid #BDC3C7!important;
+    font-size: 18px!important
+}
+
+.cortana-content blockquote p,.cortana-content q p {
+    margin: 0!important;
+    padding: 0!important
+}
+
+.cortana-content table {
+    margin: 30px!important;
+    border-collapse: collapse!important
+}
+
+@media only screen and (max-width:900px) {
+.cortana-content table {
+    margin: 30px 10px!important
+}
+}
+
+.cortana-content table td,.cortana-content table th,.cortana-content table tr {
+    padding: 10px 15px!important;
+    border: 1px solid #ccc!important
+}
+
+.cortana-content table th {
+    font-weight: 700!important;
+    color: #333!important
+}
+
+.cortana-content ul {
+    margin: 0 30px!important;
+    padding-left: 2em!important;
+    font-size: 1.1em!important
+}
+
+.cortana-content a,.cortana-content a:active,.cortana-content a:focus,.cortana-content a:hover {
+    font-style: normal!important;
+    font-weight: 400!important;
+    text-decoration: underline!important;
+    font-size: 14px!important;
+    background: #fff!important
+}
+
+.cortana-content li {
+    margin: 1em .8em 1em 0!important
+}
+
+.cortana-content a {
+    color: #333!important;
+    -webkit-transition: color .3s!important;
+    transition: color .3s!important
+}
+
+.cortana-content a:active,.cortana-content a:focus,.cortana-content a:hover {
+    color: rgb(73,33,112)!important
+}
+
+.cortana-content:first-child h1,.cortana-content:first-child h2,.cortana-content:first-child h3,.cortana-content:first-child h4,.cortana-content:first-child h5,.cortana-content:first-child h6 {
+    margin-top: 0!important;
+    border: none!important
+}
+
+.cortana-menu-btn {
+    width: 28px!important;
+    height: 28px!important;
+    margin: 0!important;
+    position: absolute!important;
+    left: 25px!important;
+    top: 37px!important
+}
+
+.cortana-menu-btn:hover {
+    cursor: pointer!important
+}
+
+.cortana-menu-btn:hover span {
+    background: #17428C!important
+}
+
+.cortana-menu-btn span {
+    display: block!important;
+    width: 100%!important;
+    height: 4px!important;
+    border-radius: 1px!important;
+    margin: 5px 0!important;
+    background: #95A5A6!important;
+    -webkit-transition: background .3s!important;
+    transition: background .3s!important
+}
+
+@media only screen and (max-width:767px) {
+.cortana-menu-btn {
+    top: 12px!important
+}
+}
+
+.cortana-sidenav {
+    background: #fff!important
+}
+
+.cortana-nav li a,.cortana-nav li a:focus,.cortana-nav li a:hover {
+    text-decoration: none!important;
+    font-size: 16px!important;
+    background: 0 0!important
+}
+
+.cortana-nav {
+    padding: 0 0 10px!important;
+    margin: 0!important;
+}
+
+.cortana-nav li,.cortana-nav ul {
+    margin: 0!important;
+    padding: 0!important
+}
+
+.cortana-nav li {
+    list-style-type: none!important;
+    display: inline!important;
+    font-style: normal!important;
+    font-weight: 400!important
+}
+
+.cortana-nav li a {
+    display: block!important;
+    width: 100%!important;
+    padding: 3px 5%!important;
+    color: #000!important;
+    margin: 0!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    border: none!important;
+    -webkit-transition: all .3s!important;
+    transition: all .3s!important
+}
+
+.codeBlock .c,.codeBlock .c1,.codeBlock .cm,.codeBlock .cp,.codeBlock .cs,.codeBlock .ge {
+    font-style: italic
+}
+
+.cortana-nav li a:focus,.cortana-nav li a:hover {
+    color: #17428C!important
+}
+
+.cortana-nav li a.active {
+    background: #17428C!important;
+    color: #fff!important;
+    font-size: 16px!important;
+    font-weight: bold;
+    text-decoration: none!important
+}
+
+.cortana-nav h3 {
+    padding: 20px 5% 0!important;
+    margin: 20px 0 10px!important;
+    color: #17428C!important;
+    border-top: 1px solid rgb(160,160,160)!important;
+    font-size: 18px!important;
+    font-weight: 700!important
+}
+
+.cortana-nav h3:first-of-type {
+    margin: 0 0 10px!important;
+    border-top: none!important;
+}
+
+.cortana-nav h3:first-child {
+    border: none
+}
+
+.cortana-inside-nav {
+    margin-left: -110px!important;
+    width: 170px!important;
+    float: left!important;
+    margin-top: 100px!important
+}
+
+.cortana-inside-nav.cortana-stick-bottom {
+    position: fixed!important;
+    top: 0!important;
+    bottom: auto!important
+}
+
+.cortana-inside-nav a {
+    color: #333!important;
+    display: block!important;
+    width: 100%!important;
+    padding: 5px 0!important;
+    text-decoration: none!important;
+    -webkit-transition: color .2s!important;
+    transition: color .2s!important;
+    font-size: 16px!important;
+    background: 0 0!important
+}
+
+.cortana-inside-nav li {
+    list-style-type: none!important;
+    display: block!important;
+    margin: 0!important
+}
+
+.cortana-inside-nav li a:focus,.cortana-inside-nav li a:hover,.cortana-inside-nav li.active a {
+    color: rgb(0, 51, 141) !important;
+    font-size: 16px!important;
+    background: 0 0!important;
+    text-decoration: none!important
+}
+
+.cortana-inside-nav {
+    float: none!important;
+    width: 100%!important;
+    margin-top: 0!important;
+    margin-left: 0!important;
+    padding: 0 30px!important;
+    position: relative!important;
+    z-index: 10!important
+}
+
+.cortana-inside-nav li {
+    display: inline-block!important;
+    width: 33%!important;
+    text-align: center;
+}
+
+.cortana-inside-nav ul {
+    position: static!important;
+    padding: 0!important;
+    top: -100px!important;
+    margin-top: 100px!important;
+    left: -80px!important
+}
+
+.codeBlock,.codeBlock pre {
+    width: auto!important;
+    line-height: 1.6em!important
+}
+
+.cortana-content code,.cortana-content pre {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 14px!important;
+    border: 1px solid #BDC3C7!important;
+    padding: 2px 5px!important;
+    border-radius: 2px!important;
+    background: #fff!important;
+    margin: 0!important;
+    color: #B50D00!important
+}
+
+.codeBlock,.codeBlock .highlight,.codeBlock pre {
+    background: #001438!important
+}
+
+.codeBlock {
+    padding: 50px 4% 0!important;
+    border-top: 1px solid #ddd!important;
+    color: #fff!important;
+    font-size: 15px!important;
+    overflow-x: auto!important;
+    position: relative!important;
+    background-color: #001438!important;
+}
+
+.codeBlock:after {
+    content: 'HTML'!important;
+    position: absolute!important;
+    top: 0!important;
+    left: 0!important;
+    color: #dcdccc!important;
+    border-right: 1px solid #ddd!important;
+    border-bottom: 1px solid #ddd!important;
+    border-bottom-right-radius: 4px!important;
+    padding: 5px 8px!important;
+    display: inline-block!important;
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px!important;
+}
+
+.codeBlock.jsExample:after {
+    content: 'JavaScript'!important
+}
+
+.codeBlock pre {
+    font-family: 'Lato', sans-serif !important;
+    margin: 0!important;
+    padding: 5px!important;
+    font-size: 14px!important;
+    position: relative!important;
+    color: #dcdccc!important;
+    border: none!important;
+    overflow: visible!important
+}
+
+.cortana-search,.cortana-search-wrapper li {
+    font-family: 'Lato', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (max-width:900px) {
+  .codeBlock {
+      padding: 50px 10px!important
+  }
+}
+
+.codeBlock pre.lineno {
+    border-right: 1px solid #ccc!important;
+    border-radius: 0!important;
+    padding: 0 5px 0 0!important;
+}
+
+.codeBlock .code pre {
+    padding: 5px 20px!important;
+}
+
+.codeBlock code, .codeBlock pre{color:#fdce93;background-color:#3f3f3f}
+.codeBlock .hll{background-color:#222}
+.codeBlock .c{color:#7f9f7f}
+.codeBlock .err{color:#e37170;background-color:#3d3535}
+.codeBlock .g{color:#7f9f7f}
+.codeBlock .k{color:#f0dfaf}
+.codeBlock .l{color:#ccc}
+.codeBlock .n{color:#dcdccc}
+.codeBlock .o{color:#f0efd0}
+.codeBlock .x{color:#ccc}
+.codeBlock .p{color:#41706f}
+.codeBlock .cm{color:#7f9f7f}
+.codeBlock .cp{color:#7f9f7f}
+.codeBlock .c1{color:#7f9f7f}
+.codeBlock .cs{color:#cd0000;font-weight:bold}
+.codeBlock .gd{color:#cd0000}
+.codeBlock .ge{color:#ccc;font-style:italic}
+.codeBlock .gr{color:red}
+.codeBlock .gh{color:#dcdccc;font-weight:bold}
+.codeBlock .gi{color:#00cd00}
+.codeBlock .go{color:gray}
+.codeBlock .gp{color:#dcdccc;font-weight:bold}
+.codeBlock .gs{color:#ccc;font-weight:bold}
+.codeBlock .gu{color:purple;font-weight:bold}
+.codeBlock .gt{color:#0040D0}
+.codeBlock .kc{color:#dca3a3}
+.codeBlock .kd{color:#ffff86}
+.codeBlock .kn{color:#dfaf8f;font-weight:bold}
+.codeBlock .kp{color:#cdcf99}
+.codeBlock .kr{color:#cdcd00}
+.codeBlock .kt{color:#00cd00}
+.codeBlock .ld{color:#cc9393}
+.codeBlock .m{color:#8cd0d3}
+.codeBlock .s{color:#cc9393}
+.codeBlock .na{color:#9ac39f}
+.codeBlock .nb{color:#efef8f}
+.codeBlock .nc{color:#efef8f}
+.codeBlock .no{color:#ccc}
+.codeBlock .nd{color:#ccc}
+.codeBlock .ni{color:#c28182}
+.codeBlock .ne{color:#c3bf9f;font-weight:bold}
+.codeBlock .nf{color:#efef8f}
+.codeBlock .nl{color:#ccc}
+.codeBlock .nn{color:#8fbede}
+.codeBlock .nx{color:#ccc}
+.codeBlock .py{color:#ccc}
+.codeBlock .nt{color:#9ac39f}
+.codeBlock .nv{color:#dcdccc}
+.codeBlock .ow{color:#f0efd0}
+.codeBlock .w{color:#ccc}
+.codeBlock .mf{color:#8cd0d3}
+.codeBlock .mh{color:#8cd0d3}
+.codeBlock .mi{color:#8cd0d3}
+.codeBlock .mo{color:#8cd0d3}
+.codeBlock .sb{color:#cc9393}
+.codeBlock .sc{color:#cc9393}
+.codeBlock .sd{color:#cc9393}
+.codeBlock .s2{color:#cc9393}
+.codeBlock .se{color:#cc9393}
+.codeBlock .sh{color:#cc9393}
+.codeBlock .si{color:#cc9393}
+.codeBlock .sx{color:#cc9393}
+.codeBlock .sr{color:#cc9393}
+.codeBlock .s1{color:#cc9393}
+.codeBlock .ss{color:#cc9393}
+.codeBlock .bp{color:#efef8f}
+.codeBlock .vc{color:#efef8f}
+.codeBlock .vg{color:#dcdccc}
+.codeBlock .vi{color:#ffffc7}
+.codeBlock .il{color:#8cd0d3}
+
+.cortana-search {
+    position: absolute!important;
+    right: 25px!important;
+    top: 37px!important;
+    display: block!important;
+    width: 230px!important;
+    height: 38px!important;
+    border-radius: 3px!important;
+    border: 1px solid #BDC3C7!important;
+    box-shadow: none!important;
+    padding: 5px 10px 5px 50px!important;
+    font-size: 14px!important;
+    border-box: box-sizing!important;
+    background: url(../img/search-icon.svg) 10px 6px no-repeat!important;
+    color: #17428C;
+}
+
+.cortana-search:focus {
+    outline: 0;
+    border: 1px solid #17428C!important
+}
+
+.cortana-search::-webkit-input-placeholder {
+    font-style: italic
+}
+
+.cortana-search:-moz-placeholder {
+    font-style: italic
+}
+
+@media only screen and (max-width:767px) {
+  .cortana-search {
+      display: none!important
+  }
+}
+
+.cortana-search-wrapper .dropdown-menu {
+    width: 230px!important;
+    margin-top: 12px!important;
+    padding: 8px 0!important;
+    background-color: #fff!important;
+    border: 1px solid #BDC3C7!important;
+    border-radius: 3px!important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2)!important;
+    position: absolute;
+    list-style: none
+}
+
+.cortana-search-wrapper li {
+    padding: 8px 15px!important;
+    border-top: 1px solid #BDC3C7!important
+}
+
+.cortana-search-wrapper li:first-child {
+    border: none!important
+}
+
+.cortana-search-wrapper li a {
+    text-decoration: none!important;
+    color: #333!important
+}
+
+.cortana-search-wrapper li.active {
+    background-color: #17428C!important
+}
+
+.cortana-search-wrapper li.active a {
+    color: #fff!important
+}
+
+.cortana-search-title {
+    font-weight: 700!important;
+    font-size: 14px!important;
+    margin: 0 0 5px!important
+}
+
+.cortana-search-path {
+    font-weight: 400!important;
+    font-size: 12px!important;
+    margin: 0!important;
+    word-wrap: break-word!important;
+    white-space: normal!important
+}
+
+.cortana-search-wrapper .dropdown-menu .active a,.cortana-search-wrapper .dropdown-menu .active a:focus,.cortana-search-wrapper .dropdown-menu .active a:hover,.cortana-search-wrapper .dropdown-menu li a,.cortana-search-wrapper .dropdown-menu li a:focus,.cortana-search-wrapper .dropdown-menu li a:hover {
+    padding: 0!important;
+    background: 0 0!important
+}
+
+.cortana-content:last-of-type:not(:first-of-type) {
+    display: none;
+}

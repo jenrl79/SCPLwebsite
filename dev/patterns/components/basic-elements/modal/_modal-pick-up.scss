@@ -1,0 +1,124 @@
+/*doc
+---
+title: Pick-up Modal
+name: 01-modal-pick-up
+category: Basic Elements-Modals
+---
+
+```html_example
+<!--For pattern library only, do not copy-->
+<style>
+  .modal-backdrop {
+    z-index: -10 !important;
+  }
+  #modal-pick-up {
+    margin-top: 25em;
+  }
+</style>
+<!-- Do not copy -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-pick-up btn-lg" data-toggle="modal" data-target="#modal-pick-up">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-pick-up" tabindex="-1" role="dialog" aria-labelledby="modal-pick-upLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="modal-pick-upLabel">Where would you like to pick up this item?</h3>
+      </div>
+      <div class="modal-body col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+        <h5>Choose a location nearest you.</h5>
+        <div class="dropdown open">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select a library branch <span class="icon-select-arrows"></span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item" href="#">First Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <p>We'll let you know when your item is ready to be picked up!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-pick-up" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+*/
+
+
+#scpl {
+  #modal-pick-up {
+    margin-top: 15em;
+    .modal-header {
+      h3 {
+        font-weight: lighter;
+        text-align: center;
+        color: palette(blue,dark);
+        margin-top: 40px;
+      }
+    }
+    .modal-body {
+      p {
+        margin-top: 20px;
+        font-weight: lighter;
+        font-style: italic;
+        color: palette(blue,dark);
+      }
+      .dropdown {
+        text-align: center;
+        .btn-secondary {
+          font-size: 14px;
+          font-weight: lighter;
+          background-color: palette(gray,x-light);
+          border: 1px solid palette(gray,dark);
+          padding: 10px;
+          &:hover {
+            background-color: palette(gray,x-light);
+            border: 1px solid palette(gray,regular);
+          }
+        }
+        .dropdown-menu {
+          a {
+            display: block;
+            padding: 5px 20px;
+            color: palette(gray,dark);
+            &:hover {
+              color: palette(orange,secondary);
+              text-decoration: none;
+            }
+          }
+        }
+        span {
+          margin-left: 50px;
+          color: palette(orange,secondary);
+        }
+      }
+    }
+    .modal-footer {
+      .btn-pick-up {
+        background-color: palette(gray,x-light);
+        border-color: palette(gray,x-light);
+        font-size: 14px;
+        font-weight: lighter;
+        text-transform: capitalize;
+        color: palette(gray,dark);
+        &:hover {
+          background-color: palette(gray,light);
+          border-color: palette(gray,light);
+        }
+      }
+    }
+  }
+}

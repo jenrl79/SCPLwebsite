@@ -1,0 +1,85 @@
+/*doc
+---
+title: Radio Buttons
+name: 01-radio-buttons
+category: Basic Elements-Radio
+---
+
+This is a sample of radio buttons. To make a radio button disabled, add 'disabled' to the end of your input tag.
+
+```html_example
+<fieldset>
+  <div class="field">
+    <input type="radio" name="state" id="radio1" value="email">
+    <label for="radio1">Email</label>
+  </div>
+  <div class="field">
+    <input type="radio" name="state" id="radio2" value="text" checked>
+    <label for="radio2">Text</label>
+  </div>
+  <div class="field">
+    <input type="radio" name="state" id="radio3" value="phone" disabled>
+    <label for="radio3">Phone</label>
+  </div>
+</fieldset>
+```
+
+*/
+
+#scpl {
+    .field {
+        display: inline-block;
+        margin: 1em .5em 2em 0;
+        input[type="radio"] {
+            opacity: 0;
+            height: 0;
+            width: 0;
+            display: inline;
+            position: absolute;
+
+            + label {
+                display: inline-block;
+                font-weight: 400;
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+                text-transform: none;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: -2px;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid palette(gray,dark);
+                    border-radius: 50%;
+                }
+
+                &:after {
+                    background-color: palette(blue,light);
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 4px;
+                    top: 2px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: all 0.3s;
+                }
+            }   
+
+            &:checked + label:after {
+                opacity: 1;
+            }
+
+            &:disabled + label {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

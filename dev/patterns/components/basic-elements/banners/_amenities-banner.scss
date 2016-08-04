@@ -1,0 +1,70 @@
+/*doc
+---
+title: Amenities Banner
+name: amenities-banner
+category: Basic Elements-Banners
+---
+
+```html_example
+<div class="amenities-banner">
+    <div class="container">
+        <h5>Amenities</h5>
+        <div class="col-md-3">
+            <ul>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+                <li><span class="icon-check"></span>Info</li>
+            </ul>
+        </div>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+    .amenities-banner {
+        background-color: palette(gray,light);
+        margin: 2em 0;
+        padding: 2em 0;
+        width: 100%;
+
+        h5 {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 2em 0;
+            font-weight: 400;
+        }
+        ul {
+            padding-bottom: 2em;
+            li {
+                text-align: left;
+                line-height: 2;
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

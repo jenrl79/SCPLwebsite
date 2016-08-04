@@ -1,0 +1,57 @@
+/*doc
+---
+title: Carousel Card
+name: carousel-cards
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="carousel-card">
+  <img src="http://placehold.it/115x150">
+  <p class="title">Book Title</p>
+  <p class="author">Book Author</p>
+</div>
+
+
+<div class="carousel-card">
+  <img src="http://placehold.it/115x150">
+  <p class="title">Film Title</p>
+  <p class="duration">0hr 00min</p>
+</div>
+```
+
+*/
+
+#scpl {
+
+  .carousel-card {
+    border-radius: 3px;
+    margin: 10px;
+
+    .title {
+      color: palette(blue, light);
+    }
+
+    p {
+      text-align: center;
+      margin: 0;
+
+      &.duration,
+      &.author {
+        font-size: 11px;
+      }
+
+      &.duration:before {
+        content: 'Duration: ';
+      }
+
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+  }
+
+}

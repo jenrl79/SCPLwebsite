@@ -1,0 +1,1600 @@
+/*doc
+---
+title: Entypo
+name: 01-entypo
+category: Icons-Entypo
+---
+
+<style>
+  .col-sm-3 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+  }
+  .col-sm-3 span {
+    display: block;
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="col-sm-3"><span class="icon-add-to-list"></span>.icon-add-to-list</div>
+<div class="col-sm-3"><span class="icon-classic-computer"></span>.icon-classic-computer</div>
+<div class="col-sm-3"><span class="icon-controller-fast-backward"></span>.icon-controller-fast-backward</div>
+<div class="col-sm-3"><span class="icon-creative-commons-attribution"></span>.icon-creative-commons-attribution</div>
+<div class="col-sm-3"><span class="icon-creative-commons-noderivs"></span>.icon-creative-commons-noderivs</div>
+<div class="col-sm-3"><span class="icon-creative-commons-noncommercial-eu"></span>.icon-creative-commons-noncommercial-eu</div>
+<div class="col-sm-3"><span class="icon-creative-commons-noncommercial-us"></span>.icon-creative-commons-noncommercial-us</div>
+<div class="col-sm-3"><span class="icon-creative-commons-public-domain"></span>.icon-creative-commons-public-domain</div>
+<div class="col-sm-3"><span class="icon-creative-commons-remix"></span>.icon-creative-commons-remix</div>
+<div class="col-sm-3"><span class="icon-creative-commons-share"></span>.icon-creative-commons-share</div>
+<div class="col-sm-3"><span class="icon-creative-commons-sharealike"></span>.icon-creative-commons-sharealike</div>
+<div class="col-sm-3"><span class="icon-creative-commons"></span>.icon-creative-commons</div>
+<div class="col-sm-3"><span class="icon-document-landscape"></span>.icon-document-landscape</div>
+<div class="col-sm-3"><span class="icon-remove-user"></span>.icon-remove-user</div>
+<div class="col-sm-3"><span class="icon-warning"></span>.icon-warning</div>
+<div class="col-sm-3"><span class="icon-arrow-bold-down"></span>.icon-arrow-bold-down</div>
+<div class="col-sm-3"><span class="icon-arrow-bold-left"></span>.icon-arrow-bold-left</div>
+<div class="col-sm-3"><span class="icon-arrow-bold-right"></span>.icon-arrow-bold-right</div>
+<div class="col-sm-3"><span class="icon-arrow-bold-up"></span>.icon-arrow-bold-up</div>
+<div class="col-sm-3"><span class="icon-arrow-down"></span>.icon-arrow-down</div>
+<div class="col-sm-3"><span class="icon-arrow-left"></span>.icon-arrow-left</div>
+<div class="col-sm-3"><span class="icon-arrow-long-down"></span>.icon-arrow-long-down</div>
+<div class="col-sm-3"><span class="icon-arrow-long-left"></span>.icon-arrow-long-left</div>
+<div class="col-sm-3"><span class="icon-arrow-long-right"></span>.icon-arrow-long-right</div>
+<div class="col-sm-3"><span class="icon-arrow-long-up"></span>.icon-arrow-long-up</div>
+<div class="col-sm-3"><span class="icon-arrow-right"></span>.icon-arrow-right</div>
+<div class="col-sm-3"><span class="icon-arrow-up"></span>.icon-arrow-up</div>
+<div class="col-sm-3"><span class="icon-arrow-with-circle-down"></span>.icon-arrow-with-circle-down</div>
+<div class="col-sm-3"><span class="icon-arrow-with-circle-left"></span>.icon-arrow-with-circle-left</div>
+<div class="col-sm-3"><span class="icon-arrow-with-circle-right"></span>.icon-arrow-with-circle-right</div>
+<div class="col-sm-3"><span class="icon-arrow-with-circle-up"></span>.icon-arrow-with-circle-up</div>
+<div class="col-sm-3"><span class="icon-bookmark"></span>.icon-bookmark</div>
+<div class="col-sm-3"><span class="icon-bookmarks"></span>.icon-bookmarks</div>
+<div class="col-sm-3"><span class="icon-chevron-down"></span>.icon-chevron-down</div>
+<div class="col-sm-3"><span class="icon-chevron-left"></span>.icon-chevron-left</div>
+<div class="col-sm-3"><span class="icon-chevron-right"></span>.icon-chevron-right</div>
+<div class="col-sm-3"><span class="icon-chevron-small-down"></span>.icon-chevron-small-down</div>
+<div class="col-sm-3"><span class="icon-chevron-small-left"></span>.icon-chevron-small-left</div>
+<div class="col-sm-3"><span class="icon-chevron-small-right"></span>.icon-chevron-small-right</div>
+<div class="col-sm-3"><span class="icon-chevron-small-up"></span>.icon-chevron-small-up</div>
+<div class="col-sm-3"><span class="icon-chevron-thin-down"></span>.icon-chevron-thin-down</div>
+<div class="col-sm-3"><span class="icon-chevron-thin-left"></span>.icon-chevron-thin-left</div>
+<div class="col-sm-3"><span class="icon-chevron-thin-right"></span>.icon-chevron-thin-right</div>
+<div class="col-sm-3"><span class="icon-chevron-thin-up"></span>.icon-chevron-thin-up</div>
+<div class="col-sm-3"><span class="icon-chevron-up"></span>.icon-chevron-up</div>
+<div class="col-sm-3"><span class="icon-chevron-with-circle-down"></span>.icon-chevron-with-circle-down</div>
+<div class="col-sm-3"><span class="icon-chevron-with-circle-left"></span>.icon-chevron-with-circle-left</div>
+<div class="col-sm-3"><span class="icon-chevron-with-circle-right"></span>.icon-chevron-with-circle-right</div>
+<div class="col-sm-3"><span class="icon-chevron-with-circle-up"></span>.icon-chevron-with-circle-up</div>
+<div class="col-sm-3"><span class="icon-circle-right-chevron"></span>.icon-circle-right-chevron</div>
+<div class="col-sm-3"><span class="icon-cloud"></span>.icon-cloud</div>
+<div class="col-sm-3"><span class="icon-controller-fast-forward"></span>.icon-controller-fast-forward</div>
+<div class="col-sm-3"><span class="icon-controller-jump-to-start"></span>.icon-controller-jump-to-start</div>
+<div class="col-sm-3"><span class="icon-controller-next"></span>.icon-controller-next</div>
+<div class="col-sm-3"><span class="icon-controller-paus"></span>.icon-controller-paus</div>
+<div class="col-sm-3"><span class="icon-controller-play"></span>.icon-controller-play</div>
+<div class="col-sm-3"><span class="icon-controller-record"></span>.icon-controller-record</div>
+<div class="col-sm-3"><span class="icon-controller-stop"></span>.icon-controller-stop</div>
+<div class="col-sm-3"><span class="icon-controller-volume"></span>.icon-controller-volume</div>
+<div class="col-sm-3"><span class="icon-dot-single"></span>.icon-dot-single</div>
+<div class="col-sm-3"><span class="icon-dots-three-horizontal"></span>.icon-dots-three-horizontal</div>
+<div class="col-sm-3"><span class="icon-dots-three-vertical"></span>.icon-dots-three-vertical</div>
+<div class="col-sm-3"><span class="icon-dots-two-horizontal"></span>.icon-dots-two-horizontal</div>
+<div class="col-sm-3"><span class="icon-dots-two-vertical"></span>.icon-dots-two-vertical</div>
+<div class="col-sm-3"><span class="icon-download"></span>.icon-download</div>
+<div class="col-sm-3"><span class="icon-emoji-flirt"></span>.icon-emoji-flirt</div>
+<div class="col-sm-3"><span class="icon-flow-branch"></span>.icon-flow-branch</div>
+<div class="col-sm-3"><span class="icon-flow-cascade"></span>.icon-flow-cascade</div>
+<div class="col-sm-3"><span class="icon-flow-line"></span>.icon-flow-line</div>
+<div class="col-sm-3"><span class="icon-flow-parallel"></span>.icon-flow-parallel</div>
+<div class="col-sm-3"><span class="icon-flow-tree"></span>.icon-flow-tree</div>
+<div class="col-sm-3"><span class="icon-install"></span>.icon-install</div>
+<div class="col-sm-3"><span class="icon-layers"></span>.icon-layers</div>
+<div class="col-sm-3"><span class="icon-resize-100"></span>.icon-resize-100</div>
+<div class="col-sm-3"><span class="icon-resize-full-screen"></span>.icon-resize-full-screen</div>
+<div class="col-sm-3"><span class="icon-save"></span>.icon-save</div>
+<div class="col-sm-3"><span class="icon-select-arrows"></span>.icon-select-arrows</div>
+<div class="col-sm-3"><span class="icon-sound-mute"></span>.icon-sound-mute</div>
+<div class="col-sm-3"><span class="icon-sound"></span>.icon-sound</div>
+<div class="col-sm-3"><span class="icon-trash"></span>.icon-trash</div>
+<div class="col-sm-3"><span class="icon-triangle-down"></span>.icon-triangle-down</div>
+<div class="col-sm-3"><span class="icon-triangle-left"></span>.icon-triangle-left</div>
+<div class="col-sm-3"><span class="icon-triangle-right"></span>.icon-triangle-right</div>
+<div class="col-sm-3"><span class="icon-triangle-up"></span>.icon-triangle-up</div>
+<div class="col-sm-3"><span class="icon-uninstall"></span>.icon-uninstall</div>
+<div class="col-sm-3"><span class="icon-upload-to-cloud"></span>.icon-upload-to-cloud</div>
+<div class="col-sm-3"><span class="icon-upload"></span>.icon-upload</div>
+<div class="col-sm-3"><span class="icon-add-user"></span>.icon-add-user</div>
+<div class="col-sm-3"><span class="icon-address"></span>.icon-address</div>
+<div class="col-sm-3"><span class="icon-adjust"></span>.icon-adjust</div>
+<div class="col-sm-3"><span class="icon-air"></span>.icon-air</div>
+<div class="col-sm-3"><span class="icon-aircraft-landing"></span>.icon-aircraft-landing</div>
+<div class="col-sm-3"><span class="icon-aircraft-take-off"></span>.icon-aircraft-take-off</div>
+<div class="col-sm-3"><span class="icon-aircraft"></span>.icon-aircraft</div>
+<div class="col-sm-3"><span class="icon-align-bottom"></span>.icon-align-bottom</div>
+<div class="col-sm-3"><span class="icon-align-horizontal-middle"></span>.icon-align-horizontal-middle</div>
+<div class="col-sm-3"><span class="icon-align-left"></span>.icon-align-left</div>
+<div class="col-sm-3"><span class="icon-align-right"></span>.icon-align-right</div>
+<div class="col-sm-3"><span class="icon-align-top"></span>.icon-align-top</div>
+<div class="col-sm-3"><span class="icon-align-vertical-middle"></span>.icon-align-vertical-middle</div>
+<div class="col-sm-3"><span class="icon-archive"></span>.icon-archive</div>
+<div class="col-sm-3"><span class="icon-area-graph"></span>.icon-area-graph</div>
+<div class="col-sm-3"><span class="icon-attachment"></span>.icon-attachment</div>
+<div class="col-sm-3"><span class="icon-awareness-ribbon"></span>.icon-awareness-ribbon</div>
+<div class="col-sm-3"><span class="icon-back-in-time"></span>.icon-back-in-time</div>
+<div class="col-sm-3"><span class="icon-back"></span>.icon-back</div>
+<div class="col-sm-3"><span class="icon-bar-graph"></span>.icon-bar-graph</div>
+<div class="col-sm-3"><span class="icon-battery"></span>.icon-battery</div>
+<div class="col-sm-3"><span class="icon-beamed-note"></span>.icon-beamed-note</div>
+<div class="col-sm-3"><span class="icon-bell"></span>.icon-bell</div>
+<div class="col-sm-3"><span class="icon-blackboard"></span>.icon-blackboard</div>
+<div class="col-sm-3"><span class="icon-block"></span>.icon-block</div>
+<div class="col-sm-3"><span class="icon-book"></span>.icon-book</div>
+<div class="col-sm-3"><span class="icon-bowl"></span>.icon-bowl</div>
+<div class="col-sm-3"><span class="icon-box"></span>.icon-box</div>
+<div class="col-sm-3"><span class="icon-briefcase"></span>.icon-briefcase</div>
+<div class="col-sm-3"><span class="icon-browser"></span>.icon-browser</div>
+<div class="col-sm-3"><span class="icon-brush"></span>.icon-brush</div>
+<div class="col-sm-3"><span class="icon-bucket"></span>.icon-bucket</div>
+<div class="col-sm-3"><span class="icon-cake"></span>.icon-cake</div>
+<div class="col-sm-3"><span class="icon-calculator"></span>.icon-calculator</div>
+<div class="col-sm-3"><span class="icon-calendar"></span>.icon-calendar</div>
+<div class="col-sm-3"><span class="icon-camera"></span>.icon-camera</div>
+<div class="col-sm-3"><span class="icon-ccw"></span>.icon-ccw</div>
+<div class="col-sm-3"><span class="icon-chat"></span>.icon-chat</div>
+<div class="col-sm-3"><span class="icon-check"></span>.icon-check</div>
+<div class="col-sm-3"><span class="icon-circle-with-cross"></span>.icon-circle-with-cross</div>
+<div class="col-sm-3"><span class="icon-circle-with-minus"></span>.icon-circle-with-minus</div>
+<div class="col-sm-3"><span class="icon-circle-with-plus"></span>.icon-circle-with-plus</div>
+<div class="col-sm-3"><span class="icon-circle"></span>.icon-circle</div>
+<div class="col-sm-3"><span class="icon-circular-graph"></span>.icon-circular-graph</div>
+<div class="col-sm-3"><span class="icon-clapperboard"></span>.icon-clapperboard</div>
+<div class="col-sm-3"><span class="icon-clipboard"></span>.icon-clipboard</div>
+<div class="col-sm-3"><span class="icon-clock"></span>.icon-clock</div>
+<div class="col-sm-3"><span class="icon-code"></span>.icon-code</div>
+<div class="col-sm-3"><span class="icon-cog"></span>.icon-cog</div>
+<div class="col-sm-3"><span class="icon-colours"></span>.icon-colours</div>
+<div class="col-sm-3"><span class="icon-compass"></span>.icon-compass</div>
+<div class="col-sm-3"><span class="icon-copy"></span>.icon-copy</div>
+<div class="col-sm-3"><span class="icon-credit-card"></span>.icon-credit-card</div>
+<div class="col-sm-3"><span class="icon-credit"></span>.icon-credit</div>
+<div class="col-sm-3"><span class="icon-cross"></span>.icon-cross</div>
+<div class="col-sm-3"><span class="icon-cup"></span>.icon-cup</div>
+<div class="col-sm-3"><span class="icon-cw"></span>.icon-cw</div>
+<div class="col-sm-3"><span class="icon-cycle"></span>.icon-cycle</div>
+<div class="col-sm-3"><span class="icon-database"></span>.icon-database</div>
+<div class="col-sm-3"><span class="icon-dial-pad"></span>.icon-dial-pad</div>
+<div class="col-sm-3"><span class="icon-direction"></span>.icon-direction</div>
+<div class="col-sm-3"><span class="icon-document"></span>.icon-document</div>
+<div class="col-sm-3"><span class="icon-documents"></span>.icon-documents</div>
+<div class="col-sm-3"><span class="icon-drink"></span>.icon-drink</div>
+<div class="col-sm-3"><span class="icon-drive"></span>.icon-drive</div>
+<div class="col-sm-3"><span class="icon-drop"></span>.icon-drop</div>
+<div class="col-sm-3"><span class="icon-edit"></span>.icon-edit</div>
+<div class="col-sm-3"><span class="icon-email"></span>.icon-email</div>
+<div class="col-sm-3"><span class="icon-emoji-happy"></span>.icon-emoji-happy</div>
+<div class="col-sm-3"><span class="icon-emoji-neutral"></span>.icon-emoji-neutral</div>
+<div class="col-sm-3"><span class="icon-emoji-sad"></span>.icon-emoji-sad</div>
+<div class="col-sm-3"><span class="icon-erase"></span>.icon-erase</div>
+<div class="col-sm-3"><span class="icon-eraser"></span>.icon-eraser</div>
+<div class="col-sm-3"><span class="icon-export"></span>.icon-export</div>
+<div class="col-sm-3"><span class="icon-eye"></span>.icon-eye</div>
+<div class="col-sm-3"><span class="icon-feather"></span>.icon-feather</div>
+<div class="col-sm-3"><span class="icon-flag"></span>.icon-flag</div>
+<div class="col-sm-3"><span class="icon-flash"></span>.icon-flash</div>
+<div class="col-sm-3"><span class="icon-flashlight"></span>.icon-flashlight</div>
+<div class="col-sm-3"><span class="icon-flat-brush"></span>.icon-flat-brush</div>
+<div class="col-sm-3"><span class="icon-folder-images"></span>.icon-folder-images</div>
+<div class="col-sm-3"><span class="icon-folder-music"></span>.icon-folder-music</div>
+<div class="col-sm-3"><span class="icon-folder-video"></span>.icon-folder-video</div>
+<div class="col-sm-3"><span class="icon-folder"></span>.icon-folder</div>
+<div class="col-sm-3"><span class="icon-forward"></span>.icon-forward</div>
+<div class="col-sm-3"><span class="icon-funnel"></span>.icon-funnel</div>
+<div class="col-sm-3"><span class="icon-game-controller"></span>.icon-game-controller</div>
+<div class="col-sm-3"><span class="icon-gauge"></span>.icon-gauge</div>
+<div class="col-sm-3"><span class="icon-globe"></span>.icon-globe</div>
+<div class="col-sm-3"><span class="icon-graduation-cap"></span>.icon-graduation-cap</div>
+<div class="col-sm-3"><span class="icon-grid"></span>.icon-grid</div>
+<div class="col-sm-3"><span class="icon-hair-cross"></span>.icon-hair-cross</div>
+<div class="col-sm-3"><span class="icon-hand"></span>.icon-hand</div>
+<div class="col-sm-3"><span class="icon-heart-outlined"></span>.icon-heart-outlined</div>
+<div class="col-sm-3"><span class="icon-heart"></span>.icon-heart</div>
+<div class="col-sm-3"><span class="icon-help-with-circle"></span>.icon-help-with-circle</div>
+<div class="col-sm-3"><span class="icon-help"></span>.icon-help</div>
+<div class="col-sm-3"><span class="icon-home"></span>.icon-home</div>
+<div class="col-sm-3"><span class="icon-hour-glass"></span>.icon-hour-glass</div>
+<div class="col-sm-3"><span class="icon-image-inverted"></span>.icon-image-inverted</div>
+<div class="col-sm-3"><span class="icon-image"></span>.icon-image</div>
+<div class="col-sm-3"><span class="icon-images"></span>.icon-images</div>
+<div class="col-sm-3"><span class="icon-inbox"></span>.icon-inbox</div>
+<div class="col-sm-3"><span class="icon-infinity"></span>.icon-infinity</div>
+<div class="col-sm-3"><span class="icon-info-with-circle"></span>.icon-info-with-circle</div>
+<div class="col-sm-3"><span class="icon-info"></span>.icon-info</div>
+<div class="col-sm-3"><span class="icon-key"></span>.icon-key</div>
+<div class="col-sm-3"><span class="icon-keyboard"></span>.icon-keyboard</div>
+<div class="col-sm-3"><span class="icon-lab-flask"></span>.icon-lab-flask</div>
+<div class="col-sm-3"><span class="icon-landline"></span>.icon-landline</div>
+<div class="col-sm-3"><span class="icon-language"></span>.icon-language</div>
+<div class="col-sm-3"><span class="icon-laptop"></span>.icon-laptop</div>
+<div class="col-sm-3"><span class="icon-leaf"></span>.icon-leaf</div>
+<div class="col-sm-3"><span class="icon-level-down"></span>.icon-level-down</div>
+<div class="col-sm-3"><span class="icon-level-up"></span>.icon-level-up</div>
+<div class="col-sm-3"><span class="icon-lifebuoy"></span>.icon-lifebuoy</div>
+<div class="col-sm-3"><span class="icon-light-bulb"></span>.icon-light-bulb</div>
+<div class="col-sm-3"><span class="icon-light-down"></span>.icon-light-down</div>
+<div class="col-sm-3"><span class="icon-light-up"></span>.icon-light-up</div>
+<div class="col-sm-3"><span class="icon-line-graph"></span>.icon-line-graph</div>
+<div class="col-sm-3"><span class="icon-link"></span>.icon-link</div>
+<div class="col-sm-3"><span class="icon-list"></span>.icon-list</div>
+<div class="col-sm-3"><span class="icon-location-pin"></span>.icon-location-pin</div>
+<div class="col-sm-3"><span class="icon-location"></span>.icon-location</div>
+<div class="col-sm-3"><span class="icon-lock-open"></span>.icon-lock-open</div>
+<div class="col-sm-3"><span class="icon-lock"></span>.icon-lock</div>
+<div class="col-sm-3"><span class="icon-log-out"></span>.icon-log-out</div>
+<div class="col-sm-3"><span class="icon-login"></span>.icon-login</div>
+<div class="col-sm-3"><span class="icon-loop"></span>.icon-loop</div>
+<div class="col-sm-3"><span class="icon-magnet"></span>.icon-magnet</div>
+<div class="col-sm-3"><span class="icon-magnifying-glass"></span>.icon-magnifying-glass</div>
+<div class="col-sm-3"><span class="icon-mail"></span>.icon-mail</div>
+<div class="col-sm-3"><span class="icon-man"></span>.icon-man</div>
+<div class="col-sm-3"><span class="icon-map"></span>.icon-map</div>
+<div class="col-sm-3"><span class="icon-mask"></span>.icon-mask</div>
+<div class="col-sm-3"><span class="icon-medal"></span>.icon-medal</div>
+<div class="col-sm-3"><span class="icon-megaphone"></span>.icon-megaphone</div>
+<div class="col-sm-3"><span class="icon-menu"></span>.icon-menu</div>
+<div class="col-sm-3"><span class="icon-message"></span>.icon-message</div>
+<div class="col-sm-3"><span class="icon-mic"></span>.icon-mic</div>
+<div class="col-sm-3"><span class="icon-minus"></span>.icon-minus</div>
+<div class="col-sm-3"><span class="icon-mobile"></span>.icon-mobile</div>
+<div class="col-sm-3"><span class="icon-modern-mic"></span>.icon-modern-mic</div>
+<div class="col-sm-3"><span class="icon-moon"></span>.icon-moon</div>
+<div class="col-sm-3"><span class="icon-mouse"></span>.icon-mouse</div>
+<div class="col-sm-3"><span class="icon-music"></span>.icon-music</div>
+<div class="col-sm-3"><span class="icon-network"></span>.icon-network</div>
+<div class="col-sm-3"><span class="icon-new-message"></span>.icon-new-message</div>
+<div class="col-sm-3"><span class="icon-new"></span>.icon-new</div>
+<div class="col-sm-3"><span class="icon-news"></span>.icon-news</div>
+<div class="col-sm-3"><span class="icon-note"></span>.icon-note</div>
+<div class="col-sm-3"><span class="icon-notification"></span>.icon-notification</div>
+<div class="col-sm-3"><span class="icon-old-mobile"></span>.icon-old-mobile</div>
+<div class="col-sm-3"><span class="icon-old-phone"></span>.icon-old-phone</div>
+<div class="col-sm-3"><span class="icon-palette"></span>.icon-palette</div>
+<div class="col-sm-3"><span class="icon-paper-plane"></span>.icon-paper-plane</div>
+<div class="col-sm-3"><span class="icon-pencil"></span>.icon-pencil</div>
+<div class="col-sm-3"><span class="icon-phone"></span>.icon-phone</div>
+<div class="col-sm-3"><span class="icon-pie-chart"></span>.icon-pie-chart</div>
+<div class="col-sm-3"><span class="icon-pin"></span>.icon-pin</div>
+<div class="col-sm-3"><span class="icon-plus"></span>.icon-plus</div>
+<div class="col-sm-3"><span class="icon-popup"></span>.icon-popup</div>
+<div class="col-sm-3"><span class="icon-power-plug"></span>.icon-power-plug</div>
+<div class="col-sm-3"><span class="icon-price-ribbon"></span>.icon-price-ribbon</div>
+<div class="col-sm-3"><span class="icon-price-tag"></span>.icon-price-tag</div>
+<div class="col-sm-3"><span class="icon-print"></span>.icon-print</div>
+<div class="col-sm-3"><span class="icon-progress-empty"></span>.icon-progress-empty</div>
+<div class="col-sm-3"><span class="icon-progress-full"></span>.icon-progress-full</div>
+<div class="col-sm-3"><span class="icon-progress-one"></span>.icon-progress-one</div>
+<div class="col-sm-3"><span class="icon-progress-two"></span>.icon-progress-two</div>
+<div class="col-sm-3"><span class="icon-publish"></span>.icon-publish</div>
+<div class="col-sm-3"><span class="icon-quote"></span>.icon-quote</div>
+<div class="col-sm-3"><span class="icon-radio"></span>.icon-radio</div>
+<div class="col-sm-3"><span class="icon-reply-all"></span>.icon-reply-all</div>
+<div class="col-sm-3"><span class="icon-reply"></span>.icon-reply</div>
+<div class="col-sm-3"><span class="icon-retweet"></span>.icon-retweet</div>
+<div class="col-sm-3"><span class="icon-rocket"></span>.icon-rocket</div>
+<div class="col-sm-3"><span class="icon-round-brush"></span>.icon-round-brush</div>
+<div class="col-sm-3"><span class="icon-rss"></span>.icon-rss</div>
+<div class="col-sm-3"><span class="icon-ruler"></span>.icon-ruler</div>
+<div class="col-sm-3"><span class="icon-scissors"></span>.icon-scissors</div>
+<div class="col-sm-3"><span class="icon-share-alternitive"></span>.icon-share-alternitive</div>
+<div class="col-sm-3"><span class="icon-share"></span>.icon-share</div>
+<div class="col-sm-3"><span class="icon-shareable"></span>.icon-shareable</div>
+<div class="col-sm-3"><span class="icon-shield"></span>.icon-shield</div>
+<div class="col-sm-3"><span class="icon-shop"></span>.icon-shop</div>
+<div class="col-sm-3"><span class="icon-shopping-bag"></span>.icon-shopping-bag</div>
+<div class="col-sm-3"><span class="icon-shopping-basket"></span>.icon-shopping-basket</div>
+<div class="col-sm-3"><span class="icon-shopping-cart"></span>.icon-shopping-cart</div>
+<div class="col-sm-3"><span class="icon-cart-plus"></span>.icon-cart-plus</div>
+<div class="col-sm-3"><span class="icon-shuffle"></span>.icon-shuffle</div>
+<div class="col-sm-3"><span class="icon-signal"></span>.icon-signal</div>
+<div class="col-sm-3"><span class="icon-sound-mix"></span>.icon-sound-mix</div>
+<div class="col-sm-3"><span class="icon-sports-club"></span>.icon-sports-club</div>
+<div class="col-sm-3"><span class="icon-spreadsheet"></span>.icon-spreadsheet</div>
+<div class="col-sm-3"><span class="icon-squared-cross"></span>.icon-squared-cross</div>
+<div class="col-sm-3"><span class="icon-squared-minus"></span>.icon-squared-minus</div>
+<div class="col-sm-3"><span class="icon-squared-plus"></span>.icon-squared-plus</div>
+<div class="col-sm-3"><span class="icon-star-outlined"></span>.icon-star-outlined</div>
+<div class="col-sm-3"><span class="icon-star"></span>.icon-star</div>
+<div class="col-sm-3"><span class="icon-stopwatch"></span>.icon-stopwatch</div>
+<div class="col-sm-3"><span class="icon-suitcase"></span>.icon-suitcase</div>
+<div class="col-sm-3"><span class="icon-swap"></span>.icon-swap</div>
+<div class="col-sm-3"><span class="icon-sweden"></span>.icon-sweden</div>
+<div class="col-sm-3"><span class="icon-switch"></span>.icon-switch</div>
+<div class="col-sm-3"><span class="icon-tablet"></span>.icon-tablet</div>
+<div class="col-sm-3"><span class="icon-tag"></span>.icon-tag</div>
+<div class="col-sm-3"><span class="icon-text-document-inverted"></span>.icon-text-document-inverted</div>
+<div class="col-sm-3"><span class="icon-text-document"></span>.icon-text-document</div>
+<div class="col-sm-3"><span class="icon-text"></span>.icon-text</div>
+<div class="col-sm-3"><span class="icon-thermometer"></span>.icon-thermometer</div>
+<div class="col-sm-3"><span class="icon-thumbs-down"></span>.icon-thumbs-down</div>
+<div class="col-sm-3"><span class="icon-thumbs-up"></span>.icon-thumbs-up</div>
+<div class="col-sm-3"><span class="icon-thunder-cloud"></span>.icon-thunder-cloud</div>
+<div class="col-sm-3"><span class="icon-ticket"></span>.icon-ticket</div>
+<div class="col-sm-3"><span class="icon-time-slot"></span>.icon-time-slot</div>
+<div class="col-sm-3"><span class="icon-tools"></span>.icon-tools</div>
+<div class="col-sm-3"><span class="icon-traffic-cone"></span>.icon-traffic-cone</div>
+<div class="col-sm-3"><span class="icon-tree"></span>.icon-tree</div>
+<div class="col-sm-3"><span class="icon-trophy"></span>.icon-trophy</div>
+<div class="col-sm-3"><span class="icon-tv"></span>.icon-tv</div>
+<div class="col-sm-3"><span class="icon-typing"></span>.icon-typing</div>
+<div class="col-sm-3"><span class="icon-unread"></span>.icon-unread</div>
+<div class="col-sm-3"><span class="icon-untag"></span>.icon-untag</div>
+<div class="col-sm-3"><span class="icon-user"></span>.icon-user</div>
+<div class="col-sm-3"><span class="icon-users"></span>.icon-users</div>
+<div class="col-sm-3"><span class="icon-v-card"></span>.icon-v-card</div>
+<div class="col-sm-3"><span class="icon-video"></span>.icon-video</div>
+<div class="col-sm-3"><span class="icon-vinyl"></span>.icon-vinyl</div>
+<div class="col-sm-3"><span class="icon-voicemail"></span>.icon-voicemail</div>
+<div class="col-sm-3"><span class="icon-wallet"></span>.icon-wallet</div>
+<div class="col-sm-3"><span class="icon-water"></span>.icon-water</div>
+<div class="col-sm-3"><span class="icon-500px-with-circle"></span>.icon-500px-with-circle</div>
+<div class="col-sm-3"><span class="icon-500px"></span>.icon-500px</div>
+<div class="col-sm-3"><span class="icon-basecamp"></span>.icon-basecamp</div>
+<div class="col-sm-3"><span class="icon-behance"></span>.icon-behance</div>
+<div class="col-sm-3"><span class="icon-creative-cloud"></span>.icon-creative-cloud</div>
+<div class="col-sm-3"><span class="icon-dropbox"></span>.icon-dropbox</div>
+<div class="col-sm-3"><span class="icon-evernote"></span>.icon-evernote</div>
+<div class="col-sm-3"><span class="icon-flattr"></span>.icon-flattr</div>
+<div class="col-sm-3"><span class="icon-foursquare"></span>.icon-foursquare</div>
+<div class="col-sm-3"><span class="icon-google-drive"></span>.icon-google-drive</div>
+<div class="col-sm-3"><span class="icon-google-hangouts"></span>.icon-google-hangouts</div>
+<div class="col-sm-3"><span class="icon-grooveshark"></span>.icon-grooveshark</div>
+<div class="col-sm-3"><span class="icon-icloud"></span>.icon-icloud</div>
+<div class="col-sm-3"><span class="icon-mixi"></span>.icon-mixi</div>
+<div class="col-sm-3"><span class="icon-onedrive"></span>.icon-onedrive</div>
+<div class="col-sm-3"><span class="icon-paypal"></span>.icon-paypal</div>
+<div class="col-sm-3"><span class="icon-picasa"></span>.icon-picasa</div>
+<div class="col-sm-3"><span class="icon-qq"></span>.icon-qq</div>
+<div class="col-sm-3"><span class="icon-rdio-with-circle"></span>.icon-rdio-with-circle</div>
+<div class="col-sm-3"><span class="icon-renren"></span>.icon-renren</div>
+<div class="col-sm-3"><span class="icon-scribd"></span>.icon-scribd</div>
+<div class="col-sm-3"><span class="icon-sina-weibo"></span>.icon-sina-weibo</div>
+<div class="col-sm-3"><span class="icon-skype-with-circle"></span>.icon-skype-with-circle</div>
+<div class="col-sm-3"><span class="icon-skype"></span>.icon-skype</div>
+<div class="col-sm-3"><span class="icon-slideshare"></span>.icon-slideshare</div>
+<div class="col-sm-3"><span class="icon-smashing"></span>.icon-smashing</div>
+<div class="col-sm-3"><span class="icon-soundcloud"></span>.icon-soundcloud</div>
+<div class="col-sm-3"><span class="icon-spotify-with-circle"></span>.icon-spotify-with-circle</div>
+<div class="col-sm-3"><span class="icon-spotify"></span>.icon-spotify</div>
+<div class="col-sm-3"><span class="icon-swarm"></span>.icon-swarm</div>
+<div class="col-sm-3"><span class="icon-vine-with-circle"></span>.icon-vine-with-circle</div>
+<div class="col-sm-3"><span class="icon-vine"></span>.icon-vine</div>
+<div class="col-sm-3"><span class="icon-vk-alternitive"></span>.icon-vk-alternitive</div>
+<div class="col-sm-3"><span class="icon-vk-with-circle"></span>.icon-vk-with-circle</div>
+<div class="col-sm-3"><span class="icon-vk"></span>.icon-vk</div>
+<div class="col-sm-3"><span class="icon-xing-with-circle"></span>.icon-xing-with-circle</div>
+<div class="col-sm-3"><span class="icon-xing"></span>.icon-xing</div>
+<div class="col-sm-3"><span class="icon-yelp"></span>.icon-yelp</div>
+<div class="col-sm-3"><span class="icon-dribbble-with-circle"></span>.icon-dribbble-with-circle</div>
+<div class="col-sm-3"><span class="icon-dribbble"></span>.icon-dribbble</div>
+<div class="col-sm-3"><span class="icon-facebook-with-circle"></span>.icon-facebook-with-circle</div>
+<div class="col-sm-3"><span class="icon-facebook"></span>.icon-facebook</div>
+<div class="col-sm-3"><span class="icon-flickr-with-circle"></span>.icon-flickr-with-circle</div>
+<div class="col-sm-3"><span class="icon-flickr"></span>.icon-flickr</div>
+<div class="col-sm-3"><span class="icon-github-with-circle"></span>.icon-github-with-circle</div>
+<div class="col-sm-3"><span class="icon-github"></span>.icon-github</div>
+<div class="col-sm-3"><span class="icon-google-with-circle"></span>.icon-google-with-circle</div>
+<div class="col-sm-3"><span class="icon-google"></span>.icon-google</div>
+<div class="col-sm-3"><span class="icon-instagram-with-circle"></span>.icon-instagram-with-circle</div>
+<div class="col-sm-3"><span class="icon-instagram"></span>.icon-instagram</div>
+<div class="col-sm-3"><span class="icon-lastfm-with-circle"></span>.icon-lastfm-with-circle</div>
+<div class="col-sm-3"><span class="icon-lastfm"></span>.icon-lastfm</div>
+<div class="col-sm-3"><span class="icon-linkedin-with-circle"></span>.icon-linkedin-with-circle</div>
+<div class="col-sm-3"><span class="icon-linkedin"></span>.icon-linkedin</div>
+<div class="col-sm-3"><span class="icon-pinterest-with-circle"></span>.icon-pinterest-with-circle</div>
+<div class="col-sm-3"><span class="icon-pinterest"></span>.icon-pinterest</div>
+<div class="col-sm-3"><span class="icon-rdio"></span>.icon-rdio</div>
+<div class="col-sm-3"><span class="icon-stumbleupon-with-circle"></span>.icon-stumbleupon-with-circle</div>
+<div class="col-sm-3"><span class="icon-stumbleupon"></span>.icon-stumbleupon</div>
+<div class="col-sm-3"><span class="icon-tumblr-with-circle"></span>.icon-tumblr-with-circle</div>
+<div class="col-sm-3"><span class="icon-tumblr"></span>.icon-tumblr</div>
+<div class="col-sm-3"><span class="icon-twitter-with-circle"></span>.icon-twitter-with-circle</div>
+<div class="col-sm-3"><span class="icon-twitter"></span>.icon-twitter</div>
+<div class="col-sm-3"><span class="icon-vimeo-with-circle"></span>.icon-vimeo-with-circle</div>
+<div class="col-sm-3"><span class="icon-vimeo"></span>.icon-vimeo</div>
+<div class="col-sm-3"><span class="icon-youtube-with-circle"></span>.icon-youtube-with-circle</div>
+<div class="col-sm-3"><span class="icon-youtube"></span>.icon-youtube</div>
+
+<div class="col-sm-3"><span class="icon-cart-plus"></span>.icon-cart-plus</div>
+<div class="col-sm-3"><span class="icon-circle-minus"></span>.icon-circle-minus</div>
+<div class="col-sm-3"><span class="icon-circle-play"></span>.icon-circle-play</div>
+<div class="col-sm-3"><span class="icon-circle-plus"></span>.icon-circle-plus</div>
+<div class="col-sm-3"><span class="icon-circle-right-chevron"></span>.icon-circle-right-chevron</div>
+
+```none_example
+```
+
+*/
+
+@font-face {
+  font-family: 'Entypo';
+  src: url('../fonts/entypo.eot?rkap7x');
+  src: url('../fonts/entypo.eot?rkap7x#iefix') format('embedded-opentype'),
+  url('../fonts/entypo.ttf?rkap7x') format('truetype'),
+  url('../fonts/entypo.woff?rkap7x') format('woff'),
+  url('../fonts/entypo.svg?rkap7x#entypo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'entypo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add-to-list:before {
+  content: "\e900";
+}
+.icon-classic-computer:before {
+  content: "\e901";
+}
+.icon-controller-fast-backward:before {
+  content: "\e902";
+}
+.icon-creative-commons-attribution:before {
+  content: "\e903";
+}
+.icon-creative-commons-noderivs:before {
+  content: "\e904";
+}
+.icon-creative-commons-noncommercial-eu:before {
+  content: "\e905";
+}
+.icon-creative-commons-noncommercial-us:before {
+  content: "\e906";
+}
+.icon-creative-commons-public-domain:before {
+  content: "\e907";
+}
+.icon-creative-commons-remix:before {
+  content: "\e908";
+}
+.icon-creative-commons-share:before {
+  content: "\e909";
+}
+.icon-creative-commons-sharealike:before {
+  content: "\e90a";
+}
+.icon-creative-commons:before {
+  content: "\e90b";
+}
+.icon-document-landscape:before {
+  content: "\e90c";
+}
+.icon-remove-user:before {
+  content: "\e90d";
+}
+.icon-warning:before {
+  content: "\e90e";
+}
+.icon-arrow-bold-down:before {
+  content: "\e90f";
+}
+.icon-arrow-bold-left:before {
+  content: "\e910";
+}
+.icon-arrow-bold-right:before {
+  content: "\e911";
+}
+.icon-arrow-bold-up:before {
+  content: "\e912";
+}
+.icon-arrow-down:before {
+  content: "\e913";
+}
+.icon-arrow-left:before {
+  content: "\e914";
+}
+.icon-arrow-long-down:before {
+  content: "\e915";
+}
+.icon-arrow-long-left:before {
+  content: "\e916";
+}
+.icon-arrow-long-right:before {
+  content: "\e917";
+}
+.icon-arrow-long-up:before {
+  content: "\e918";
+}
+.icon-arrow-right:before {
+  content: "\e919";
+}
+.icon-arrow-up:before {
+  content: "\e91a";
+}
+.icon-arrow-with-circle-down:before {
+  content: "\e91b";
+}
+.icon-arrow-with-circle-left:before {
+  content: "\e91c";
+}
+.icon-arrow-with-circle-right:before {
+  content: "\e91d";
+}
+.icon-arrow-with-circle-up:before {
+  content: "\e91e";
+}
+.icon-bookmark:before {
+  content: "\e91f";
+}
+.icon-bookmarks:before {
+  content: "\e920";
+}
+.icon-chevron-down:before {
+  content: "\e921";
+}
+.icon-chevron-left:before {
+  content: "\e922";
+}
+.icon-chevron-right:before {
+  content: "\e923";
+}
+.icon-chevron-small-down:before {
+  content: "\e924";
+}
+.icon-chevron-small-left:before {
+  content: "\e925";
+}
+.icon-chevron-small-right:before {
+  content: "\e926";
+}
+.icon-chevron-small-up:before {
+  content: "\e927";
+}
+.icon-chevron-thin-down:before {
+  content: "\e928";
+}
+.icon-chevron-thin-left:before {
+  content: "\e929";
+}
+.icon-chevron-thin-right:before {
+  content: "\e92a";
+}
+.icon-chevron-thin-up:before {
+  content: "\e92b";
+}
+.icon-chevron-up:before {
+  content: "\e92c";
+}
+.icon-chevron-with-circle-down:before {
+  content: "\e92d";
+}
+.icon-chevron-with-circle-left:before {
+  content: "\e92e";
+}
+.icon-chevron-with-circle-right:before {
+  content: "\e92f";
+}
+.icon-chevron-with-circle-up:before {
+  content: "\e930";
+}
+.icon-cloud:before {
+  content: "\e931";
+}
+.icon-controller-fast-forward:before {
+  content: "\e932";
+}
+.icon-controller-jump-to-start:before {
+  content: "\e933";
+}
+.icon-controller-next:before {
+  content: "\e934";
+}
+.icon-controller-paus:before {
+  content: "\e935";
+}
+.icon-controller-play:before {
+  content: "\e936";
+}
+.icon-controller-record:before {
+  content: "\e937";
+}
+.icon-controller-stop:before {
+  content: "\e938";
+}
+.icon-controller-volume:before {
+  content: "\e939";
+}
+.icon-dot-single:before {
+  content: "\e93a";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e93b";
+}
+.icon-dots-three-vertical:before {
+  content: "\e93c";
+}
+.icon-dots-two-horizontal:before {
+  content: "\e93d";
+}
+.icon-dots-two-vertical:before {
+  content: "\e93e";
+}
+.icon-download:before {
+  content: "\e93f";
+}
+.icon-emoji-flirt:before {
+  content: "\e940";
+}
+.icon-flow-branch:before {
+  content: "\e941";
+}
+.icon-flow-cascade:before {
+  content: "\e942";
+}
+.icon-flow-line:before {
+  content: "\e943";
+}
+.icon-flow-parallel:before {
+  content: "\e944";
+}
+.icon-flow-tree:before {
+  content: "\e945";
+}
+.icon-install:before {
+  content: "\e946";
+}
+.icon-layers:before {
+  content: "\e947";
+}
+.icon-resize-100:before {
+  content: "\e949";
+}
+.icon-resize-full-screen:before {
+  content: "\e94a";
+}
+.icon-save:before {
+  content: "\e94b";
+}
+.icon-select-arrows:before {
+  content: "\e94c";
+}
+.icon-sound-mute:before {
+  content: "\e94d";
+}
+.icon-sound:before {
+  content: "\e94e";
+}
+.icon-trash:before {
+  content: "\e94f";
+}
+.icon-triangle-down:before {
+  content: "\e950";
+}
+.icon-triangle-left:before {
+  content: "\e951";
+}
+.icon-triangle-right:before {
+  content: "\e952";
+}
+.icon-triangle-up:before {
+  content: "\e953";
+}
+.icon-uninstall:before {
+  content: "\e954";
+}
+.icon-upload-to-cloud:before {
+  content: "\e955";
+}
+.icon-upload:before {
+  content: "\e956";
+}
+.icon-add-user:before {
+  content: "\e957";
+}
+.icon-address:before {
+  content: "\e958";
+}
+.icon-adjust:before {
+  content: "\e959";
+}
+.icon-air:before {
+  content: "\e95a";
+}
+.icon-aircraft-landing:before {
+  content: "\e95b";
+}
+.icon-aircraft-take-off:before {
+  content: "\e95c";
+}
+.icon-aircraft:before {
+  content: "\e95d";
+}
+.icon-align-bottom:before {
+  content: "\e95e";
+}
+.icon-align-horizontal-middle:before {
+  content: "\e95f";
+}
+.icon-align-left:before {
+  content: "\e960";
+}
+.icon-align-right:before {
+  content: "\e961";
+}
+.icon-align-top:before {
+  content: "\e962";
+}
+.icon-align-vertical-middle:before {
+  content: "\e963";
+}
+.icon-archive:before {
+  content: "\e964";
+}
+.icon-area-graph:before {
+  content: "\e965";
+}
+.icon-attachment:before {
+  content: "\e966";
+}
+.icon-awareness-ribbon:before {
+  content: "\e967";
+}
+.icon-back-in-time:before {
+  content: "\e968";
+}
+.icon-back:before {
+  content: "\e969";
+}
+.icon-bar-graph:before {
+  content: "\e96a";
+}
+.icon-battery:before {
+  content: "\e96b";
+}
+.icon-beamed-note:before {
+  content: "\e96c";
+}
+.icon-bell:before {
+  content: "\e96d";
+}
+.icon-blackboard:before {
+  content: "\e96e";
+}
+.icon-block:before {
+  content: "\e96f";
+}
+.icon-book:before {
+  content: "\e970";
+}
+.icon-bowl:before {
+  content: "\e971";
+}
+.icon-box:before {
+  content: "\e972";
+}
+.icon-briefcase:before {
+  content: "\e973";
+}
+.icon-browser:before {
+  content: "\e974";
+}
+.icon-brush:before {
+  content: "\e975";
+}
+.icon-bucket:before {
+  content: "\e976";
+}
+.icon-cake:before {
+  content: "\e977";
+}
+.icon-calculator:before {
+  content: "\e978";
+}
+.icon-calendar:before {
+  content: "\e979";
+}
+.icon-camera:before {
+  content: "\e97a";
+}
+.icon-ccw:before {
+  content: "\e97b";
+}
+.icon-chat:before {
+  content: "\e97c";
+}
+.icon-check:before {
+  content: "\e97d";
+  color: #6EC038;
+}
+.icon-circle-with-cross:before {
+  content: "\e97e";
+}
+.icon-circle-with-minus:before {
+  content: "\e97f";
+}
+.icon-circle-with-plus:before {
+  content: "\e980";
+}
+.icon-circle:before {
+  content: "\e981";
+}
+.icon-circular-graph:before {
+  content: "\e982";
+}
+.icon-clapperboard:before {
+  content: "\e983";
+}
+.icon-clipboard:before {
+  content: "\e984";
+}
+.icon-clock:before {
+  content: "\e985";
+}
+.icon-code:before {
+  content: "\e986";
+}
+.icon-cog:before {
+  content: "\e987";
+}
+.icon-colours:before {
+  content: "\e988";
+}
+.icon-compass:before {
+  content: "\e989";
+}
+.icon-copy:before {
+  content: "\e98a";
+}
+.icon-credit-card:before {
+  content: "\e98b";
+}
+.icon-credit:before {
+  content: "\e98c";
+}
+.icon-cross:before {
+  content: "\e98d";
+}
+.icon-cup:before {
+  content: "\e98e";
+}
+.icon-cw:before {
+  content: "\e98f";
+}
+.icon-cycle:before {
+  content: "\e990";
+}
+.icon-database:before {
+  content: "\e991";
+}
+.icon-dial-pad:before {
+  content: "\e992";
+}
+.icon-direction:before {
+  content: "\e993";
+}
+.icon-document:before {
+  content: "\e994";
+}
+.icon-documents:before {
+  content: "\e995";
+}
+.icon-drink:before {
+  content: "\e996";
+}
+.icon-drive:before {
+  content: "\e997";
+}
+.icon-drop:before {
+  content: "\e998";
+}
+.icon-edit:before {
+  content: "\e999";
+}
+.icon-email:before {
+  content: "\e99a";
+}
+.icon-emoji-happy:before {
+  content: "\e99b";
+}
+.icon-emoji-neutral:before {
+  content: "\e99c";
+}
+.icon-emoji-sad:before {
+  content: "\e99d";
+}
+.icon-erase:before {
+  content: "\e99e";
+}
+.icon-eraser:before {
+  content: "\e99f";
+}
+.icon-export:before {
+  content: "\e9a0";
+}
+.icon-eye:before {
+  content: "\e9a1";
+}
+.icon-feather:before {
+  content: "\e9a2";
+}
+.icon-flag:before {
+  content: "\e9a3";
+}
+.icon-flash:before {
+  content: "\e9a4";
+}
+.icon-flashlight:before {
+  content: "\e9a5";
+}
+.icon-flat-brush:before {
+  content: "\e9a6";
+}
+.icon-folder-images:before {
+  content: "\e9a7";
+}
+.icon-folder-music:before {
+  content: "\e9a8";
+}
+.icon-folder-video:before {
+  content: "\e9a9";
+}
+.icon-folder:before {
+  content: "\e9aa";
+}
+.icon-forward:before {
+  content: "\e9ab";
+}
+.icon-funnel:before {
+  content: "\e9ac";
+}
+.icon-game-controller:before {
+  content: "\e9ad";
+}
+.icon-gauge:before {
+  content: "\e9ae";
+}
+.icon-globe:before {
+  content: "\e9af";
+}
+.icon-graduation-cap:before {
+  content: "\e9b0";
+}
+.icon-grid:before {
+  content: "\e9b1";
+}
+.icon-hair-cross:before {
+  content: "\e9b2";
+}
+.icon-hand:before {
+  content: "\e9b3";
+}
+.icon-heart-outlined:before {
+  content: "\e9b4";
+}
+.icon-heart:before {
+  content: "\e9b5";
+}
+.icon-help-with-circle:before {
+  content: "\e9b6";
+}
+.icon-help:before {
+  content: "\e9b7";
+}
+.icon-home:before {
+  content: "\e9b8";
+}
+.icon-hour-glass:before {
+  content: "\e9b9";
+}
+.icon-image-inverted:before {
+  content: "\e9ba";
+}
+.icon-image:before {
+  content: "\e9bb";
+}
+.icon-images:before {
+  content: "\e9bc";
+}
+.icon-inbox:before {
+  content: "\e9bd";
+}
+.icon-infinity:before {
+  content: "\e9be";
+}
+.icon-info-with-circle:before {
+  content: "\e9bf";
+}
+.icon-info:before {
+  content: "\e9c0";
+}
+.icon-key:before {
+  content: "\e9c1";
+}
+.icon-keyboard:before {
+  content: "\e9c2";
+}
+.icon-lab-flask:before {
+  content: "\e9c3";
+}
+.icon-landline:before {
+  content: "\e9c4";
+}
+.icon-language:before {
+  content: "\e9c5";
+}
+.icon-laptop:before {
+  content: "\e9c6";
+}
+.icon-leaf:before {
+  content: "\e9c7";
+}
+.icon-level-down:before {
+  content: "\e9c8";
+}
+.icon-level-up:before {
+  content: "\e9c9";
+}
+.icon-lifebuoy:before {
+  content: "\e9ca";
+}
+.icon-light-bulb:before {
+  content: "\e9cb";
+}
+.icon-light-down:before {
+  content: "\e9cc";
+}
+.icon-light-up:before {
+  content: "\e9cd";
+}
+.icon-line-graph:before {
+  content: "\e9ce";
+}
+.icon-link:before {
+  content: "\e9cf";
+}
+.icon-list:before {
+  content: "\e9d0";
+}
+.icon-location-pin:before {
+  content: "\e9d1";
+}
+.icon-location:before {
+  content: "\e9d2";
+}
+.icon-lock-open:before {
+  content: "\e9d3";
+}
+.icon-lock:before {
+  content: "\e9d4";
+}
+.icon-log-out:before {
+  content: "\e9d5";
+}
+.icon-login:before {
+  content: "\e9d6";
+}
+.icon-loop:before {
+  content: "\e9d7";
+}
+.icon-magnet:before {
+  content: "\e9d8";
+}
+.icon-magnifying-glass:before {
+  content: "\e9d9";
+}
+.icon-mail:before {
+  content: "\e9da";
+}
+.icon-man:before {
+  content: "\e9db";
+}
+.icon-map:before {
+  content: "\e9dc";
+}
+.icon-mask:before {
+  content: "\e9dd";
+}
+.icon-medal:before {
+  content: "\e9de";
+}
+.icon-megaphone:before {
+  content: "\e9df";
+}
+.icon-menu:before {
+  content: "\e9e0";
+}
+.icon-message:before {
+  content: "\e9e1";
+}
+.icon-mic:before {
+  content: "\e9e2";
+}
+.icon-minus:before {
+  content: "\e9e3";
+}
+.icon-mobile:before {
+  content: "\e9e4";
+}
+.icon-modern-mic:before {
+  content: "\e9e5";
+}
+.icon-moon:before {
+  content: "\e9e6";
+}
+.icon-mouse:before {
+  content: "\e9e7";
+}
+.icon-music:before {
+  content: "\e9e8";
+}
+.icon-network:before {
+  content: "\e9e9";
+}
+.icon-new-message:before {
+  content: "\e9ea";
+}
+.icon-new:before {
+  content: "\e9eb";
+}
+.icon-news:before {
+  content: "\e9ec";
+}
+.icon-note:before {
+  content: "\e9ed";
+}
+.icon-notification:before {
+  content: "\e9ee";
+}
+.icon-old-mobile:before {
+  content: "\e9ef";
+}
+.icon-old-phone:before {
+  content: "\e9f0";
+}
+.icon-palette:before {
+  content: "\e9f1";
+}
+.icon-paper-plane:before {
+  content: "\e9f2";
+}
+.icon-pencil:before {
+  content: "\e9f3";
+}
+.icon-phone:before {
+  content: "\e9f4";
+}
+.icon-pie-chart:before {
+  content: "\e9f5";
+}
+.icon-pin:before {
+  content: "\e9f6";
+}
+.icon-plus:before {
+  content: "\e9f7";
+}
+.icon-popup:before {
+  content: "\e9f8";
+}
+.icon-power-plug:before {
+  content: "\e9f9";
+}
+.icon-price-ribbon:before {
+  content: "\e9fa";
+}
+.icon-price-tag:before {
+  content: "\e9fb";
+}
+.icon-print:before {
+  content: "\e9fc";
+}
+.icon-progress-empty:before {
+  content: "\e9fd";
+}
+.icon-progress-full:before {
+  content: "\e9fe";
+}
+.icon-progress-one:before {
+  content: "\e9ff";
+}
+.icon-progress-two:before {
+  content: "\ea00";
+}
+.icon-publish:before {
+  content: "\ea01";
+}
+.icon-quote:before {
+  content: "\ea02";
+}
+.icon-radio:before {
+  content: "\ea03";
+}
+.icon-reply-all:before {
+  content: "\ea04";
+}
+.icon-reply:before {
+  content: "\ea05";
+}
+.icon-retweet:before {
+  content: "\ea06";
+}
+.icon-rocket:before {
+  content: "\ea07";
+}
+.icon-round-brush:before {
+  content: "\ea08";
+}
+.icon-rss:before {
+  content: "\ea09";
+}
+.icon-ruler:before {
+  content: "\ea0a";
+}
+.icon-scissors:before {
+  content: "\ea0b";
+}
+.icon-share-alternitive:before {
+  content: "\ea0c";
+}
+.icon-share:before {
+  content: "\ea0d";
+}
+.icon-shareable:before {
+  content: "\ea0e";
+}
+.icon-shield:before {
+  content: "\ea0f";
+}
+.icon-shop:before {
+  content: "\ea10";
+}
+.icon-shopping-bag:before {
+  content: "\ea11";
+}
+.icon-shopping-basket:before {
+  content: "\ea12";
+}
+.icon-shopping-cart:before {
+  content: "\ea13";
+}
+.icon-shuffle:before {
+  content: "\ea14";
+}
+.icon-signal:before {
+  content: "\ea15";
+}
+.icon-sound-mix:before {
+  content: "\ea16";
+}
+.icon-sports-club:before {
+  content: "\ea17";
+}
+.icon-spreadsheet:before {
+  content: "\ea18";
+}
+.icon-squared-cross:before {
+  content: "\ea19";
+}
+.icon-squared-minus:before {
+  content: "\ea1a";
+}
+.icon-squared-plus:before {
+  content: "\ea1b";
+}
+.icon-star-outlined:before {
+  content: "\ea1c";
+}
+.icon-star:before {
+  content: "\ea1d";
+}
+.icon-stopwatch:before {
+  content: "\ea1e";
+}
+.icon-suitcase:before {
+  content: "\ea1f";
+}
+.icon-swap:before {
+  content: "\ea20";
+}
+.icon-sweden:before {
+  content: "\ea21";
+}
+.icon-switch:before {
+  content: "\ea22";
+}
+.icon-tablet:before {
+  content: "\ea23";
+}
+.icon-tag:before {
+  content: "\ea24";
+}
+.icon-text-document-inverted:before {
+  content: "\ea25";
+}
+.icon-text-document:before {
+  content: "\ea26";
+}
+.icon-text:before {
+  content: "\ea27";
+}
+.icon-thermometer:before {
+  content: "\ea28";
+}
+.icon-thumbs-down:before {
+  content: "\ea29";
+}
+.icon-thumbs-up:before {
+  content: "\ea2a";
+}
+.icon-thunder-cloud:before {
+  content: "\ea2b";
+}
+.icon-ticket:before {
+  content: "\ea2c";
+}
+.icon-time-slot:before {
+  content: "\ea2d";
+}
+.icon-tools:before {
+  content: "\ea2e";
+}
+.icon-traffic-cone:before {
+  content: "\ea2f";
+}
+.icon-tree:before {
+  content: "\ea30";
+}
+.icon-trophy:before {
+  content: "\ea31";
+}
+.icon-tv:before {
+  content: "\ea32";
+}
+.icon-typing:before {
+  content: "\ea33";
+}
+.icon-unread:before {
+  content: "\ea34";
+}
+.icon-untag:before {
+  content: "\ea35";
+}
+.icon-user:before {
+  content: "\ea36";
+}
+.icon-users:before {
+  content: "\ea37";
+}
+.icon-v-card:before {
+  content: "\ea38";
+}
+.icon-video:before {
+  content: "\ea39";
+}
+.icon-vinyl:before {
+  content: "\ea3a";
+}
+.icon-voicemail:before {
+  content: "\ea3b";
+}
+.icon-wallet:before {
+  content: "\ea3c";
+}
+.icon-water:before {
+  content: "\ea3d";
+}
+.icon-500px-with-circle:before {
+  content: "\ea3e";
+}
+.icon-500px:before {
+  content: "\ea3f";
+}
+.icon-basecamp:before {
+  content: "\ea40";
+}
+.icon-behance:before {
+  content: "\ea41";
+}
+.icon-creative-cloud:before {
+  content: "\ea42";
+}
+.icon-dropbox:before {
+  content: "\ea43";
+}
+.icon-evernote:before {
+  content: "\ea44";
+}
+.icon-flattr:before {
+  content: "\ea45";
+}
+.icon-foursquare:before {
+  content: "\ea46";
+}
+.icon-google-drive:before {
+  content: "\ea47";
+}
+.icon-google-hangouts:before {
+  content: "\ea48";
+}
+.icon-grooveshark:before {
+  content: "\ea49";
+}
+.icon-icloud:before {
+  content: "\ea4a";
+}
+.icon-mixi:before {
+  content: "\ea4b";
+}
+.icon-onedrive:before {
+  content: "\ea4c";
+}
+.icon-paypal:before {
+  content: "\ea4d";
+}
+.icon-picasa:before {
+  content: "\ea4e";
+}
+.icon-qq:before {
+  content: "\ea4f";
+}
+.icon-rdio-with-circle:before {
+  content: "\ea50";
+}
+.icon-renren:before {
+  content: "\ea51";
+}
+.icon-scribd:before {
+  content: "\ea52";
+}
+.icon-sina-weibo:before {
+  content: "\ea53";
+}
+.icon-skype-with-circle:before {
+  content: "\ea54";
+}
+.icon-skype:before {
+  content: "\ea55";
+}
+.icon-slideshare:before {
+  content: "\ea56";
+}
+.icon-smashing:before {
+  content: "\ea57";
+}
+.icon-soundcloud:before {
+  content: "\ea58";
+}
+.icon-spotify-with-circle:before {
+  content: "\ea59";
+}
+.icon-spotify:before {
+  content: "\ea5a";
+}
+.icon-swarm:before {
+  content: "\ea5b";
+}
+.icon-vine-with-circle:before {
+  content: "\ea5c";
+}
+.icon-vine:before {
+  content: "\ea5d";
+}
+.icon-vk-alternitive:before {
+  content: "\ea5e";
+}
+.icon-vk-with-circle:before {
+  content: "\ea5f";
+}
+.icon-vk:before {
+  content: "\ea60";
+}
+.icon-xing-with-circle:before {
+  content: "\ea61";
+}
+.icon-xing:before {
+  content: "\ea62";
+}
+.icon-yelp:before {
+  content: "\ea63";
+}
+.icon-dribbble-with-circle:before {
+  content: "\ea64";
+}
+.icon-dribbble:before {
+  content: "\ea65";
+}
+.icon-facebook-with-circle:before {
+  content: "\ea66";
+}
+.icon-facebook:before {
+  content: "\ea67";
+}
+.icon-flickr-with-circle:before {
+  content: "\ea68";
+}
+.icon-flickr:before {
+  content: "\ea69";
+}
+.icon-github-with-circle:before {
+  content: "\ea6a";
+}
+.icon-github:before {
+  content: "\ea6b";
+}
+.icon-google-with-circle:before {
+  content: "\ea6c";
+}
+.icon-google:before {
+  content: "\ea6d";
+}
+.icon-instagram-with-circle:before {
+  content: "\ea6e";
+}
+.icon-instagram:before {
+  content: "\ea6f";
+}
+.icon-lastfm-with-circle:before {
+  content: "\ea70";
+}
+.icon-lastfm:before {
+  content: "\ea71";
+}
+.icon-linkedin-with-circle:before {
+  content: "\ea72";
+}
+.icon-linkedin:before {
+  content: "\ea73";
+}
+.icon-pinterest-with-circle:before {
+  content: "\ea74";
+}
+.icon-pinterest:before {
+  content: "\ea75";
+}
+.icon-rdio:before {
+  content: "\ea76";
+}
+.icon-stumbleupon-with-circle:before {
+  content: "\ea77";
+}
+.icon-stumbleupon:before {
+  content: "\ea78";
+}
+.icon-tumblr-with-circle:before {
+  content: "\ea79";
+}
+.icon-tumblr:before {
+  content: "\ea7a";
+}
+.icon-twitter-with-circle:before {
+  content: "\ea7b";
+}
+.icon-twitter:before {
+  content: "\ea7c";
+}
+.icon-vimeo-with-circle:before {
+  content: "\ea7d";
+}
+.icon-vimeo:before {
+  content: "\ea7e";
+}
+.icon-youtube-with-circle:before {
+  content: "\ea7f";
+}
+.icon-youtube:before {
+  content: "\ea80";
+}
+

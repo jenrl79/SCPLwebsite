@@ -1,0 +1,288 @@
+/*doc
+---
+title: Detailed Item Card
+name: 03-detailed-item-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<!-- For pattern lib view only -->
+<style>
+    .detail-item-availability {
+        margin-bottom: 18em !important;
+    }
+</style>
+<!-- Don't copy this -->
+
+
+<div class="container">
+    <div class="detail-item-card">  <!--Item Card Start -->
+        <div class="row">
+            <div class="col-md-3">
+                <span class="icon-chevron-small-left"></span>Go Back to Results</a>
+                <div class="detail-item-image"><img src="http://placehold.it/250x340"></div>
+            </div>
+            <div class="col-md-8">
+                <div class="detail-item-overview">
+                    <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+                    <h4 class="author">Sir Author</h4>
+                    <p class="call-number">BT Smith, Logan</p>
+                    <button type="button" class="btn btn-primary"><span class="icon-bookmark" aria-hidden="true"></span>Hold</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile"></span><a href="#">Text me the call number</a></button>
+                    <button type="button" class="btn btn-primary"><span class="icon-bookshelf-plus"></span><a href="#">Add to bookshelf</a></button>
+                    <div class="line-break col-md-12 col-sm-12 col-xs-12"></div>
+                    <h6>Overview</h6>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.</p>
+                    <a href="#" class="more-details">(More)</a>
+                    <br>
+                    <div class="line-break"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="detail-item-buttons">
+                    <p>This item is also available as:</p>
+                    <ul>
+                        <li><button type="button" class="btn btn-pill">E-Book</button></li>
+                        <li><button type="button" class="btn btn-pill">E-Audio Book</button></li>
+                        <li><button type="button" class="btn btn-pill">CD Audio Book</button></li>
+                    </ul>
+                    <p>SHARE</p>
+                    <ul>
+                        <li><span class="icon-facebook"></span></li>
+                        <li><span class="icon-instagram"></span></li>
+                        <li><span class="icon-twitter"></span></li>
+                    </ul>
+                </div>
+                <div class="line-break hidden-lg hidden-md hidden-sm"></div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="detail-item-details">
+                    <p>Details</p>       
+                    <ul>
+                        <li class="format">book</li>
+                        <li class="edition">3rd</li>
+                        <li class="publisher">New York: Thorndike Press</li>
+                        <li class="publishing-date">2013</li>
+                        <li class="isbn">
+                            <p>123456789(hardback)</p>
+                            <p>123456789(hardback)</p>
+                            <p>123456789</p>
+                        </li>
+                        <li class="local-items">10</li>
+                        <li class="available-items">7</li>
+                    </ul>
+                    <div class="line-break hidden-lg hidden-md hidden-sm"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="detail-item-availability">
+                    <p>Availability</p>
+                    <ul class="col-md-6">
+                        <li><mark><a href="#"><span class="availability-tag">3</span>Library Branch</a></mark></li>
+                        <li><mark><a href="#"><span class="availability-tag">8</span>Library Branch</a></mark></li>
+                        <li><mark><a href="#"><span class="availability-tag">4</span>Library Branch</a></mark></li>
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                        <li><mark><a href="#"><span class="availability-tag">3</span>Library Branch</a></mark></li>
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!--detailed item card end-->
+</div>
+
+    
+```
+
+*/
+
+#scpl {
+    .detail-item-card {
+        position: relative;
+        color: palette(gray,x-dark);
+        -webkit-font-smoothing: antialiased;
+        padding: 10px;
+        text-align: center;
+
+        .detail-item-overview {
+
+            button {
+                margin: 5px 0;
+                background-color: palette(gray,x-light);
+                border: none;
+                
+                a {
+                    color: palette(blue,drkhover);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                
+                span {
+                    color: palette(blue,drkhover);
+                    font-size: 16px;
+                }
+                
+                &:first-of-type {
+                    color: palette(gray,x-light);
+                    background-color: palette(blue,light);
+                    &:hover {
+                        background-color: palette(blue,hover);
+                    }
+                    span {
+                        color: palette(gray,x-light);
+                    }
+                }
+            }
+
+            .description {
+                margin: 15px 0;
+            }
+
+            .item-title {
+                margin: 0;
+                color: palette(gray,x-dark);
+                font-weight: bold;
+            }
+
+            .author {
+                margin: 10px 0;
+
+                &:before {
+                    content: 'by ';
+                }
+                
+            }
+
+            .publisher:before {
+                content: 'Publisher, Date: ';
+            }
+
+            .call-number:before {
+                content: 'Call Number: ';
+            }
+
+            h6 {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            .availability:before {
+                content: 'Availability: ';
+            }
+
+            .more-details {
+                display: inline-block;
+                float: right;
+                color: palette(blue,light);
+            }
+            @include breakpoint(laptop) {
+                text-align: left;
+            }
+        }
+
+        .detail-item-buttons {
+            text-align: center;
+
+            li {
+                display: inline-block;
+            }
+            span {
+                font-size: 20px;
+                text-align: center;
+                padding: 0 10px;
+            }
+            @include breakpoint(laptop) {
+                text-align: left;
+            }
+        }
+
+        .detail-item-details {
+            text-align: left;
+            li {
+                margin: 10px 0;
+            }
+            
+            .format:before {
+                content: 'Format: ';
+            }
+            .edition:before {
+                content: 'Edition: ';
+            }
+            .publisher:before {
+                content: 'Publisher: ';
+            }
+            .publishing-date:before {
+                content: 'Publishing Date: ';
+            }
+            .isbn {
+                p {
+                    margin: 0 40px;
+                    text-transform: capitalize;
+                }
+                &:before {
+                    content: 'ISBN: ';
+                }
+            }
+            .local-items:before {
+                content: 'Local Items: ';
+            }
+            .available-items:before {
+                content: 'Available Items: ';
+            }
+            .line-break-vert {
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 14em;
+            }
+        }
+
+        .detail-item-availability {
+            ul {
+                li {
+                    mark {
+                        background-color: transparent;
+                        padding: 0;
+                        span {
+                            background-color: palette(blue,light);
+                        }
+                        a {
+                            color: palette(blue,light);
+                        }
+                    }
+                    a {
+                        color: palette(gray,dark);
+                    }
+                }
+            }
+            @include breakpoint(laptop) {
+                text-align: left;
+            }
+        }
+
+        .detail-item-buttons,
+        .detail-item-details,
+        .detail-item-availability {
+            p {
+                margin: 10px 0;
+            }
+        }
+        .detail-item-details,
+        .detail-item-availability {
+            p {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

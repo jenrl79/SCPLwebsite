@@ -1,0 +1,85 @@
+/*doc
+---
+title: Event Card
+name: event-card
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="event-card">
+	<h4 alt="upcoming events and programs">Upcoming Events & Programs</h4>
+	<div class="item-content">
+		<p class="item-status">Ongoing</p>
+	    <h6 class="item-date">June 1 - August 30</h6>
+	    <p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+	    <p class="item-location">Library</p>
+	    <h6><a href="#" class="item-details">See more details and locations</a></h6>
+	</div>
+	<div class="line-break"></div>
+	<div class="item-content">
+		<p class="item-status">Ongoing</p>
+	    <h6 class="item-date">June 1 - August 30</h6>
+	    <p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+	    <p class="item-location">Library</p>
+	    <h6><a href="#" class="item-details">See more details and locations</a></h6>
+	</div>
+	<div class="line-break"></div>
+	<div class="item-content">
+		<p class="item-status">Ongoing</p>
+	    <h6 class="item-date">June 1 - August 30</h6>
+	    <p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+	    <p class="item-location">Library</p>
+	    <h6><a href="#" class="item-details">See more details and locations</a></h6>
+	</div>
+	<div class="line-break"></div>
+	<div class="item-content">
+		<p class="item-status">Ongoing</p>
+	    <h6 class="item-date">June 1 - August 30</h6>
+	    <p class="item-title">Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor </p>
+	    <p class="item-location">Library</p>
+	    <h6><a href="#" class="item-details">See more details and locations</a></h6>
+	</div>
+	<a href="#" class="event-all-events">All events and programs <span class="icon-circle-right-chevron"></span></a>
+</div>
+```
+
+*/
+
+#scpl {
+	.event-card {
+		background-color: #F5F5F5;
+		line-height: 1;
+		display: block;
+		padding: 1em 2em 8em;
+		margin: 0px 2em 0 0;
+		h4 {
+			color: palette(blue,dark);
+		}
+		.item-content {
+			.item-status  {
+				&:after {
+					content: ' | ';
+				}
+			}
+			.item-content {
+				a {
+					margin-bottom: 2em;
+				}
+			}
+		}
+		
+		.item-date, .item-status {
+			text-transform: uppercase;
+			display: inline-block;
+		}
+		.item-date, .item-title {
+			font-weight: bold;
+		}
+
+		.item-status,
+		.item-details,
+		.event-all-events {
+			color: palette(blue,hover);
+		}
+	}
+}

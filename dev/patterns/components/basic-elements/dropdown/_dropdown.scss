@@ -1,0 +1,39 @@
+/*doc
+---
+title: Dropdown
+name: dropdown
+category: Basic Elements-Dropdown
+---
+
+```html_example
+<div class="dropdown">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		Dropdown
+		<span class="icon-triangle-down"></span>
+	</button>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		<li><a href="#">Action</a></li>
+		<li><a href="#">Another action</a></li>
+		<li><a href="#">Something else here</a></li>
+	</ul>
+</div>
+```
+
+*/
+
+#scpl .dropdown {
+	text-align: center;
+	display: inline-block;
+	@include breakpoint(phablet) {
+		text-align: left;
+	}
+
+	.btn {
+		color: palette(gray,dark);
+		border: none;
+		text-transform: capitalize;
+		font-size: 14px;
+		padding: 7px 0;
+	}
+
+}

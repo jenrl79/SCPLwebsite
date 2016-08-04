@@ -1,0 +1,24 @@
+/*doc
+---
+title: Copyright Banner
+name: copyright-banner
+category: Basic Elements-Banners
+---
+
+```html_example
+<div class="copyright-banner">
+    <p>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</p>
+</div>
+```
+
+*/
+
+#scpl {
+    .copyright-banner {
+        text-align: center;
+        p {
+        	font-size: 10px;
+        	padding: 5em 5em 0 5em;
+        }
+    }
+}

@@ -1,0 +1,253 @@
+/*doc
+---
+title: Item Card
+name: 02-item-card
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="card">
+    <div class="item-type"><span>Book</span></div>
+    <div class="item-image"><img src="http://placehold.it/120x160"></div>
+    <div class="item-content">
+        <h4 class="item-title">Lorem Ipsum Sit Dolor</h4>
+        <p class="author">Sir Author</p>
+        <p class="call-number">BT Smith, Logan</p>
+        <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+        <p class="publish-date">2016</p>
+        <p class="availability">10 (of 10)</p>
+        <a href="#" class="more-details">See more details and locations</a>
+    </div>
+    <div class="item-buttons">
+        <button><span class="icon-mobile" aria-hidden="true"></span></button>
+        <button class="bookshelf-add">
+          <span class="icon-bookshelf-plus" aria-hidden="true">
+            <span></span>
+          </span>
+        </button>
+    </div>
+    <button type="button" class="btn btn-primary card-action"><span class="icon-bookmark" aria-hidden="true"></span>Hold</button>
+    <a href="#" class="send-text-mobile">Text to Mobile</a>
+    <a href="#" class="add-to-shelf-mobile">Add to Bookshelf</a>
+</div>
+```
+
+```js_example
+$('.bookshelf-add').click(function(){
+  $(this).find('>span').toggleClass('icon-check');
+  $(this).find('>span').toggleClass('icon-bookshelf-plus');
+});
+```
+
+*/
+
+#scpl {
+
+  .card,
+  .card-summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    line-height: 1;
+    position: relative;
+    margin: 2em 0;
+    color: palette(gray,dark);
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid palette(gray,mid);
+    padding: 20px;
+    max-height: 370px;
+
+    .item-type {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      display: block;
+
+      span {
+        display: inline-block;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        min-width: 150px;
+        text-align: center;
+        background-color: palette(blue,drkhover);
+        color: #fff;
+      }
+
+      ~ div {
+        margin-top: 20px;
+      }
+
+    }
+
+
+    .item-image {
+      min-width: 150px;
+      margin-right: 20px;
+      display: none;
+      @include breakpoint(phablet) {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    .item-content {
+      padding-bottom: 120px;
+      @include breakpoint(phablet) {
+        padding-bottom: 0;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      .description {
+        margin: 15px 0;
+      }
+
+      .item-title {
+        margin: 0 0 5px 0;
+        color: palette(blue,light);
+        font-weight: bold;
+      }
+
+      .author:before {
+        content: 'by ';
+      }
+
+      .publish-date:before {
+        content: 'Publish Date: ';
+      }
+
+      .call-number:before {
+        content: 'Call Number: ';
+      }
+
+      .availability:before {
+        content: 'Availability: ';
+      }
+
+      .more-details {
+        display: inline-block;
+        margin-top: 10px;
+        color: palette(blue,light);
+      }
+
+    }
+
+    .item-buttons {
+      display: none;
+      position: relative;
+      right: -20px;
+      top: -40px;
+      width: 50px;
+      @include breakpoint(phablet) {
+        display: block;
+
+      .bookshelf-subtract {
+        .icon-bookshelf {
+          span {
+            width: 0;
+          }
+        }
+      }
+        
+        
+      }
+
+      button {
+        border-left: 1px solid palette(gray,mid);
+        border-bottom: 1px solid palette(gray,mid);
+        border-right: none;
+        border-top: none;
+        border-radius: 2px;
+        background-color: transparent;
+        color: palette(blue,drkhover);
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+
+        &:not(:first-of-type) {
+          position: relative;
+          top: -2px;
+          padding-top: 2px;
+        }
+
+      }
+
+    }
+
+    .card-action {
+      position: absolute;
+      bottom: 30px;
+      right: 50%;
+      transform: translate(50%);
+      @include breakpoint(phablet) {
+        transform: translate(0);
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    a.send-text-mobile {
+      position: absolute;
+      bottom: 40px;
+      right: 50%;
+      transform: translate(50%);
+      @include breakpoint(phablet) {
+        display: none;
+      }
+    }
+
+    a.add-to-shelf-mobile {
+      position: absolute;
+      bottom: 20px;
+      right: 50%;
+      transform: translate(50%);
+      @include breakpoint(phablet) {
+        display: none;
+      }
+    }
+
+    &-summary {
+      display: inline-flex;
+
+      .item-content {
+        display: flex;
+        align-items: center;
+
+        > div:not(:last-of-type) {
+          border-right: 1px solid palette(gray, mid);
+          padding-right: 20px;
+          margin-right: 20px;
+        }
+
+        a {
+          font-size: 12px;
+
+          [class^="icon"] {
+            vertical-align: text-bottom;
+            font-size: 14px;
+          }
+
+        }
+
+        .remove {
+
+          span {
+            font-size: 30px;
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+}

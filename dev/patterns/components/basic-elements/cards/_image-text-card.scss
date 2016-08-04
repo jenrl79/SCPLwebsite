@@ -1,0 +1,67 @@
+/*doc
+---
+title: Image Text Card
+name: image-text-card
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="image-text-card">
+    <div class="image-text-source"></div>
+    <div class="image-text-content">    
+        <h4 class="image-text-title"><a href="#">Lorem Ipsum Sit Dolor</a></h4>
+        <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+        <a href="#" class="more-details">See details</a>
+    </div>
+</div>
+ 
+
+```
+
+*/
+
+#scpl {
+    .image-text-card {
+        display: inline-block;
+        position: relative;
+        color: palette(gray,x-dark);
+        -webkit-font-smoothing: antialiased;
+        border: 1px solid palette(gray,mid);
+        border-radius: 2px;
+        max-height: 370px;
+        margin: 1em 0;
+
+        .image-text-source {
+            height: 120px;
+            background: palette(gray,light);
+            // replace all of above with image specifications
+        }
+
+        .image-text-content {
+            padding: 2em;
+            letter-spacing: normal;
+
+            h4 {
+                font-weight: bold;
+                a {
+                    float: none;
+                }
+            }
+
+            .image-text-title {
+                color: palette(blue,hover);
+            }
+
+            .description {
+                max-height: 100px;
+                overflow: hidden;
+            }
+ 
+            a {
+                color: palette(blue,hover);
+                float: right;
+                margin: 2em 0;
+            }
+        }
+    }
+}

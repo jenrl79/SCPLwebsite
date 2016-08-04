@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SCPL Research Databases</title>
+
+    <!-- NEED THESE STYLESHEETS -->
+    <link rel="stylesheet" href="../assets/css/patterns.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body id="scpl">
+
+<!-- Navigation -->
+  <nav class="top-nav">
+      <a href="./homepage.html" class="logo"></a>
+      <div class="quick-links">
+          <a href="./research-db-page.html" class="active"><span class="icon-research"></span>Research</a>
+          <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+          <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+      </div>
+      <div class="sign-in">
+          <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf" aria-hidden="true"></span>Bookshelf (5)</button></a>
+          <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+      </div>
+      <a class="mobile-nav-trigger" role="button" data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav">Menu <span class="icon-menu"></span></a>
+      <div class="mobile-nav collapse" id="mobile-nav">
+          <div class="sign-in">
+              <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-shopping-cart" aria-hidden="true"></span>Bookshelf (5)</button></a>
+              <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+          </div>
+          <div class="quick-links">
+              <a href="./research-db-page.html" class="active"><span class="icon-research"></span>Research</a>
+              <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+              <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+          </div>
+          <div class="menu-items">
+              <a href="./homepage.html" alt="home">home</a>
+              <a href="./locations-page.html" alt="locations">locations</a>
+              <a href="./events-page.html" alt="events">events</a>
+              <a href="./using-the-library-page.html" alt="using the library">using the library</a>
+              <a href="./about-us-page.html" alt="about us">about us</a>
+              <a href="./contact-page.html" alt="contact">contact</a>
+          </div>
+          <div class="social">
+              <a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a>
+          </div>
+      </div>
+  </nav>
+  <div class="jumbotron"> <!--jumbotron begin-->
+    	<div class="container">
+  	    <div class="col-md-8 col-md-offset-2">
+  	    	<h3>Research Databases</h3>
+  		    <div class="input-group">
+  		      <input type="text" class="form-control" placeholder="Search database titles...">
+  		      <span class="input-group-btn">
+  		        <button type="button" class="btn btn-secondary btn-lg">Go!</button>
+  		      </span>
+  		    </div>
+  		    <h5>The database links will take you to a new website.</h5>
+  	    </div>
+    	</div>
+  </div>
+
+  <div class="container">
+  	<div class="col-md-3 hidden-sm hidden-xs">
+  		<!-- Search Filter Component -->
+  		<h4 style="color:#82878D;">FILTER SEARCH</h4>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-location" aria-expanded="false" aria-controls="search-location">
+              Age Group
+          </a>
+          <div class="collapse search-filter-content" id="search-location">
+              <ul>
+                  <li>
+                      <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox1">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox2" name="checkbox" type="checkbox"> 
+                      <label for="checkbox2">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox3" name="checkbox" type="checkbox"> 
+                      <label for="checkbox3">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox4" name="checkbox" type="checkbox"> 
+                      <label for="checkbox4">Enter subject here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-format" aria-expanded="false" aria-controls="search-format">
+              Subject
+          </a>
+          <div class="collapse search-filter-content" id="search-format">
+              <ul>
+                  <li>
+                      <input id="checkbox5" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox5">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox6" name="checkbox" type="checkbox"> 
+                      <label for="checkbox6">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox7" name="checkbox" type="checkbox"> 
+                      <label for="checkbox7">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox8" name="checkbox" type="checkbox"> 
+                      <label for="checkbox8">Enter subject here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-audience" aria-expanded="false" aria-controls="search-audience">
+              Language
+          </a>
+          <div class="collapse search-filter-content" id="search-audience">
+              <ul>
+                  <li>
+                      <input id="checkbox9" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox9">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox10" name="checkbox" type="checkbox"> 
+                      <label for="checkbox10">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox11" name="checkbox" type="checkbox"> 
+                      <label for="checkbox11">Enter subject here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox12" name="checkbox" type="checkbox"> 
+                      <label for="checkbox12">Enter subject here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </div> <!--search filter ends -->
+
+  	<!-- Dropdown & Pagination -->
+  	<div class="col-md-9">
+  		<div class="sort-pagination">
+  			<!--Dropdown -->
+  			<div class="dropdown">
+  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  					Sort A-Z
+  					<span class="icon-triangle-down"></span>
+  				</button>
+  				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  					<li><a href="#">Action</a></li>
+  					<li><a href="#">Another action</a></li>
+  					<li><a href="#">Something else here</a></li>
+  					<li role="separator" class="divider"></li>
+  					<li><a href="#">Separated link</a></li>
+  				</ul>
+  			</div>
+
+        <p class="results">
+            <span class="results-num">100</span> Results
+        </p>
+
+  			<!-- Pagination -->
+  			<ul class="pagination">
+  				<li>
+  					<a href="#" aria-label="Previous">
+  						<span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+  					</a>
+  				</li>
+  				<li><a href="#">1</a></li>
+  				<li><a href="#">2</a></li>
+  				<li><a href="#">3</a></li>
+  				<li><a href="#">4</a></li>
+  				<li><a href="#">5</a></li>
+  				<li>
+  					<a href="#" aria-label="Next">
+  						<span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+
+
+  		<div class="line-break"></div>
+
+  		<!-- Tags -->
+  		<ul class="tags">
+  		    <li class="btn btn-secondary btn-sm">Adults
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		    <li class="btn btn-secondary btn-sm">Trees
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		    <li class="btn btn-secondary btn-sm">Stuff
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		</ul>
+
+  		<!-- Cards -->
+      <div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  		<div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <span class="icon-lock-corner"></span>
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div><div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <span class="icon-lock-corner"></span>
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div><div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div><div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div><div class="col-md-6 col-sm-6">
+        <div class="basic-card">
+          <div class="item-content">
+              <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="database-password"></p>
+              <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+          </div>
+          <div class="item-genre">
+              <ul>
+              <li>Adults</li>
+              <li>Geneaology</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  	</div>
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright-banner">
+      <p>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</p>
+  </div>
+	<nav class="navbar navbar-fixed-bottom">
+      <div class="container"> 
+          <div class="row">
+              <ul class="navbar-bottom-items">
+                  <li><a href="./homepage.html" alt="home">home</a></li>
+                  <li><a href="./locations-page.html" alt="locations">locations</a></li>
+                  <li><a href="./events-page.html" alt="events">events</a></li>
+                  <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+                  <li><a href="./about-us-page.html" alt="about us">about us</a></li>
+                  <li><a href="./contact-page.html" alt="contact">contact</a></li>
+              </ul>
+              <div class="pull-right">
+                  <ul class="navbar-bottom-social">
+                      <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+                      <li><a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav> <!-- footer ends -->
+
+  <script type="text/javascript" src="/vendor_assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

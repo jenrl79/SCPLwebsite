@@ -1,0 +1,72 @@
+/*doc
+---
+title: Contact Banner
+name: contact-banner
+category: Basic Elements-Banners
+---
+
+```html_example
+
+<div class="contact-banner">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="contact-text">
+				<h3>Get in touch with us</h3>
+				<h4>If you have questions or comments, we'd love to hear from you.</h4>
+			</div>
+		</div>
+		<ul class="contact-info">
+			<li class="contact-contact">Contact <span class="contact-detail">Jane Doe</span></li>
+			<li class="contact-phone">Phone <span class="contact-detail">(555) 555-5555</span></li>
+			<li class="contact-department">Department <span class="contact-detail">#1234</span></li>
+			<li class="contact-address">Address <span class="contact-detail">1234 Spartanburg Lane, Spartanburg, SC 00000</span></li>
+		</ul>
+	</div>
+	<div class="line-break"></div>
+	<p><small>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</small></p>
+</div>
+
+
+
+```
+
+*/
+
+#scpl {
+	.contact-banner {
+		background-color: palette(gray,light);
+		padding: 2em;
+		margin: 2em 0 0 0;
+
+		.contact-text, p {
+			text-align: center;
+		}
+		.contact-info {
+			text-align: center;
+			margin: 2em;
+
+			li {
+				display: block;
+				font-size: 16px;
+				font-weight: 300;
+				margin: 1em 0;
+				@include breakpoint(phablet) {
+					text-align: left;
+					display: inline-block;
+					margin-left: 2em;
+				}
+			}
+			
+			.contact-detail {
+				display: block;
+				text-decoration: none;
+			}
+		}
+		h3, h4 {
+			margin: 1em;
+		}
+		p {
+			margin-top: 1em;
+		}
+	}
+}

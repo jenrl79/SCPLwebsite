@@ -1,0 +1,68 @@
+/*doc
+---
+title: Image Card
+name: image-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<div class="image-card">
+    <div class="image-source"></div>
+    <div class="image-content">    
+        <a href="#">
+            <h4>The Gettysburg Exhibit <span class="icon-chevron-right"></span></h4>
+        </a>
+    </div>
+</div>
+
+```
+
+*/
+
+#scpl {
+    .image-card {
+        position: relative;
+        border: 1px solid palette(gray,mid);
+        border-radius: 2px;
+        margin: 1em 0;
+        .image-source {
+            height: 370px;
+            background-color: palette(gray,light);
+        }
+
+        .image-content {
+            position: absolute;
+            background-color: palette(blue,dark);
+            opacity: .8;
+            bottom: 0em;
+            padding: 2em;
+            width: 100%;
+
+            a {
+                color: palette(gray,x-light);
+                text-decoration: none;
+
+                span {
+                    font-size: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    #allages .image-content {
+        background-color: #C55E1F;
+    }
+
+    #teens .image-content {
+        background-color: palette(blue,x-light);
+    }
+
+    #adult .image-content {
+        background-color: palette(blue,dark);   
+    }
+
+    #kids .image-content {
+        background-color: palette(green,primary);
+    }
+}

@@ -1,0 +1,90 @@
+/*doc
+---
+title: Reverse Image Card
+name: reverse-image-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<div class="row reverse-img-card">
+    <div class="col-md-8 col-sm-6">
+        <div class="reverse-img-overview">
+            <h3>Lorem Ipsum</h3>
+            <h5>Lorem Ipsum</h5>
+            <div class="line-break"></div>
+        </div>
+        <div class="row reverse-img-details">
+            <div class="col-sm-6">
+                <div class="details-section">
+                  <h4>Location</h4>
+                  <ul>
+                      <li>525 Spartanburg St, Spartanburg, SC 12345</li>
+                      <li><a href="#">Get Directions <span class="icon-circle-right-chevron"></span></a></li>
+                  </ul>
+                </div>
+                <div class="details-section">
+                  <h4>Contact</h4>
+                  <ul>
+                      <li>John Doe</li>
+                      <li>(555) 555-5555</li>
+                      <li>library@infodepot.org</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="location-detail-availability">
+                    <h4>Hours</h4>
+                    <ul class="location-hours">
+                        <li class="location-mon">Monday:<span class="location-hr">10am - 5pm</span></li>
+                        <li class="location-tues">Tuesday:<span class="location-hr">10am - 5pm</span></li>
+                        <li class="location-weds">Wednesday:<span class="location-hr">10am - 5pm</span></li>
+                        <li class="location-thurs">Thursday:<span class="location-hr">10am - 5pm</span></li>
+                        <li class="location-fri">Friday:<span class="location-hr">10am - 5pm</span></li>
+                        <li class="location-sat">Saturday:<span class="location-hr">Closed</span></li>
+                        <li class="location-sun">Sunday:<span class="location-hr">Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="reverse-img-section">
+            <div class="reverse-img-image"><img src="http://placehold.it/350x350"></div>
+        </div>
+    </div>
+</div>
+    
+```
+
+*/
+
+#scpl {
+    .reverse-img-card {
+        margin-top: 2em;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            text-align: left;
+        }
+        .reverse-img-details {
+
+            [class^='col']:first-of-type {
+                border: none;
+
+                @include breakpoint(tablet) {
+                    border-right: 1px solid palette(gray, mid);
+                }
+            }
+            h4 {
+                text-transform: uppercase;
+                margin: 0 0 10px;
+            }
+
+            .details-section {
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,82 @@
+/*doc
+---
+title: Featured Cards
+name: featured-cards
+category: Basic Elements-Cards
+---
+
+```html_example
+<div class="featured-card">
+	<div class="item-content">
+	    <a><h5 class="item-title">Lorem Ipsum Sit Dolor</h5></a>
+	    <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. </p>
+	    <p class="database-password"></p>
+	    <a href="#" class="more-details">Go to site <span class="icon-circle-right-chevron" aria-hidden="true"></span></a>
+	</div>
+</div>
+
+```
+
+*/
+
+#scpl {
+	.featured-card {
+		background-color: palette(gray,x-light);
+		margin: 1em 0;
+		-webkit-font-smoothing: antialiased;
+		border-radius: 3px;
+		border: 1px solid palette(gray,light);
+		padding: 0;
+		font-size: 12px;
+		max-height: 155px;
+
+		.item-content {
+			padding: 20px;
+			
+			a {
+				color: palette(blue,hover);
+			}
+			h5 {
+				margin: 0 0 10px 0;
+				font-weight: bold;
+				padding: 0;
+
+			}
+
+			.item-title {
+				color: palette(gray,x-dark);
+			}
+			
+			.description {
+				max-height: 51px;
+    			overflow: hidden;
+			}
+
+			.database-password {
+				margin: 20px 0;
+
+				&:before {
+					content: ' ';
+					display: block;
+				}
+			}
+
+			a {
+				font-weight: bold;
+				color: palette(blue,hover);
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.line-break-vert:after {
+	    content: '';
+	    width: 0;
+	    height: 60%;
+	    position: absolute;
+	    border: 1px solid #fff;
+	    top: 7em;
+		left: 41em;
+	}
+}

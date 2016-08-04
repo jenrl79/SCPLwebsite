@@ -1,0 +1,78 @@
+/*doc
+---
+title: Location Card
+name: location-card
+category: Basic Elements-Cards
+---
+
+Location cards for each individual library stating the address, phone, hours of operation and directions to each individual library.
+
+```html_example
+
+<div class="location-card">
+	<div class="location-marker">1</div>
+	<div class="location-title">
+		<a href="#">Library Location</a>
+	</div>
+	<p class="location-address">525 Spartanburg St, Spartanburg, SC 12345</p>
+	<p class="location-phone">(555) 555-5555</p>
+	<ul class="location-hours">
+		<li class="location-mon">Monday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-tues">Tuesday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-weds">Wednesday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-thurs">Thursday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-fri">Friday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-sat">Saturday:<span class="location-hr">9am - 8pm</span></li>
+		<li class="location-sun">Sunday:<span class="location-hr">Closed</span></li>
+	</ul>
+	<div class="line-break"></div>
+	<div class="location-directions">
+		<a href="#">Get Directions <span class="icon-circle-right-chevron"></span></a>
+	</div>
+</div>
+
+
+```
+
+*/
+
+#scpl {
+	.location-card {
+		border: 1px solid palette(gray,mid);
+		border-radius: 2px;
+		padding: 1em;
+		margin: 1em .5em;
+		position: relative;
+		a {
+			color: palette(blue,light);
+		}
+		.location-marker {
+			background-color: palette(blue,light);
+			border: 1px solid palette(blue,light);
+			color: palette(gray,x-light);
+			padding: 10px 15px;
+			position: absolute;
+			right: -1px;
+			top: -1px;
+		}
+		.location-title {
+			font-weight: bold;
+			margin-bottom: 1em;
+		}
+		.location-hours {
+				.location-hr {
+					float: right;
+					@include breakpoint(laptop) {
+							float: right;
+					}
+				}
+		}
+		.location-directions {
+			margin-top: 1em;
+			span {
+				color: palette(blue,light);
+				font-size: 16px;
+			}
+		}
+	}
+}

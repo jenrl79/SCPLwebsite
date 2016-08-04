@@ -1,0 +1,53 @@
+/*doc
+---
+title: Text Card
+name: text-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<div class="text-card">
+    <div class="text-card-content">    
+        <h4 class="text-card-title">Lorem Ipsum Sit Dolor</h4>
+        <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound.Assertively simplify synergistic potentialities with economically sound...</p>
+        <a href="#" class="more-details">See details</a>
+    </div>
+</div>
+
+```
+
+*/
+
+#scpl {
+    .text-card {
+        display: inline-block;
+        color: palette(gray,x-dark);
+        -webkit-font-smoothing: antialiased;
+        border: 1px solid palette(gray,mid);
+        border-radius: 2px;
+        margin: 1em 0;
+        padding: 1.55em 3em;
+        max-height: 170px;
+
+        .text-card-content {
+            letter-spacing: normal;
+
+            h4 {
+                font-weight: bold;
+            }
+
+            .text-card-title {
+                color: palette(blue,hover);
+            }
+            .description {
+                overflow: hidden;
+                max-height: 60px;
+            }
+            a {
+                color: palette(blue,hover);
+                float: right;
+            }
+        }
+    }
+}

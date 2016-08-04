@@ -1,0 +1,36 @@
+// -------------------------------------------------
+// COLORS
+// -------------------------------------------------
+
+$palettes: (
+	blue: (
+		x-light: #67C2DF,
+		light: #00ADEF,
+		mid: #596E89,
+		dark: #006990,
+		deep: #003267,
+		hover: #0097CC,
+		drkhover: #014B66
+	),
+	orange: (
+		primary: #F38724,
+		mid: #E56643,
+		hover: #DE7A1C
+	),
+	red: (
+		secondary: #F1552F
+	),
+	green: (
+		primary: #6EC038
+	),
+	gray: (
+		x-light: #FFF, 
+		light: #E5E5E5,
+		mid: #C2C2C2,
+		regular: #999999,
+		dark: #82878D,
+		x-dark: #000
+	)
+);
+
+// palette(gray,x-light) is white

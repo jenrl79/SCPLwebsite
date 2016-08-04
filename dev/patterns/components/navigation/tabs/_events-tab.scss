@@ -1,0 +1,74 @@
+/*doc
+---
+title: Events Tab
+name: events-tab
+category: Navigation-Tabs
+---
+
+```html_example
+
+<!-- Events nav tab -->
+<div class="events-tab">
+    <h5>Upcoming Events</h5>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#adult-events" aria-controls="adults" role="tab" data-toggle="tab">Adults</a></li>
+        <li role="presentation"><a href="#teen-events" aria-controls="teens" role="teens" data-toggle="tab">Teens</a></li>
+        <li role="presentation"><a href="#kid-events" aria-controls="kids" role="kids" data-toggle="tab">Kids</a></li>
+        <li role="presentation"><a href="#kid-events" aria-controls="kids" role="kids" data-toggle="tab">Storytimes</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="adult">Adult content</div>
+        <div role="tabpanel" class="tab-pane" id="teens">Teen content</div>
+        <div role="tabpanel" class="tab-pane" id="kids">Kid content</div>
+        <div role="tabpanel" class="tab-pane" id="storytime">Storytime content</div>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+    .events-tab {
+        text-align: left;
+        h5 {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 2em;
+        }
+        .nav-tabs {
+            margin-bottom: 3em;
+            border-bottom: 0;
+            h5 {
+                font-size: 16px;
+                margin-right: 2em;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+            li {
+                text-transform: uppercase;
+                text-align: center;
+                float: none;
+                display: inline-block;
+                margin: 0 2em;
+                a {
+                    color: palette(gray,x-dark);
+                    border: none;
+                }
+                @include breakpoint(mobileonly) {
+                    display: block;
+                }
+            }
+            li.active {
+                a {
+                    color: palette(gray,x-dark);
+                    background-color: palette(gray,mid);
+                    border-radius: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

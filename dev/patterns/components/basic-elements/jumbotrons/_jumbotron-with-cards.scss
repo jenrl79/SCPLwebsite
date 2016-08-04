@@ -1,0 +1,161 @@
+/*doc
+---
+title: Cardotron
+name: 01-Jumbotron With Cards
+category: Jumbotrons-Cardotron
+---
+
+```html_example
+<div class="cardotron">
+  <div class="cardotron-content">
+    <h1>Welcome to the Library</h1>
+    <div class="subhead"><p>What are you looking for?</p></div>
+    <div class="card-small">
+      <span class="icon-research"></span>
+      <p>I'm looking for scholarly journals, articles, or research papers.</p>
+      <a href="./research-db-page.html"><button type="button" class="btn btn-secondary">Go to Research</button></a>
+    </div>
+    <div class="card-large">
+      <span class="icon-open-book"></span>
+      <p>I'm looking for books, ebooks, audiobooks, or other items from the library catalog.</p>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search the catalog">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary">Go!</button>
+                </span>
+      </div>
+      <a href="#" class="sub-link">Browse some suggestions</a>
+    </div>
+    <div class="card-small">
+      <span class="icon-resources"></span>
+      <p>I'm looking for scholarly journals, articles, or research papers.</p>
+      <a href="./resource-page.html"><button type="button" class="btn btn-secondary">Go to Resources</button></a>
+    </div>
+  </div>
+</div>
+```
+*/
+
+#scpl .cardotron {
+  background-image: url(../img/hero-image.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3em;
+  padding: 0 10px;
+  @include breakpoint(tablet) {
+    padding: 0;
+  }
+
+  .cardotron-content {
+    max-width: 1170px;
+    padding: 5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    font-size: 45px;
+  }
+
+  .subhead {
+    flex-basis: 100%;
+    text-align: center;
+
+    p {
+      display: inline-block;
+      text-align: center;
+      color: palette(gray, x-light);
+      font-size: 24px;
+      border-radius: 25px;
+    }
+
+  }
+
+  .card-small {
+
+    .btn-secondary {
+      background: palette(gray,x-light);
+      border: 2px solid palette(orange,primary);
+      color: palette(orange, primary);
+    }
+
+  }
+
+  .card-small, .card-large {
+    background-color: palette(gray,x-light);
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: -30px;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    border-radius: 3px;
+    @include breakpoint(tablet) {
+      width: 29%;
+    }
+
+    [class^="icon"] {
+      font-size: 40px;
+      background-color: palette(orange,primary);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 63px;
+      margin-bottom: 20px;
+      color: palette(gray,x-light);
+    }
+    
+    .icon-research:before {
+      margin-left: .3em;
+    }
+
+    input {
+      height: 39px;
+    }
+
+    .input-group-btn {
+      padding-left: 10px;
+
+      button {
+        padding: 10px 10px;
+      }
+
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    
+    .sub-link {
+      color: palette(gray, x-dark);
+      font-size: 11px;
+      text-align: left;
+      display: block;
+      padding: 2px;
+    }
+
+  }
+
+  .card-large {
+    .form-control {
+      border: 1px solid palette(gray,dark);
+      padding: 8px 20px;
+      margin: .5em 0;
+      border-radius: 1px;
+      font-weight: 400;
+    }
+
+    @include breakpoint(tablet) {
+      width: 40%;
+    }
+  }
+
+}

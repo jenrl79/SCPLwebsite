@@ -1,0 +1,71 @@
+/*doc
+---
+title: Bottom Navigation
+name: bottom-navigation
+category: Navigation-Navigation
+---
+
+Bottom navigation used for SCPL. For example please see bottom of this page.
+
+
+```html_example 
+<nav class="navbar navbar-fixed-bottom">
+    <div class="container"> 
+        <div class="row">
+            <ul class="navbar-bottom-items">
+                <li><a href="./homepage.html" alt="home">home</a></li>
+                <li><a href="./locations-page.html" alt="locations">locations</a></li>
+                <li><a href="./events-page.html" alt="events">events</a></li>
+                <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+                <li><a href="./directory-page.html" alt="about us">about us</a></li>
+                <li><a href="./contact-page.html" alt="contact">contact</a></li>
+            </ul>
+            <div class="pull-right">
+                <ul class="navbar-bottom-social">
+                    <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+                    <li><a href="#"><span class="icon-twitter"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+```
+
+*/
+
+#scpl {
+    .navbar-fixed-bottom {
+        background-color: palette(gray,x-light);
+        text-transform: uppercase;
+        border-top: 1px solid palette(gray,mid);
+        display: none;
+        @include breakpoint(desktop) {
+            display: block;
+        }
+        .navbar-bottom-items {
+            .active {
+                color: palette(orange,primary);
+            }
+        }
+        ul {
+            display: inline-flex;
+            margin: 20px 0 10px;
+            a {
+                color: palette(gray,dark);
+                text-decoration: none;
+                margin-right: 2em;
+                font-size: 16px;
+                &:hover {
+                    color: palette(orange,primary);
+                }
+            }
+            span {
+                font-size: 25px;
+                padding: 0;
+            }
+        }
+    }
+}
+    
+    

@@ -1,0 +1,56 @@
+/*doc
+---
+title: Newsletter Cards
+name: newsletter-cards
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<a href="#">
+	<div class="row newsletter-card">
+		<div class="col-md-8 col-xs-9">
+			<h4 class="newsletter-title">June 2016: Spartanburg Newsletter</h4>
+			<a class="newsletter-link">download pdf</a>
+		</div>
+		<div class="col-md-4 col-xs-3">
+			<span class="icon-arrow-with-circle-down"></span>
+		</div>	
+	</div>
+</a>
+
+```
+
+*/
+
+#scpl {
+	.newsletter-card {
+		border: 1px solid palette(gray, mid);
+		padding: 5px 30px 0 15px;
+		cursor: pointer;
+		background-color: palette(gray,x-light);
+		border-radius: 2px;
+		margin: 1em 0;
+		@include breakpoint(phablet) {
+			padding: 10px 20px 0 20px;
+		}
+		@include breakpoint(laptop) {
+			padding: 1em 3em 1em 4em;
+		} 
+		.newsletter-title {
+			color: palette(blue,dark);
+		}
+		.newsletter-link {
+			text-transform: uppercase;
+			font-size: 10px;
+			color: palette(blue,light);
+			cursor: pointer;
+			line-height: 3;
+		}
+		.icon-arrow-with-circle-down {
+			font-size: 26px;
+			color: palette(blue,light);
+			line-height: 3;
+		}
+	}
+}

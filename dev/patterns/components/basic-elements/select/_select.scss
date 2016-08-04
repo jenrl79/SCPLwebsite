@@ -1,0 +1,29 @@
+/*doc
+---
+title: Select
+name: Select
+category: Basic Elements-Select
+---
+
+```html_example
+<select class="selectpicker">
+    <option>option title</option>
+    <option>option 1</option>
+    <option>option 2</option>
+    <option>option 3</option>
+</select>
+```
+
+*/
+
+#scpl .selectpicker {
+    color: palette(gray,dark);
+    border: 1px solid palette(gray,dark);
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 10px 35px 10px 10px;
+    text-transform: capitalize;
+    &:hover {
+        cursor: pointer;
+    }
+}

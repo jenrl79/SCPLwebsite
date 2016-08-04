@@ -1,0 +1,101 @@
+/*doc
+---
+title: Contact Us Input
+name: contact-us-input
+category: Inputs-Contact Us Inputs
+---
+
+```html_example
+<div class="contact-us-input">
+    <h2>Get in touch with us!</h2>
+    <div class="line-break"></div>
+
+    <h4>Which department would you like to contact?</h4>
+    <select class="selectpicker">
+        <option>Select a library department</option>
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+    </select>
+
+    <div class="form-group">
+        <label for="personal-user">Full Name</label>
+        <input type="text" class="form" id="personal-user" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label for="personal-phone">Phone</label>
+        <input type="text" class="form" id="personal-phone" placeholder="(555) 555-5555">
+    </div>
+    <div class="form-group">
+        <label for="personal-email">Email</label>
+        <input type="text" class="form" id="personal-email" placeholder="janedoe@scpl.com">
+    </div>
+    <div class="form-group">
+        <label for="name">What's on your mind and how can we help?</label>
+        <textarea class="form" rows="3"></textarea>
+    </div> 
+
+    <div class="buttons-group">
+        <button type="button" class="btn btn-secondary">Submit</button>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+    .contact-us-input {
+        margin: 2em 1em;
+        h2 {
+            margin-top: 2em;
+            color: palette(blue,dark);
+        }
+        h4 {
+            font-weight: bold;
+        }
+        .line-break {
+            width: 5em;
+        }
+        
+        .selectpicker {
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+        }
+        .form {
+            border: 1px solid palette(gray,dark);
+            padding: 1rem 5em 1rem 2em;
+            margin: .5em 0;
+            border-radius: 1px;
+            font-weight: 400;
+            @include breakpoint(phablet) {
+                padding: 1rem 23em 1rem 2em;
+            }
+            @include breakpoint(laptop) {
+                padding: 1rem 23.4em 1rem 2em;
+            }
+        }
+        input, textarea {
+            border-color: palette(gray,dark);
+            border-radius: 1px;
+        }
+        .dropdown-menu {
+            padding: 5px 40px;
+            border-radius: 1px;
+        }
+        .buttons-group {
+            float: right;
+            .btn-primary {
+                background-color: palette(gray,x-light);
+                color: palette(gray,dark);
+                border: none;
+                text-transform: capitalize;
+                font-size: 13px;
+                &:hover {
+                    background-color: palette(gray,light);
+                }
+            }
+        }
+    }
+}

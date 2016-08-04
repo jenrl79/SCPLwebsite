@@ -1,0 +1,30 @@
+/*doc
+---
+title: Button Sizes
+name: 02-button-sizes
+category: Basic Elements-Buttons
+---
+
+Buttons can come in three different sizes: small, regular, or large. You can enlarge a button by adding `.btn-lg` to the button, or shrink it by adding `.btn-sm`.
+
+```html_example
+<button type="button" class="btn btn-secondary btn-sm">Listen</button>
+<button type="button" class="btn btn-secondary">Read</button>
+<button type="button" class="btn btn-secondary btn-lg">Hold</button>
+```
+
+*/
+
+#scpl .btn {
+
+  &.btn-lg {
+    padding: 15px 15px;
+    font-size: 13px;
+  }
+
+  &.btn-sm {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+}

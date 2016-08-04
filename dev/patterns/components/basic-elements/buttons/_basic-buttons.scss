@@ -1,0 +1,51 @@
+/*doc
+---
+title: Basic Buttons
+name: 01-basic-buttons
+category: Basic Elements-Buttons
+---
+
+Buttons by default are styled using `.btn` and colored with `.btn-primary` or `.btn-secondary`.
+
+```html_example
+<button type="button" class="btn btn-primary">Hold</button>
+<button type="button" class="btn btn-secondary">Read</button>
+<button type="button" class="btn btn-primary">Listen</button>
+```
+
+*/
+
+#scpl .btn {
+  color: palette(gray,x-light);
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  transition: all 0.3s;
+
+  &-primary {
+    background-color: palette(blue,light);
+    border-color: palette(blue,light);
+
+    &:hover {
+      background-color: palette(blue,hover);
+      border-color: palette(blue,hover);
+    }
+
+  }
+
+  &-secondary {
+    background-color: palette(orange,primary);
+    border-color: palette(orange,primary);
+
+    &:hover {
+      background-color: palette(orange,hover);
+      border-color: palette(orange,hover);
+    }
+
+  }
+
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SCPL Search Catalog</title>
+
+    <!-- NEED THESE STYLESHEETS -->
+    <link rel="stylesheet" href="../assets/css/patterns.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body id="scpl">
+  <nav class="top-nav">
+      <a href="./homepage.html" class="logo"></a>
+      <div class="quick-links">
+          <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+          <a href="./library-catalog-page.html" class="active"><span class="icon-open-book"></span>Library Catalog</a>
+          <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+      </div>
+      <div class="sign-in">
+          <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf" aria-hidden="true"></span>Bookshelf (5)</button></a>
+          <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+      </div>
+      <a class="mobile-nav-trigger" role="button" data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav">Menu <span class="icon-menu"></span></a>
+      <div class="mobile-nav collapse" id="mobile-nav">
+          <div class="sign-in">
+              <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf-plus" aria-hidden="true"></span>Bookshelf (5)</button></a>
+              <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+          </div>
+          <div class="quick-links">
+              <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+              <a href="./library-catalog-page.html"><span class="icon-open-book" class="active"></span>Library Catalog</a>
+              <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+          </div>
+          <div class="menu-items">
+              <a href="./homepage.html" alt="home">home</a>
+              <a href="./locations-page.html" alt="locations">locations</a>
+              <a href="./events-page.html" alt="events">events</a>
+              <a href="./using-the-library-page.html" alt="using the library">using the library</a>
+              <a href="./about-us-page.html" alt="about us">about us</a>
+              <a href="./contact-page.html" alt="contact">contact</a>
+          </div>
+          <div class="social">
+              <a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a>
+              <a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a>
+          </div>
+      </div>
+  </nav>
+
+
+  <div class="jumbotron">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h3>Explore the Library Catalog</h3>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Find books, ebooks and more...">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-secondary btn-lg">Go!</button>
+            </span>
+          </div>
+          <a class="search-trigger role="button" data-toggle="collapse" href="#search1" aria-expanded="false" aria-controls="search1">
+            More Search Options<span class="icon-chevron-right"></span>
+          </a>
+          <div class="collapse search-content" id="search1">
+            <div class="row">
+            <div class="col-md-6">
+              <h4>Library Branch</h4>
+              <select class="selectpicker">
+                  <option>All libraries</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <h4>Languages</h4>
+              <select class="selectpicker">
+                  <option>All libraries</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <h4>Age Group</h4>
+              <select class="selectpicker">
+                  <option>All libraries</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <h4>Material Type</h4>
+              <select class="selectpicker">
+                  <option>All libraries</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <h4>Collections</h4>
+              <select class="selectpicker">
+                  <option>All libraries</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <h4>Publication Year</h4>
+              <div class="form-group">
+                    <input type="text" class="form-control" id="publication-year" placeholder="2014">
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+  	<!-- Search Filter Component -->
+  	<div class="col-md-3 hidden-sm hidden-xs">
+      <h4 style="color:#82878D;">FILTER SEARCH</h4>
+  		<div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-location" aria-expanded="false" aria-controls="search-location">
+              Location
+          </a>
+          <div class="collapse search-filter-content" id="search-location">
+              <ul>
+                  <li>
+                      <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox1">Enter location here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox2" name="checkbox" type="checkbox"> 
+                      <label for="checkbox2">Enter location here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox3" name="checkbox" type="checkbox"> 
+                      <label for="checkbox3">Enter location here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox4" name="checkbox" type="checkbox"> 
+                      <label for="checkbox4">Enter location here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-format" aria-expanded="false" aria-controls="search-format">
+              Format Type
+          </a>
+          <div class="collapse search-filter-content" id="search-format">
+              <ul>
+                  <li>
+                      <input id="checkbox5" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox5">Enter format here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox6" name="checkbox" type="checkbox"> 
+                      <label for="checkbox6">Enter format here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox7" name="checkbox" type="checkbox"> 
+                      <label for="checkbox7">Enter format here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox8" name="checkbox" type="checkbox"> 
+                      <label for="checkbox8">Enter format here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-audience" aria-expanded="false" aria-controls="search-audience">
+              Audience
+          </a>
+          <div class="collapse search-filter-content" id="search-audience">
+              <ul>
+                  <li>
+                      <input id="checkbox9" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox9">Enter audience here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox10" name="checkbox" type="checkbox"> 
+                      <label for="checkbox10">Enter audience here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox11" name="checkbox" type="checkbox"> 
+                      <label for="checkbox11">Enter audience here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox12" name="checkbox" type="checkbox"> 
+                      <label for="checkbox12">Enter audience here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-author" aria-expanded="false" aria-controls="search-author">
+              Author
+          </a>
+          <div class="collapse search-filter-content" id="search-author">
+              <ul>
+                  <li>
+                      <input id="checkbox13" name="checkbox" type="checkbox" checked="checked">
+                      <label for="checkbox13">Enter author here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox14" name="checkbox" type="checkbox"> 
+                      <label for="checkbox14">Enter author here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox15" name="checkbox" type="checkbox"> 
+                      <label for="checkbox15">Enter author here</label>
+                  </li>
+                  <li>
+                      <input id="checkbox16" name="checkbox" type="checkbox"> 
+                      <label for="checkbox16">Enter author here</label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-published" aria-expanded="false" aria-controls="search-published">
+              Published Date
+          </a>
+          <div class="collapse search-filter-content" id="search-published">
+              <ul>
+                 <!-- li inputs go here -->
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-language" aria-expanded="false" aria-controls="search-language">
+              Language
+          </a>
+          <div class="collapse search-filter-content" id="search-language">
+              <ul>
+                 <!-- li inputs go here -->
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-audiencegenre" aria-expanded="false" aria-controls="search-audiencegenre">
+              Audience
+          </a>
+          <div class="collapse search-filter-content" id="search-audiencegenre">
+              <ul>
+                  <!-- li inputs go here -->
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-genre" aria-expanded="false" aria-controls="search-genre">
+              Genre
+          </a>
+          <div class="collapse search-filter-content" id="search-genre">
+              <ul>
+                  <!-- li inputs go here -->
+              </ul>
+          </div>
+      </div>
+      <div class="search-filter">
+          <a class="search-filter-trigger" role="button" data-toggle="collapse" href="#search-region" aria-expanded="false" aria-controls="search-region">
+              Region
+          </a>
+          <div class="collapse search-filter-content" id="search-region">
+              <ul>
+                  <!-- li inputs go here -->
+              </ul>
+          </div>
+      </div>
+  	</div> <!-- search filter ends -->
+  	<div class="col-md-9">
+  		<!-- Dropdown, Results & Pagination -->
+  		<div class="sort-pagination">
+  			<!--Dropdown -->
+          <select class="selectpicker" style="border: none;">
+              <option>Most Relevant</option>
+              <option>option 1</option>
+              <option>option 2</option>
+              <option>option 3</option>
+          </select>
+  		
+        <p class="results">
+          <span class="results-num">2</span> Results
+        </p>
+
+  			<!-- Pagination -->
+  			<ul class="pagination">
+  				<li>
+  					<a href="#" aria-label="Previous">
+  						<span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+  					</a>
+  				</li>
+  				<li><a href="#">1</a></li>
+  				<li><a href="#">2</a></li>
+  				<li><a href="#">3</a></li>
+  				<li><a href="#">4</a></li>
+  				<li><a href="#">5</a></li>
+  				<li>
+  					<a href="#" aria-label="Next">
+  						<span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="line-break"></div>
+
+  		<!-- Tags -->
+  		<ul class="tags">
+  		    <li class="btn btn-secondary btn-sm">Fiction
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		    <li class="btn btn-secondary btn-sm">Teens
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		    <li class="btn btn-secondary btn-sm">Spartanburg
+  		        <span onclick="$(this).parent().remove();" class="tagRemove">x</span>
+  		        <input type="hidden" name="tags[]" value="Web Deisgn">
+  		    </li>
+  		</ul>
+
+  		<!-- Cards -->
+  		<div class="card">
+          <div class="item-type"><span>Book</span></div>
+          <div class="item-image"><img src="http://placehold.it/120x160"></div>
+          <div class="item-content">
+              <h4 class="item-title">Lorem Ipsum Sit Dolor</h4>
+              <p class="author">Sir Author</p>
+              <p class="call-number">BT Smith, Logan</p>
+              <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+              <p class="publish-date">2016</p>
+              <p class="availability">10 (of 10)</p>
+              <a href="#" class="more-details">See more details and locations</a>
+          </div>
+          <div class="item-buttons">
+              <button data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile" aria-hidden="true"></span></button>
+              <button class="bookshelf-add">
+                <span class="icon-bookshelf-plus" aria-hidden="true">
+                  <span></span>
+                </span>
+              </button>
+          </div>
+          <button type="button" class="btn btn-primary card-action" data-toggle="modal" data-target="#modal-pick-up"><span class="icon-bookmark" aria-hidden="true"></span>Hold</button>
+      </div>
+  		<div class="card">
+  			<div class="item-type"><span>E-Book</span></div>
+  			<div class="item-image"><img src="http://placehold.it/120x160"></div>
+  			<div class="item-content">
+            <h4 class="item-title">Lorem Ipsum Sit Dolor</h4>
+            <p class="author">Sir Author</p>
+            <p class="call-number">BT Smith, Logan</p>
+            <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+            <p class="publish-date">2016</p>
+            <p class="availability">10 (of 10)</p>
+            <a href="#" class="more-details">See more details and locations</a>
+        </div>
+  			<div class="item-buttons">
+  			    <button data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile" aria-hidden="true"></span></button>
+  			    <button class="bookshelf-add">
+              <span class="icon-bookshelf-plus" aria-hidden="true">
+                <span></span>
+              </span>
+            </button>
+  			</div>
+  			<button type="button" class="btn btn-primary card-action"><span class="icon-book" aria-hidden="true"></span>Read</button>
+  		</div>
+  		<div class="card">
+  			<div class="item-type"><span>CD Audio Book</span></div>
+  			<div class="item-image"><img src="http://placehold.it/120x160"></div>
+  			<div class="item-content">
+            <h4 class="item-title">Lorem Ipsum Sit Dolor</h4>
+            <p class="author">Sir Author</p>
+            <p class="call-number">BT Smith, Logan</p>
+            <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+            <p class="publish-date">2016</p>
+            <p class="availability">10 (of 10)</p>
+            <a href="#" class="more-details">See more details and locations</a>
+        </div>
+  			<div class="item-buttons">
+  			    <button data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile" aria-hidden="true"></span></button>
+  			    <button class="bookshelf-add">
+              <span class="icon-bookshelf-plus" aria-hidden="true">
+                <span></span>
+              </span>
+            </button>
+  			</div>
+  			<button type="button" class="btn btn-primary card-action" data-toggle="modal" data-target="#modal-pick-up"><span class="icon-bookmark" aria-hidden="true"></span>Hold</button>
+  		</div>
+  		<div class="card">
+  			<div class="item-type"><span>E-Audio Book</span></div>
+  			<div class="item-image"><img src="http://placehold.it/120x160"></div>
+  			<div class="item-content">
+            <h4 class="item-title">Lorem Ipsum Sit Dolor</h4>
+            <p class="author">Sir Author</p>
+            <p class="call-number">BT Smith, Logan</p>
+            <p class="description">Intrinsicly innovate transparent intellectual capital and impactful core competencies. Assertively simplify synergistic potentialities with economically sound...</p>
+            <p class="publish-date">2016</p>
+            <p class="availability">10 (of 10)</p>
+            <a href="#" class="more-details">See more details and locations</a>
+        </div>
+  			<div class="item-buttons">
+  			    <button data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile" aria-hidden="true"></span></button>
+  			    <button class="bookshelf-add">
+              <span class="icon-bookshelf-plus" aria-hidden="true">
+                <span></span>
+              </span>
+            </button>
+  			</div>
+  			<button type="button" class="btn btn-primary card-action"><span class="icon-circle-play" aria-hidden="true"></span>Listen</button>
+  		</div>
+  	</div>
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+        </a>
+      </li>
+    </ul>
+  </div> <!-- Container ends -->
+  
+  <!-- Modal begins -->
+  <div class="modal fade" id="modal-call-number" tabindex="-1" role="dialog" aria-labelledby="modal-call-numberLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="modal-call-numberLabel">Get your item's call number sent to your mobile phone!</h3><h5>(Text rates may apply.)</h5>
+        </div>
+        <div class="modal-body col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+          <h5>Choose a location nearest you.</h5>
+          <div class="dropdown open">
+            <button class="btn btn-call-number dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a library branch <span class="icon-select-arrows"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#">Library 1</a>
+              <a class="dropdown-item" href="#">Library 2</a>
+              <a class="dropdown-item" href="#">Library 3</a>
+              <a class="dropdown-item" href="#">Library 4</a>
+              <a class="dropdown-item" href="#">Library 5</a>
+            </div>
+          </div>
+          <h5>Add your mobile phone</h5>
+          <div class="input-group">
+            <input type="tel" class="form-control" placeholder="(555) 555-5555" aria-describedby="basic-addon1">
+          </div>
+          <h5>Select your mobile phone carrier</h5>
+          <div class="dropdown open">
+            <button class="btn btn-call-number dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a library branch <span class="icon-select-arrows"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#">Carrier 1</a>
+              <a class="dropdown-item" href="#">Carrier 2</a>
+              <a class="dropdown-item" href="#">Carrier 3</a>
+              <a class="dropdown-item" href="#">Carrier 4</a>
+              <a class="dropdown-item" href="#">Carrier 5</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-call-number">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="modal-pick-up" tabindex="-1" role="dialog" aria-labelledby="modal-pick-upLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="modal-pick-upLabel">Where would you like to pick up this item?</h3>
+        </div>
+        <div class="modal-body col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+          <h5>Choose a location nearest you.</h5>
+          <div class="dropdown open">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select a library branch <span class="icon-select-arrows"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#">First Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <p>We'll let you know when your item is ready to be picked up!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-pick-up" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="alert-banner blue">
+    <div class="container-fluid">
+      <p>Didn't get the results you wanted? Visit the <a href="#">Inter-Library Loan</a> or view the <a href="#">Classic Catalog</a>.</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-fixed-bottom">
+      <div class="container"> 
+          <div class="row">
+              <ul class="navbar-bottom-items">
+                  <li><a href="./homepage.html" alt="home">home</a></li>
+                  <li><a href="./locations-page.html" alt="locations">locations</a></li>
+                  <li><a href="./events-page.html" alt="events">events</a></li>
+                  <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+                  <li><a href="./about-us-page.html" alt="about us">about us</a></li>
+                  <li><a href="./contact-page.html" alt="contact">contact</a></li>
+              </ul>
+              <div class="pull-right">
+                  <ul class="navbar-bottom-social">
+                      <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+                      <li><a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav> <!-- footer ends -->
+  <script type="text/javascript" src="/vendor_assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $('.bookshelf-add').click(function(){
+      $(this).find('>span').toggleClass('icon-check');
+      $(this).find('>span').toggleClass('icon-bookshelf-plus');
+    });
+  </script>
+</body>
+</html>

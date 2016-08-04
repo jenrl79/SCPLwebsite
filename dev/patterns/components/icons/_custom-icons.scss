@@ -1,0 +1,116 @@
+/*doc
+---
+title: Custom Icons
+name: 02-custom
+category: Icons-Custom
+---
+
+<style>
+  .col-sm-3 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+  }
+  .col-sm-3 span {
+    display: block;
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="col-sm-3"><span class="icon-circle-minus"></span>.icon-circle-minus</div>
+<div class="col-sm-3"><span class="icon-circle-play"></span>.icon-circle-play</div>
+<div class="col-sm-3"><span class="icon-circle-plus"></span>.icon-circle-plus</div>
+<div class="col-sm-3"><span class="icon-circle-right-chevron"></span>.icon-circle-right-chevron</div>
+
+<div class="col-sm-3">
+  <span class="icon-bookshelf">
+    <span></span>
+  </span>
+  .icon-bookshelf-plus
+</div>
+
+<div class="col-sm-3"><span class="icon-bookshelf"></span>.icon-bookshelf</div>
+<div class="col-sm-3"><span class="icon-lock-corner"></span>.icon-lock-corner</div>
+<div class="col-sm-3"><span class="icon-research"></span>.icon-research</div>
+<div class="col-sm-3"><span class="icon-resources"></span>.icon-resources</div>
+<div class="col-sm-3"><span class="icon-open-book"></span>.icon-open-book</div>
+
+
+```none_example
+```
+*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?47573330');
+  src: url('../fonts/fontello.eot?47573330#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?47573330') format('woff2'),
+       url('../fonts/fontello.woff?47573330') format('woff'),
+       url('../fonts/fontello.ttf?47573330') format('truetype'),
+       url('../fonts/fontello.svg?47573330#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?47573330#fontello') format('svg');
+  }
+}
+*/
+ 
+ .icon-bookshelf-minus:before { 
+  font-family: 'fontello';
+  content: '\e80a'; 
+}
+ 
+.icon-bookshelf-plus:before { 
+    font-family: 'fontello';
+    content: '\e800'; 
+}
+
+.icon-bookshelf:before { 
+    font-family: 'fontello';
+    content: '\e801'; 
+}
+.icon-circle-minus:before { 
+    font-family: 'fontello';
+    content: '\e802'; 
+}
+.icon-circle-play:before { 
+    font-family: 'fontello';
+    content: '\e803'; 
+}
+.icon-circle-plus:before { 
+    font-family: 'fontello';
+    content: '\e804'; 
+}
+.icon-circle-right-chevron:before { 
+    font-family: 'fontello';
+    content: '\e805'; 
+}
+.icon-lock-corner:before { 
+    font-family: 'fontello';
+    content: '\e806';
+    color: #F38724; 
+}
+.icon-research:before { 
+    font-family: 'fontello';
+    content: '\e807'; 
+}
+.icon-resources:before { 
+    font-family: 'fontello';
+    content: '\e808'; 
+}
+.icon-open-book:before { 
+    font-family: 'fontello';
+    content: '\e809';
+    font-size: 45px;
+    vertical-align: middle; 
+}

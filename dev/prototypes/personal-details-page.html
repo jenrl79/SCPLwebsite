@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SCPL Personal Details</title>
+
+    <!-- NEED THESE STYLESHEETS -->
+    <link rel="stylesheet" href="../assets/css/patterns.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+	<body id="scpl">
+        <nav class="top-nav">
+            <a href="./homepage.html" class="logo"></a>
+            <div class="quick-links">
+                <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+                <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+                <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+            </div>
+            <div class="sign-in">
+                <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf" aria-hidden="true"></span>Bookshelf (5)</button></a>
+                <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+            </div>
+            <a class="mobile-nav-trigger" role="button" data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav">Menu <span class="icon-menu"></span></a>
+            <div class="mobile-nav collapse" id="mobile-nav">
+                <div class="sign-in">
+                    <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-shopping-cart" aria-hidden="true"></span>Bookshelf (5)</button></a>
+                    <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+                </div>
+                <div class="quick-links">
+                    <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+                    <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+                    <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+                </div>
+                <div class="menu-items">
+                    <a href="./homepage.html" alt="home">home</a>
+                    <a href="./locations-page.html" alt="locations">locations</a>
+                    <a href="./events-page.html" alt="events">events</a>
+                    <a href="./using-the-library-page.html" alt="using the library">using the library</a>
+                    <a href="./about-us-page.html" alt="about us">about us</a>
+                    <a href="./contact-page.html" alt="contact">contact</a>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a>
+                    <a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a>
+                </div>
+            </div>
+        </nav>
+
+    	<div class="container">
+
+            <div class="personal-detail-input"> <!--Personal Detail Input Start-->
+                <h2>Personal Details</h2>
+                
+                <div class="line-break"></div>
+
+                <div class="form-group">
+                  <label for="personal-user">Full Name</label>
+                  <input type="text" class="form-control" id="personal-user" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                  <label for="personal-phone">Phone</label>
+                  <input type="text" class="form-control" id="personal-phone" placeholder="(555) 555-5555">
+                </div>
+                <div class="form-group">
+                  <label for="personal-email">Email</label>
+                  <input type="text" class="form-control" id="personal-email" placeholder="janedoe@scpl.com">
+                </div>
+                <div class="form-group">
+                  <label for="personal-address">Address</label>
+                  <input type="text" class="form-control" id="personal-address" placeholder="1234 Spartanburg Lane">
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <div class="form-group">
+                          <label for="personal-city">City</label>
+                          <input type="text" class="form-control" id="personal-city" placeholder="Spartanburg">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="form-group">
+                          <label for="personal-zip">Zip</label>
+                          <input type="text" class="form-control" id="personal-zip" placeholder="00000">
+                        </div>
+                    </div>
+                </div>
+                <h4>How would you like us to reach you?</h4>
+                <fieldset>
+                  <div class="field">
+                    <input type="radio" name="state" id="radio1" value="email" checked>
+                    <label for="radio1">Email</label>
+                  </div>
+                  <div class="field">
+                    <input type="radio" name="state" id="radio2" value="text">
+                    <label for="radio2">Text</label>
+                  </div>
+                  <div class="field">
+                    <input type="radio" name="state" id="radio3" value="phone">
+                    <label for="radio3">Phone</label>
+                  </div>
+                </fieldset>
+                <div class="buttons-group">
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                    <button type="button" class="btn btn-secondary">Save</button>
+                </div>
+            </div> <!--Personal Detail Input end-->
+
+    		<div class="copyright-banner">
+    		    <p>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</p>
+    		</div>
+    	</div>
+
+		<nav class="navbar navbar-fixed-bottom">
+            <div class="container"> 
+                <div class="row">
+                    <ul class="navbar-bottom-items">
+                        <li><a href="./homepage.html" alt="home">home</a></li>
+                        <li><a href="./locations-page.html" alt="locations">locations</a></li>
+                        <li><a href="./events-page.html" alt="events">events</a></li>
+                        <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+                        <li><a href="./about-us-page.html" alt="about us">about us</a></li>
+                        <li><a href="./contact-page.html" alt="contact">contact</a></li>
+                    </ul>
+                    <div class="pull-right">
+                        <ul class="navbar-bottom-social">
+                            <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+                            <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+                            <li><a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+		<script type="text/javascript" src="/vendor_assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

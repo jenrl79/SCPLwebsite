@@ -1,0 +1,23 @@
+/*doc
+---
+title: Line Break
+name: line-break
+category: Basic Elements-Line Breaks
+---
+
+A simple line break for separating components.
+
+```html_example
+<div class="line-break"></div>
+
+```
+
+*/
+
+.line-break {
+  	height: 1px;
+  	background-color: palette(gray,regular);
+  	border-bottom: 1px solid palette(gray,regular);
+  	width: 100%;
+	margin: 20px 0;
+}

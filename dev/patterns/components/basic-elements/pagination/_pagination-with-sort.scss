@@ -1,0 +1,70 @@
+/*doc
+---
+title: Pagination With Sorting
+name: 02-pagination-with-sort
+category: Basic Elements-Pagination
+---
+
+
+```html_example
+<div class="sort-pagination">
+	<!--Dropdown -->
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			Most Relevant
+			<span class="icon-triangle-down"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<p class="results">
+	    <span class="results-num">2</span> Results
+	</p>
+
+	<!-- Pagination -->
+	<ul class="pagination">
+		<li>
+			<a href="#" aria-label="Previous">
+				<span aria-hidden="true"><span class="icon-chevron-small-left"></span></span>
+			</a>
+		</li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li>
+			<a href="#" aria-label="Next">
+				<span aria-hidden="true"><span class="icon-chevron-small-right"></span></span>
+			</a>
+		</li>
+	</ul>
+</div>
+```
+
+*/
+
+#scpl .sort-pagination {
+  display: block;
+  text-align: center;
+  align-items: flex-end;
+  color: palette(gray,dark);
+  .pagination {
+  	margin: 0;
+  }
+  @include breakpoint(phablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include breakpoint(mobileonly) {
+    .dropdown {
+      width: 100%;
+    }
+  }
+}

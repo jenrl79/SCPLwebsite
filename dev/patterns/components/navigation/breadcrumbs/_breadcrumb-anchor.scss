@@ -1,0 +1,36 @@
+/*doc
+---
+title: Breadcrumb Anchor
+name: 01-breadcrumb-anchor
+category: Basic Elements-Breadcrumbs
+---
+
+```html_example
+<a href="homepage.html" class="breadcrumb">Using the Library</a>
+```
+
+*/
+
+#scpl {
+
+  a.breadcrumb {
+    display: block;
+    background-color: transparent;
+    font-size: 16px;
+    color: palette(gray, x-dark);
+    padding: 20px 0;
+
+    &:before {
+      font-family: 'Entypo';
+      content: "\e922";
+      vertical-align: sub;
+      font-size: 23px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,79 @@
+/*doc
+---
+title: Event Detail Card
+name: event-detail-card
+category: Basic Elements-Cards
+---
+
+```html_example
+
+<div class="row event-detail-card">
+	<div class="col-md-3">
+		<div class="event-detail-timeline">
+			<div class="event-detail-date">June 29th</div>
+			<div class="event-detail-time">10:15AM - 11:15PM</div>
+		</div>
+	</div>
+	<div class="hidden-lg hidden-md">
+		<div class="line-break"></div>
+	</div>
+	<div class="hidden-sm hidden-xs">
+		<div class="line-break-vert"></div>
+	</div>
+	<div class="col-md-9">
+		<div class="event-detail-about">
+			<h4 class="event-detail-title">Yoga at the Library</h4>
+			<p class="event-detail-subtitle">Spartanburg Library - The Green Room</p>
+			<p class="event-detail-description">Practice yoga at the library every week at this instructor-led class!</p>
+			<div class="event-detail-link"><a href="#">See details</a></div>
+		</div>
+	</div>
+</div>
+
+```
+
+*/
+
+#scpl {
+	.event-detail-card {
+		border: 1px solid palette(gray,mid);
+		border-radius: 2px;
+		padding: 2em;
+		line-height: 3;
+		margin: 2em 0;
+		position: relative;
+		text-align: left;
+		.event-detail-timeline {
+			position: relative;
+			.event-detail-date, .event-detail-time {
+				color: palette(gray,dark);
+				text-transform: uppercase;
+			}
+		}
+		.line-break-vert::after {
+			position: absolute;
+			left: 15em;
+			top: 2.5em;
+			height: 10em;
+			@include breakpoint(laptop) {
+				left: 17em;
+			}
+		}
+		.event-detail-about {
+			text-align: left;
+			.event-detail-title {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.event-detail-link {
+				a {
+					color: palette(blue,light);
+					text-decoration: none;
+					&:hover {
+						color: palette(blue,drkhover);
+					}
+				}
+			}
+		}
+	}
+}

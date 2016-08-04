@@ -1,0 +1,86 @@
+/*doc
+---
+title: Personal Details Input
+name: personal-details-input
+category: Inputs-Personal Details
+---
+
+```html_example
+<div class="personal-detail-input">
+    <h2>Personal Details</h2>
+    
+    <div class="line-break"></div>
+
+    <div class="form-group">
+      <label for="personal-user">Full Name</label>
+      <input type="text" class="form" id="personal-user" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+      <label for="personal-phone">Phone</label>
+      <input type="text" class="form" id="personal-phone" placeholder="(555) 555-5555">
+    </div>
+    <div class="form-group">
+      <label for="personal-email">Email</label>
+      <input type="text" class="form" id="personal-email" placeholder="janedoe@scpl.com">
+    </div>
+    <div class="form-group">
+      <label for="personal-address">Address</label>
+      <input type="text" class="form" id="personal-address" placeholder="1234 Spartanburg Lane">
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            <div class="form-group">
+              <label for="personal-city">City</label>
+              <input type="text" class="form" id="personal-city" placeholder="Spartanburg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="form-group">
+              <label for="personal-zip">Zip</label>
+              <input type="text" class="form" id="personal-zip" placeholder="00000">
+            </div>
+        </div>
+    </div>
+    <!--<div class="personal-form-contact">
+        <input type="" name="personal-email">
+        <input type="" name="personal-text">
+        <input type="" name="personal-phone">
+    </div>-->
+    <div class="buttons-group">
+        <button type="button" class="btn btn-primary">Cancel</button>
+        <button type="button" class="btn btn-secondary">Save</button>
+    </div>
+</div>
+```
+
+*/
+
+#scpl {
+    .personal-detail-input {
+        margin: 2em 1em;
+        h2 {
+            color: palette(blue,dark);
+        }
+        .line-break {
+            width: 5em;
+        }
+        input {
+            border-color: palette(gray,dark);
+            border-radius: 1px;
+            padding: 1.3em;
+        }
+        .buttons-group {
+            float: right;
+            .btn-primary {
+                background-color: palette(gray,x-light);
+                color: palette(gray,dark);
+                border: none;
+                text-transform: capitalize;
+                font-size: 13px;
+                &:hover {
+                    background-color: palette(gray,light);
+                }
+            }
+        }
+    }
+}

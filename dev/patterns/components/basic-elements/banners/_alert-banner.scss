@@ -1,0 +1,49 @@
+/*doc
+---
+title: Alert Banner
+name: 01-alert-banner
+category: Basic Elements-Banners
+---
+
+```html_example
+<div class="alert-banner blue">
+  <div class="container-fluid">
+    <p>Didn't get the results you wanted? Visit the <a href="#">Inter-Library Loan</a> or view the <a href="#">Classic Catalog</a>.</p>
+  </div>
+</div>
+```
+
+*/
+
+#scpl {
+  
+  .alert-banner {
+    width: 100%;
+    padding: 20px;
+
+    .container-fluid {
+      padding: 0;
+    }
+    
+    p {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    a {
+      font-weight: bold;
+    }
+
+    &.blue {
+      background-color: #E1F2FC;
+    }
+  }
+
+  .alert {
+    padding: 20px 25px 15px;
+    border-radius: 0;
+    border: none;
+  }
+
+}

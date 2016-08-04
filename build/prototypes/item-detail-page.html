@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SCPL Item Details</title>
+
+    <!-- NEED THESE STYLESHEETS -->
+    <link rel="stylesheet" href="../assets/css/patterns.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+	<body id="scpl">
+		<!-- Navigation -->
+    <nav class="top-nav">
+        <a href="./homepage.html" class="logo"></a>
+        <div class="quick-links">
+            <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+            <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+            <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+        </div>
+        <div class="sign-in">
+            <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf" aria-hidden="true"></span>Bookshelf (5)</button></a>
+            <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+        </div>
+        <a class="mobile-nav-trigger" role="button" data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav">Menu <span class="icon-menu"></span></a>
+        <div class="mobile-nav collapse" id="mobile-nav">
+            <div class="sign-in">
+                <a href="./bookshelf-page.html"><button type="button" class="btn btn-primary"><span class="icon-bookshelf-plus" aria-hidden="true"></span>Bookshelf (5)</button></a>
+                <a href="./account-overview-page.html"><button type="button" class="btn btn-secondary">Account</button></a>
+            </div>
+            <div class="quick-links">
+                <a href="./research-db-page.html"><span class="icon-research"></span>Research</a>
+                <a href="./library-catalog-page.html"><span class="icon-open-book"></span>Library Catalog</a>
+                <a href="./resource-page.html"><span class="icon-resources"></span>Resources</a>
+            </div>
+            <div class="menu-items">
+                <a href="./homepage.html" alt="home">home</a>
+                <a href="./locations-page.html" alt="locations">locations</a>
+                <a href="./events-page.html" alt="events">events</a>
+                <a href="./using-the-library-page.html" alt="using the library">using the library</a>
+                <a href="./about-us-page.html" alt="about us">about us</a>
+                <a href="./contact-page.html" alt="contact">contact</a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a>
+                <a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a>
+            </div>
+        </div>
+    </nav>
+
+	<div class="container">
+		<a href="#" class="breadcrumb">Back to results</a>
+	    <div class="detail-item-card">  <!--Item Card Start -->
+	        <div class="row">
+	            <div class="col-md-3">
+	                <div class="detail-item-image"><img src="http://placehold.it/250x340"></div>
+	            </div>
+	            <div class="col-md-8">
+	                <div class="detail-item-overview">
+	                    <h3 class="item-title">Lorem Ipsum Sit Dolor</h3>
+	                    <h4 class="author">Sir Author</h4>
+	                    <p class="call-number">BT Smith, Logan</p>
+	                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pick-up"><span class="icon-bookmark" aria-hidden="true"></span>Hold</button>
+	                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-call-number"><span class="icon-mobile"></span><a href="#">Text me the call number</a></button>
+	                    <button type="button" class="btn btn-primary"><span class="icon-bookshelf-plus"></span><a href="#">Add to bookshelf</a></button>
+	                    <div class="line-break col-md-12 col-sm-12 col-xs-12"></div>
+	                    <h6>Overview</h6>
+	                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis quam dictum, ultricies elit nec, semper turpis.</p>
+	                    <a href="#" class="more-details">(More)</a>
+	                    <br>
+	                    <div class="line-break"></div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-md-3 col-sm-4 col-xs-12">
+	                <div class="detail-item-buttons">
+	                    <p>This item is also available as:</p>
+	                    <ul>
+	                        <li><button type="button" class="btn btn-pill">E-Book</button></li>
+	                        <li><button type="button" class="btn btn-pill">E-Audio Book</button></li>
+	                        <li><button type="button" class="btn btn-pill">CD Audio Book</button></li>
+	                    </ul>
+	                    <p>SHARE</p>
+	                    <ul>
+	                        <li><span class="icon-facebook"></span></li>
+	                        <li><span class="icon-instagram"></span></li>
+	                        <li><span class="icon-twitter"></span></li>
+	                    </ul>
+	                </div>
+	                <div class="line-break hidden-lg hidden-md hidden-sm"></div>
+	            </div>
+	            <div class="col-md-3 col-sm-4 col-xs-12">
+	                <div class="detail-item-details">
+	                    <p>Details</p>       
+	                    <ul>
+	                        <li class="format">book</li>
+	                        <li class="edition">3rd</li>
+	                        <li class="publisher">New York: Thorndike Press</li>
+	                        <li class="publishing-date">2013</li>
+	                        <li class="isbn">
+	                            <p>123456789(hardback)</p>
+	                            <p>123456789(hardback)</p>
+	                            <p>123456789</p>
+	                        </li>
+	                        <li class="local-items">10</li>
+	                        <li class="available-items">7</li>
+	                    </ul>
+	                    <div class="line-break hidden-lg hidden-md hidden-sm"></div>
+	                </div>
+	            </div>
+	            <div class="col-md-4 col-sm-4 col-xs-12">
+	                <div class="detail-item-availability">
+	                    <p>Availability</p>
+	                    <ul class="col-md-6">
+	                        <li><mark><a href="#"><span class="availability-tag">3</span>Library Branch</a></mark></li>
+	                        <li><mark><a href="#"><span class="availability-tag">8</span>Library Branch</a></mark></li>
+	                        <li><mark><a href="#"><span class="availability-tag">4</span>Library Branch</a></mark></li>
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                    </ul>
+	                    <ul class="col-md-6">
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                        <li><mark><a href="#"><span class="availability-tag">3</span>Library Branch</a></mark></li>
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                        <li><a href="#"><span class="availability-tag">0</span>Library Branch</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div> <!--detailed item card end-->
+
+	    <!-- Modal begins -->
+	    <div class="modal fade" id="modal-call-number" tabindex="-1" role="dialog" aria-labelledby="modal-call-numberLabel">
+	      <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <h3 class="modal-title" id="modal-call-numberLabel">Get your item's call number sent to your mobile phone!</h3><h5>(Text rates may apply.)</h5>
+	          </div>
+	          <div class="modal-body col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+	            <h5>Choose a location nearest you.</h5>
+	            <div class="dropdown open">
+	              <button class="btn btn-call-number dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                Select a library branch <span class="icon-select-arrows"></span>
+	              </button>
+	              <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	                <a class="dropdown-item" href="#">Library 1</a>
+	                <a class="dropdown-item" href="#">Library 2</a>
+	                <a class="dropdown-item" href="#">Library 3</a>
+	                <a class="dropdown-item" href="#">Library 4</a>
+	                <a class="dropdown-item" href="#">Library 5</a>
+	              </div>
+	            </div>
+	            <h5>Add your mobile phone</h5>
+	            <div class="input-group">
+	              <input type="tel" class="form-control" placeholder="(555) 555-5555" aria-describedby="basic-addon1">
+	            </div>
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+	            <button type="button" class="btn btn-call-number">Submit</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    
+	    <div class="modal fade" id="modal-pick-up" tabindex="-1" role="dialog" aria-labelledby="modal-pick-upLabel">
+	      <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <h3 class="modal-title" id="modal-pick-upLabel">Where would you like to pick up this item?</h3>
+	          </div>
+	          <div class="modal-body col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+	            <h5>Choose a location nearest you.</h5>
+	            <div class="dropdown open">
+	              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                Select a library branch <span class="icon-select-arrows"></span>
+	              </button>
+	              <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	                <a class="dropdown-item" href="#">First Action</a>
+	                <a class="dropdown-item" href="#">Another action</a>
+	                <a class="dropdown-item" href="#">Something else here</a>
+	                <a class="dropdown-item" href="#">Something else here</a>
+	                <a class="dropdown-item" href="#">Something else here</a>
+	              </div>
+	            </div>
+	            <p>We'll let you know when your item is ready to be picked up!</p>
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn btn-pick-up" data-dismiss="modal">Cancel</button>
+	            <button type="button" class="btn btn-secondary">Submit</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    
+		<div class="copyright-banner">
+		    <p>Copyright 2016 &copy; Spartanburg County Public Libraries. All Rights Reserved.</p>
+		</div>
+		<nav class="navbar navbar-fixed-bottom">
+		    <div class="container"> 
+		        <div class="row">
+		            <ul class="navbar-bottom-items">
+		                <li><a href="./homepage.html" alt="home">home</a></li>
+		                <li><a href="./locations-page.html" alt="locations">locations</a></li>
+		                <li><a href="./events-page.html" alt="events">events</a></li>
+		                <li><a href="./using-the-library-page.html" alt="using the library">using the library</a></li>
+		                <li><a href="./about-us-page.html" alt="about us">about us</a></li>
+		                <li><a href="./contact-page.html" alt="contact">contact</a></li>
+		            </ul>
+		            <div class="pull-right">
+		                <ul class="navbar-bottom-social">
+		                    <li><a href="https://www.facebook.com/spartanburglibraries"><span class="icon-facebook"></span></a></li>
+		                    <li><a href="https://twitter.com/sptbglibraries"><span class="icon-instagram"></span></a></li>
+		                    <li><a href="https://www.instagram.com/spartanburglibraries/"><span class="icon-twitter"></span></a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</nav>
+	</div>
+  <script type="text/javascript" src="/vendor_assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/vendor_assets/bootstrap.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
